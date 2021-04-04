@@ -5,6 +5,8 @@ import Home from './pages/Home';
 import Portfolio from './pages/Portfolio';
 
 function App() {
+    document.body.style = 'background-color: #F5F5F5;';
+    
     return (
         <BrowserRouter>
             <Switch>
