@@ -1,7 +1,9 @@
+import Brand from '../components/Brand';
+
 function Home() {
     return (
         <div>
-            <p>Home</p>
+            <Brand />
         </div>
     );
 }
