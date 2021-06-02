@@ -1,7 +1,7 @@
-function Portfolio() {
+const Portfolio = () => {
     return (
         <div>
-            <p>Portfolio</p>
+            <h1>Portfolio</h1>
         </div>
     );
 }

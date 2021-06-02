@@ -1,0 +1,10 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display&family=Source+Sans+Pro&display=swap');
+
+body {
+    background-color: #F5F5F5;
+    font-family: 'Source Sans Pro', sans-serif;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Playfair Display', sans-serif;
+}

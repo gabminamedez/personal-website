@@ -1,9 +1,11 @@
 import { useState } from 'react';
 
+import menuStyles from '../styles/Menu.module.css';
+
 function Menu() {
     const isOpenStyles = {
-        display: "none"
-    }
+        display: 'none'
+    };
 
     const [isOpen, setIsOpen] = useState(false);
 
@@ -12,8 +14,8 @@ function Menu() {
     };
 
     return (
-        <div id="menu" onClick={toggleMenu}>
-            <div id="hamburger" styles={!isOpen && isOpenStyles}>
+        <div className={menuStyles.menu} onClick={toggleMenu}>
+            <div className={menuStyles.hamburger} styles={!isOpen && isOpenStyles}>
                 <div></div>
             </div>
         </div>
