@@ -11,12 +11,14 @@
     position: relative;
     background-color: #4B92DB;
     color: #FBF7D5;
-    transition: 0.5s;
+    transition: 0.2s;
 }
 
 .brand:hover, .menu:hover {
     background-color: #FBF7D5;
     color: #4B92DB;
+    border: 5px solid #4B92DB;
+    box-shadow: 10px 10px;
 }
 
 .brand h1 {

@@ -1,0 +1,56 @@
+.menuButtonClosed, .menuButtonOpen {
+    height: 55px;
+    width: 55px;
+    margin-top: 15px;
+    margin-right: 15px;
+    float: right;
+    position: relative;
+    transition: 0.2s;
+}
+
+.menuButtonClosed {
+    background-color: #4B92DB;
+    color: #FBF7D5;
+}
+
+.menuButtonOpen {
+    background-color: #FBF7D5;
+    color: #4B92DB;
+    border: 1px solid #4B92DB;
+    box-shadow: -10px 10px;
+}
+
+.hamburgerClosed, .hamburgerOpen {
+    width: 30px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.hamburgerClosed:before, .hamburgerClosed:after, .hamburgerClosed div, .hamburgerOpen:before, .hamburgerOpen:after, .hamburgerOpen div {
+    border-radius: 3px;
+    content: '';
+    display: block;
+    height: 3px;
+    margin: 7px 0;
+    transition: all 0.2s ease-in-out;
+}
+
+.hamburgerClosed:before, .hamburgerClosed:after, .hamburgerClosed div {
+    background-color: #FBF7D5;
+}
+
+.hamburgerOpen:before {
+    transform: translateY(10px) rotate(135deg);
+    background-color: #4B92DB;
+}
+
+.hamburgerOpen:after {
+    transform: translateY(-10px) rotate(-135deg);
+    background-color: #4B92DB;
+}
+
+.hamburgerOpen div {
+    transform: scale(0);
+}
