@@ -1,7 +1,31 @@
 .menu {
     background-color: #FBF7D5;
     width: 100%;
-    height: 60%;
-    margin-top: -25px;
+    height: 80%;
+    margin-bottom: 25px;
     text-align: center;
+    position: absolute;
+    z-index: 3;
+    transition: top .2s ease-in-out;
+    box-shadow: 10px 0 8px -2px #202020;
+}
+
+.menu .menuContent {
+    margin: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    font-size: x-large;
+}
+
+.menu a {
+    text-decoration: none;
+    color: #202020;
+}
+
+.menu a:hover {
+    text-decoration: none;
+    color: #4B92DB;
 }

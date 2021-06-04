@@ -20,7 +20,9 @@ const Layout = ({ children }) => {
             </div>
             <Menu isOpen={isOpen} />
             
-            {children}
+            <div style={{position: 'relative', zIndex: 1}}>
+                {children}
+            </div>
         </>
     )
 }

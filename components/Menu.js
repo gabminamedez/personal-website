@@ -6,7 +6,12 @@ function Menu({isOpen}) {
         <div>
             {   isOpen ?
                     <div className={menuStyles.menu}>
-                        <h1>Yeet</h1>
+                        <div className={menuStyles.menuContent}>
+                            <h1><a href='/about' target='_blank'>About Me</a></h1>
+                            <h1><a href='https://gabminamedez.medium.com' target='_blank'>Blog</a></h1>
+                            <h1><a href='/portfolio' target='_blank'>Portfolio</a></h1>
+                            <h1><a href='' target='_blank'>Resumé</a></h1>
+                        </div>
                     </div>
                 :
                     <div></div>
