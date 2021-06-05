@@ -15,27 +15,31 @@ const Layout = ({ children }) => {
 
     return (
         <>
-            <div className={layoutStyles.layoutButtons}>
-                <Brand />
-                <MenuButton toggleMenu={toggleMenu} isOpen={isOpen} />
+            <div className={layoutStyles.layout}>
+                <div className={layoutStyles.layoutButtons}>
+                    <Brand />
+                    <MenuButton toggleMenu={toggleMenu} isOpen={isOpen} />
+                </div>
+
+                {   isOpen ?
+                        <div className={layoutStyles.menu}>
+                            <div className={layoutStyles.menuContent}>
+                                <h1><a href='/about'>About Me</a></h1>
+                                <h1><a href='https://gabminamedez.medium.com' target='_blank'>Blog</a></h1>
+                                <h1><a href='/portfolio'>Portfolio</a></h1>
+                                <h1><a href='/'>Resumé</a></h1>
+                            </div>
+                        </div>
+                    :
+                        <div></div>
+                }
+                
+                <div className={layoutStyles.children}>
+                    {children}
+                </div>
             </div>
 
-            {   isOpen ?
-                    <div className={layoutStyles.menu}>
-                        <div className={layoutStyles.menuContent}>
-                            <h1><a href='/about'>About Me</a></h1>
-                            <h1><a href='https://gabminamedez.medium.com' target='_blank'>Blog</a></h1>
-                            <h1><a href='/portfolio'>Portfolio</a></h1>
-                            <h1><a href='/'>Resumé</a></h1>
-                        </div>
-                    </div>
-                :
-                    <div></div>
-            }
-            
-            <div className={layoutStyles.children}>
-                {children}
-            </div>
+            <Footer />
         </>
     )
 }
