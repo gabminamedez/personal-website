@@ -2,8 +2,9 @@ import { useState } from 'react';
 
 import Brand from './Brand';
 import Footer from './Footer';
-import Menu from './Menu';
 import MenuButton from './MenuButton';
+
+import layoutStyles from '../styles/Layout.module.css';
 
 const Layout = ({ children }) => {
     const [isOpen, setIsOpen] = useState(false);
@@ -14,13 +15,25 @@ const Layout = ({ children }) => {
 
     return (
         <>
-            <div style={{marginTop: '-25px'}}>
+            <div className={layoutStyles.layoutButtons}>
                 <Brand />
                 <MenuButton toggleMenu={toggleMenu} isOpen={isOpen} />
             </div>
-            <Menu isOpen={isOpen} />
+
+            {   isOpen ?
+                    <div className={layoutStyles.menu}>
+                        <div className={layoutStyles.menuContent}>
+                            <h1><a href='/about'>About Me</a></h1>
+                            <h1><a href='https://gabminamedez.medium.com' target='_blank'>Blog</a></h1>
+                            <h1><a href='/portfolio'>Portfolio</a></h1>
+                            <h1><a href='/'>Resumé</a></h1>
+                        </div>
+                    </div>
+                :
+                    <div></div>
+            }
             
-            <div style={{position: 'relative', zIndex: 1}}>
+            <div className={layoutStyles.children}>
                 {children}
             </div>
         </>
