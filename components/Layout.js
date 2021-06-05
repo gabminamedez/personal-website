@@ -16,10 +16,8 @@ const Layout = ({ children }) => {
     return (
         <>
             <div className={layoutStyles.layout}>
-                <div className={layoutStyles.layoutButtons}>
-                    <Brand />
-                    <MenuButton toggleMenu={toggleMenu} isOpen={isOpen} />
-                </div>
+                <Brand />
+                <MenuButton toggleMenu={toggleMenu} isOpen={isOpen} />
 
                 {   isOpen ?
                         <div className={layoutStyles.menu}>
@@ -35,6 +33,9 @@ const Layout = ({ children }) => {
                 }
                 
                 <div className={layoutStyles.children}>
+                    <br />
+                    <br />
+                    
                     {children}
                 </div>
             </div>

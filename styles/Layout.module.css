@@ -1,20 +1,15 @@
 .layout {
-    min-height: calc(100vh - 80px - 18px);
-}
-
-.layoutButtons {
-    margin-top: -25px;
+    margin-bottom: 100px;
 }
 
 .menu {
     background-color: #FBF7D5;
     width: 100%;
-    height: 80%;
+    height: 500px;
     margin-bottom: 25px;
     text-align: center;
     position: absolute;
-    z-index: 3;
-    transition: all .2s ease-in-out;
+    z-index: 5;
     box-shadow: 0 8px 6px -6px #E5E5E5;
 }
 
@@ -40,18 +35,25 @@
 
 .children {
     position: relative;
-    z-index: 1;
+    z-index: 3;
+    padding-top: 120px;
 }
 
-@media only screen and (min-width: 850px) {
-    .menu .menuContent {
-        font-size: x-large;
+@media only screen and (max-width: 600px) {
+    .children {
+        padding-top: 60px;
     }
 }
 
 @media only screen and (max-width: 500px) {
     .menu .menuContent {
         font-size: medium;
+    }
+}
+
+@media only screen and (max-width: 400px) {
+    .children {
+        padding-top: 30px;
     }
 }
 

@@ -1,0 +1,42 @@
+.leftCol {
+    padding: 18px;
+    text-align: center;
+}
+
+.leftCol p {
+    font-size: larger;
+}
+
+.dpImage {
+    border-radius: 50%;
+    height: 180px;
+    width: 180px;
+    border: 1px solid rgba(0,0,0,.125);
+    background-color: #fff;
+    padding: .5rem;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 10px;
+}
+
+.rightCol {
+    background-color: #E5E5E5;
+    min-height: 65vh;
+    padding: 18px;
+    margin-right: 15px;
+}
+
+@media only screen and (max-width: 576px) {
+    .leftCol, .rightCol {
+        width: 95vw;
+        margin-left: auto;
+        margin-right: auto;
+    }
+}
+
+@media only screen and (max-width: 320px) {
+    .leftCol, .rightCol {
+        width: 92vw;
+    }
+}
