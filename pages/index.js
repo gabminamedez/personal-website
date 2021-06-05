@@ -6,7 +6,7 @@ const Home = () => {
     return (
         <div>
             <Row mx={0} fluid>
-                <Col sm={4}>
+                <Col sm={6}>
                     <div className={homeStyles.leftCol}>
                         <h1>What up world!<br />It's Gabriel Minamedez.</h1>
                         <p><i>...but you can call me Gab for short.</i></p>
@@ -23,7 +23,7 @@ const Home = () => {
                     </div>
                 </Col>
 
-                <Col sm={8}>
+                <Col sm={6}>
                     <div className={homeStyles.rightCol}>
                         <h1>Right</h1>
                         <p>lorem</p>
