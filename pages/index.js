@@ -1,8 +1,23 @@
+import { useState } from 'react';
 import { Row, Col } from 'reactstrap';
 
 import homeStyles from '../styles/Home.module.css';
 
 const Home = () => {
+    const [displayImage, setDisplayImage] = useState('none');
+    const [hover, setHover] = useState(false);
+
+    const handleHover = () => {
+        if(hover){
+            setHover(false);
+            setDisplayImage('none');
+        }
+        else{
+            setHover(true);
+            setDisplayImage('block');
+        }
+    }
+
     return (
         <div>
             <Row mx={0} fluid>
@@ -25,10 +40,14 @@ const Home = () => {
 
                 <Col sm={6}>
                     <div className={homeStyles.rightCol}>
-                        <h1>Right</h1>
-                        <p>lorem</p>
-                        <p>lorem</p>
-                        <p>lorem</p>
+                        {hover ? <img className={homeStyles.prevImg} src='/img/sample.jpg' /> : <div></div>}
+                        
+                        <div className={homeStyles.rightColText}>
+                            <h1 onMouseOver={handleHover} onMouseLeave={handleHover}><a href='/about'>About Me</a></h1>
+                            <h1><a href='https://gabminamedez.medium.com' target='_blank'>Blog</a></h1>
+                            <h1><a href='/portfolio'>Portfolio</a></h1>
+                            <h1><a href='/'>Resumé</a></h1>
+                        </div>
                     </div>
                 </Col>
             </Row>
