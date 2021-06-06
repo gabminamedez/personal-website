@@ -1,4 +1,5 @@
 import { useState } from 'react';
+import { Animated } from 'react-animated-css';
 
 import Brand from './Brand';
 import Footer from './Footer';
@@ -19,18 +20,16 @@ const Layout = ({ children }) => {
                 <Brand />
                 <MenuButton toggleMenu={toggleMenu} isOpen={isOpen} />
 
-                {   isOpen ?
-                        <div className={layoutStyles.menu}>
-                            <div className={layoutStyles.menuContent}>
-                                <h1><a href='/about'>About Me</a></h1>
-                                <h1><a href='https://gabminamedez.medium.com' target='_blank'>Blog</a></h1>
-                                <h1><a href='/portfolio'>Portfolio</a></h1>
-                                <h1><a href='/'>Resumé</a></h1>
-                            </div>
+                <Animated animationIn='slideInDown' animationOut='slideOutUp' animationInDuration={400} animationOutDuration={400} isVisible={isOpen} className={layoutStyles.menu}>
+                    <div className={layoutStyles.menu}>
+                        <div className={layoutStyles.menuContent}>
+                            <h1><a href='/about'>About Me</a></h1>
+                            <h1><a href='https://gabminamedez.medium.com' target='_blank'>Blog</a></h1>
+                            <h1><a href='/portfolio'>Portfolio</a></h1>
+                            <h1><a href='/'>Resumé</a></h1>
                         </div>
-                    :
-                        <div></div>
-                }
+                    </div>
+                </Animated>
                 
                 <div className={layoutStyles.children}>
                     <br />

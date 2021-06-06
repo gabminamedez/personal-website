@@ -1,6 +1,11 @@
 .leftCol {
+    height: 65vh;
     padding: 18px;
     text-align: center;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    flex-direction: column;
 }
 
 .leftCol p {
@@ -24,7 +29,7 @@
     background-color: #E5E5E5;
     height: 65vh;
     margin-right: 15px;
-    width: 48vw;
+    width: 55vw;
     display: flex;
     justify-content: center;
     align-content: center;
@@ -36,13 +41,12 @@
     height: 100%;
     object-fit: cover;
     position: relative;
-    transition: opacity 0.2s ease-in-out;
     display: block;
 }
 
 .rightColText {
     position: absolute;
-    margin-left: 32vw;
+    margin-left: 42vw;
     text-align: right;
 }
 
@@ -64,16 +68,58 @@
     box-shadow: 10px 10px;
 }
 
-@media only screen and (max-width: 576px) {
+@media only screen and (max-width: 1440px) {
+    .rightColText {
+        margin-left: 38vw;
+    }
+}
+
+@media only screen and (max-width: 1160px) {
+    .rightColText {
+        margin-left: 36vw;
+    }
+}
+
+@media only screen and (max-width: 991px) {
     .leftCol, .rightCol {
         width: 95vw;
         margin-left: auto;
         margin-right: auto;
+        height: 500px;
+    }
+
+    .rightCol {
+        position: relative;
+        height: 50vh;
+    }
+
+    .rightColText {
+        text-align: center;
+        padding: 70px 0;
+        margin: 0;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+}
+
+@media only screen and (max-width: 336px) {
+    .leftCol {
+        margin-top: 40px;
+        margin-bottom: 40px;
     }
 }
 
 @media only screen and (max-width: 320px) {
     .leftCol, .rightCol {
         width: 92vw;
+    }
+}
+
+@media only screen and (max-width: 248px) {
+    .leftCol {
+        margin-top: 80px;
+        margin-bottom: 80px;
     }
 }
