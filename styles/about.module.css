@@ -1,6 +1,19 @@
+.headDiv {
+    margin-bottom: 25px;
+}
+
+.aboutImageCol {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    flex-direction: column;
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
 .aboutImage {
     height: 350px;
-    width: 80%;
+    width: 85%;
     display: block;
     margin-left: auto;
     margin-right: auto;
@@ -21,4 +34,35 @@
 .bioCol p {
     font-size: 16px;
     color: #202020;
+}
+
+.upToDiv, .inToDiv {
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 25px;
+    color: #202020;
+}
+
+.upToDiv h3, .inToDiv h3 {
+    font-family: 'Karla', sans-serif;
+    font-size: 22px;
+    font-weight: 900;
+    color: #4B92DB;
+    text-align: center;
+    margin-bottom: 12px;
+}
+
+.upToDiv p, .inToDiv p {
+    text-align: center;
+}
+
+.upToDiv a, .inToDiv a {
+    text-decoration: none;
+    color: #202020;
+}
+
+.upToDiv a:hover, .inToDiv a:hover {
+    text-decoration: solid;
+    color: #4B92DB;
 }
