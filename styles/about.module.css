@@ -1,0 +1,24 @@
+.aboutImageCol {
+    /* height: 400px;
+    width: 600px; */
+}
+
+.aboutImage {
+    height: 350px;
+    width: 80%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    object-fit: cover;
+    color: #4B92DB;
+    border: 1px solid #4B92DB;
+    box-shadow: 10px 10px;
+}
+
+.bioCol {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 80%;
+    overflow-wrap: break-word;
+}

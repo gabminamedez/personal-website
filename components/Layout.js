@@ -26,7 +26,7 @@ const Layout = ({ children }) => {
                             <h1><a href='/about'>About Me</a></h1>
                             <h1><a href='https://gabminamedez.medium.com' target='_blank'>Blog</a></h1>
                             <h1><a href='/portfolio'>Portfolio</a></h1>
-                            <h1><a href='/'>Resumé</a></h1>
+                            <h1><a href='https://docs.google.com/document/d/1hBoGjn5_nk3u8RZsyqLoIxgU3-SGNnyrWp3ZVydAp_M/edit?usp=sharing' target='_blank'>Resumé</a></h1>
                         </div>
                     </div>
                 </Animated>

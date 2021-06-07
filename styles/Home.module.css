@@ -16,7 +16,7 @@
     border-radius: 50%;
     height: 180px;
     width: 180px;
-    border: 1px solid rgba(0,0,0,.125);
+    border: 1px solid rgba(0, 0, 0, .125);
     background-color: #FFF;
     padding: .5rem;
     display: block;
@@ -36,7 +36,7 @@
     flex-direction: column;
 }
 
-.prevImg {
+.prevImage {
     width: 100%;
     height: 100%;
     object-fit: cover;
@@ -59,7 +59,7 @@
     text-decoration: none;
     color: #4B92DB;
     cursor: pointer;
-    transition: all 0.2s ease-in-out;
+    transition: all .2s ease-in-out;
 }
 
 .rightCol a:hover {

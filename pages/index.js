@@ -4,7 +4,7 @@ import { Animated } from 'react-animated-css';
 
 import Head from '../components/Head';
 
-import homeStyles from '../styles/Home.module.css';
+import homeStyles from '../styles/home.module.css';
 
 const Home = () => {
     const [displayImage, setDisplayImage] = useState(null);
@@ -36,7 +36,7 @@ const Home = () => {
                         <p>
                             🇵🇭 Computer Science Student in Sunny Manila
                             <br />
-                            👨‍💻 Aspiring Web Developer and ML Engineer
+                            👨‍💻 Aspiring Web Developer and Machine Learning Engineer
                             <br />
                             ✍️ Semi-Professional Word Vomiter
                         </p>
@@ -45,15 +45,15 @@ const Home = () => {
 
                 <Col lg={7}>
                     <div className={homeStyles.rightCol}>
-                        <Animated animationIn='fadeIn' animationOut='fadeOut' animationInDuration={400} animationOutDuration={400} isVisible={hover} className={homeStyles.prevImg}>
-                            <img className={homeStyles.prevImg} src={displayImage} />
+                        <Animated animationIn='fadeIn' animationOut='fadeOut' animationInDuration={400} animationOutDuration={400} isVisible={hover} className={homeStyles.prevImage}>
+                            <img className={homeStyles.prevImage} src={displayImage} />
                         </Animated>
                         
                         <div className={homeStyles.rightColText}>
                             <h1 onMouseOver={e => handleHover(e, 'about')} onMouseOut={e => handleHover(e, 'about')}><a href='/about'>About Me</a></h1>
                             <h1 onMouseOver={e => handleHover(e, 'blog')} onMouseOut={e => handleHover(e, 'blog')}><a href='https://gabminamedez.medium.com' target='_blank'>Blog</a></h1>
                             <h1 onMouseOver={e => handleHover(e, 'portfolio')} onMouseOut={e => handleHover(e, 'portfolio')}><a href='/portfolio'>Portfolio</a></h1>
-                            <h1 onMouseOver={e => handleHover(e, 'resume')} onMouseOut={e => handleHover(e, 'resume')}><a href='/'>Resumé</a></h1>
+                            <h1 onMouseOver={e => handleHover(e, 'resume')} onMouseOut={e => handleHover(e, 'resume')}><a href='https://docs.google.com/document/d/1hBoGjn5_nk3u8RZsyqLoIxgU3-SGNnyrWp3ZVydAp_M/edit?usp=sharing' target='_blank'>Resumé</a></h1>
                         </div>
                     </div>
                 </Col>
