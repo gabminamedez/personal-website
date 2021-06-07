@@ -18,7 +18,19 @@ const About = () => {
                     <Col lg={7}>
                         <div className={aboutStyles.bioCol}>
                             <h1>What up world!<br />It's Gabriel Minamedez.</h1>
-                            <p>some paragraph lorem hbcsbugvibdhivucvbicsvuyibibeivibivuvicbigonvwqohfigabhvibcodgibscjbkcaknoqhoqwlknvigewocnib</p>
+
+                            <br />
+
+                            <p>
+                                I'm currently a junior in college studying Computer Science at De La Salle University in sunny Manila, Philippines.
+                                The pair of glasses in my photos does justice for what I do 85% of my day: do stuff with my laptop.
+                                Aside from browsing the web for historical tidbits or looking up song lyrics or going on Netflix, I spend my time writing either code or stories.
+                            </p>
+
+                            <p>
+                                I live my days thinking about what I can innovate that could make a positive and lasting impact on even at least one person, myself included (mental health matters!).
+                                W
+                            </p>
                         </div>
                     </Col>
                 </Row>
