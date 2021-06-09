@@ -66,3 +66,9 @@
     text-decoration: solid;
     color: #4B92DB;
 }
+
+@media only screen and (max-width: 991px) {
+    .upToDiv h2, .inToDiv h2 {
+        text-align: center;
+    }
+}

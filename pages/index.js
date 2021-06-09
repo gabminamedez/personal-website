@@ -1,6 +1,7 @@
 import { useState } from 'react';
 import { Row, Col } from 'reactstrap';
 import { Animated } from 'react-animated-css';
+import { FaGithub, FaInstagram, FaLinkedin, FaMedium, FaSpotify, FaTwitter } from 'react-icons/fa';
 
 import Head from '../components/Head';
 
@@ -34,12 +35,19 @@ const Home = () => {
                         <img className={homeStyles.dpImage} src='/img/dp.jpg' />
 
                         <p>
-                            🇵🇭 Computer Science Student in Sunny Manila
+                            🇵🇭 Computer Science Student in Manila, Philippines
                             <br />
                             👨‍💻 Aspiring Web Developer and Machine Learning Engineer
                             <br />
                             ✍️ Semi-Professional Word Vomiter
                         </p>
+
+                        <FaGithub className={homeStyles.social} />
+                        <FaInstagram className={homeStyles.social} />
+                        <FaLinkedin className={homeStyles.social} />
+                        <FaMedium className={homeStyles.social} />
+                        <FaSpotify className={homeStyles.social} />
+                        <FaTwitter className={homeStyles.social} />
                     </div>
                 </Col>
 

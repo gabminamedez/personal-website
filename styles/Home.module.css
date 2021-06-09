@@ -1,3 +1,29 @@
+@keyframes fadeIn {
+    from { opacity: 0 }
+    to   { opacity: 1 }
+}
+
+@keyframes rightColColor {
+    from { background-color: #F5F5F5 }
+    to   { background-color: #E5E5E5 }
+}
+
+.social {
+    color: blue;
+}
+
+.leftCol h1, .rightCol h1 {
+    animation: fadeIn 2s;
+}
+
+.leftCol p, .leftCol img {
+    animation: fadeIn 3s;
+}
+
+.rightCol {
+    animation: rightColColor 4s;
+}
+
 .leftCol {
     height: 65vh;
     padding: 18px;
