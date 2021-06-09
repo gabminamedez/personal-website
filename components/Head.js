@@ -4,7 +4,7 @@ const Meta = ({title}) => {
     return (
         <Head>
             <meta name='viewport' content='width=device-width, initial-scale=1' />
-            <meta name='keywords' content='Gabriel Minamedez, Computer Science, Web Developer' />
+            <meta name='keywords' content='Gabriel Minamedez, Computer Science, Web Developer, De La Salle University' />
             <meta name='description' content='Gabriel Minamedez is a Computer Science in De La Salle University, Manila, Philippines. He is an aspiring web developer and machine learning engineer. He is also a writer for SLAM Philippines.' />
             <meta charSet='utf-8' />
             <link rel='icon' href='/img/favicon.ico' />

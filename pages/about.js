@@ -1,4 +1,5 @@
 import { Container, Row, Col } from 'reactstrap';
+import { FaGithub, FaInstagram, FaLinkedin, FaMedium, FaSpotify, FaTwitter } from 'react-icons/fa';
 
 import Head from '../components/Head';
 
@@ -11,10 +12,6 @@ const About = () => {
 
             <Container>
                 <Row className={aboutStyles.headDiv}>
-                    <Col lg={5} className={aboutStyles.aboutImageCol}>
-                        <img className={aboutStyles.aboutImage} src='/img/about.jpg' />
-                    </Col>
-
                     <Col lg={7}>
                         <div className={aboutStyles.bioCol}>
                             <h1>What up world!<br />It's Gabriel Minamedez.</h1>
@@ -36,6 +33,19 @@ const About = () => {
                                 A perfectly peaceful day to me involves reading books, watching Netflix, looking up historical tidbits, playing basketball, falling victim to the Spotify recommendation algorithm, and listening to podcasts.
                             </p>
                         </div>
+                    </Col>
+
+                    <Col lg={5} className={aboutStyles.aboutImageCol}>
+                        <img className={aboutStyles.aboutImage} src='/img/about/about.jpg' />
+
+                        <span className={aboutStyles.socials}>
+                            <a href='https://github.com/gabminamedez' target='_blank' className={aboutStyles.social}><FaGithub /></a>
+                            <a href='https://www.instagram.com/gabminamedez/' target='_blank' className={aboutStyles.social}><FaInstagram /></a>
+                            <a href='https://www.linkedin.com/in/gabminamedez/' target='_blank' className={aboutStyles.social}><FaLinkedin /></a>
+                            <a href='https://gabminamedez.medium.com/' target='_blank' className={aboutStyles.social}><FaMedium /></a>
+                            <a href='https://open.spotify.com/user/gabminamedezz?si=399ed840fc674d71' target='_blank' className={aboutStyles.social}><FaSpotify /></a>
+                            <a href='https://twitter.com/GabMinamedez' target='_blank' className={aboutStyles.social}><FaTwitter /></a>
+                        </span>
                     </Col>
                 </Row>
 

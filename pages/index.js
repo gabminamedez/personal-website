@@ -18,7 +18,7 @@ const Home = () => {
         }
         else{
             setHover(true);
-            setDisplayImage('/img/' + page + '.jpg');
+            setDisplayImage('/img/home/' + page + '.jpg');
         }
     }
 
@@ -30,9 +30,8 @@ const Home = () => {
                 <Col lg={5}>
                     <div className={homeStyles.leftCol}>
                         <h1>What up world!<br />It's Gabriel Minamedez.</h1>
-                        <p><i>...but you can call me Gab for short.</i></p>
 
-                        <img className={homeStyles.dpImage} src='/img/dp.jpg' />
+                        <img className={homeStyles.dpImage} src='/img/home/dp.jpg' />
 
                         <p>
                             🇵🇭 Computer Science Student in Manila, Philippines
@@ -42,12 +41,14 @@ const Home = () => {
                             ✍️ Semi-Professional Word Vomiter
                         </p>
 
-                        <FaGithub className={homeStyles.social} />
-                        <FaInstagram className={homeStyles.social} />
-                        <FaLinkedin className={homeStyles.social} />
-                        <FaMedium className={homeStyles.social} />
-                        <FaSpotify className={homeStyles.social} />
-                        <FaTwitter className={homeStyles.social} />
+                        <span className={homeStyles.socials}>
+                            <a href='https://github.com/gabminamedez' target='_blank' className={homeStyles.social}><FaGithub /></a>
+                            <a href='https://www.instagram.com/gabminamedez/' target='_blank' className={homeStyles.social}><FaInstagram /></a>
+                            <a href='https://www.linkedin.com/in/gabminamedez/' target='_blank' className={homeStyles.social}><FaLinkedin /></a>
+                            <a href='https://gabminamedez.medium.com/' target='_blank' className={homeStyles.social}><FaMedium /></a>
+                            <a href='https://open.spotify.com/user/gabminamedezz?si=399ed840fc674d71' target='_blank' className={homeStyles.social}><FaSpotify /></a>
+                            <a href='https://twitter.com/GabMinamedez' target='_blank' className={homeStyles.social}><FaTwitter /></a>
+                        </span>
                     </div>
                 </Col>
 
@@ -61,7 +62,7 @@ const Home = () => {
                             <h1 onMouseOver={e => handleHover(e, 'about')} onMouseOut={e => handleHover(e, 'about')}><a href='/about'>About Me</a></h1>
                             <h1 onMouseOver={e => handleHover(e, 'blog')} onMouseOut={e => handleHover(e, 'blog')}><a href='https://gabminamedez.medium.com' target='_blank'>Blog</a></h1>
                             <h1 onMouseOver={e => handleHover(e, 'portfolio')} onMouseOut={e => handleHover(e, 'portfolio')}><a href='/portfolio'>Portfolio</a></h1>
-                            <h1 onMouseOver={e => handleHover(e, 'resume')} onMouseOut={e => handleHover(e, 'resume')}><a href='https://docs.google.com/document/d/1hBoGjn5_nk3u8RZsyqLoIxgU3-SGNnyrWp3ZVydAp_M/edit?usp=sharing' target='_blank'>Resumé</a></h1>
+                            <h1 onMouseOver={e => handleHover(e, 'resume')} onMouseOut={e => handleHover(e, 'resume')}><a href='/resume'>Resume</a></h1>
                         </div>
                     </div>
                 </Col>
