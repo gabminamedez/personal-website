@@ -30,7 +30,7 @@ const Home = () => {
                 <Col lg={5}>
                     <div className={homeStyles.leftCol}>
                         <h1>What up world!<br />It's Gabriel Minamedez.</h1>
-
+                        
                         <img className={homeStyles.dpImage} src='/img/home/dp.jpg' />
 
                         <p>
@@ -55,7 +55,9 @@ const Home = () => {
                 <Col lg={7}>
                     <div className={homeStyles.rightCol}>
                         <Animated animationIn='fadeIn' animationOut='fadeOut' animationInDuration={400} animationOutDuration={400} isVisible={hover} className={homeStyles.prevImage}>
-                            <img className={homeStyles.prevImage} src={displayImage} />
+                            {
+                                displayImage == null ? <></> : <img className={homeStyles.prevImage} src={displayImage} />
+                            }
                         </Animated>
                         
                         <div className={homeStyles.rightColText}>
