@@ -1,9 +1,26 @@
 .resume {
     width: 80%;
+    color: #202020;
 }
 
 .resume h2 {
-    margin-top: 30px;
+    margin-top: 35px;
+    font-size: 28px;
+}
+
+.resume h3 {
+    font-family: 'Karla', sans-serif;
+    margin-top: 20px;
+    font-weight: 900;
+    font-size: 21px;
+}
+
+.resume li {
+    font-size: 18px;
+}
+
+.resume i {
+    font-size: 18px;
 }
 
 .dpImage {
@@ -43,6 +60,10 @@
     color: #4B92DB;
 }
 
-.socialWord {
-    margin-bottom: -5px;
+.downloadLink {
+    color: #4B92DB;
+}
+
+.sectionContent {
+    width: 95%;
 }
