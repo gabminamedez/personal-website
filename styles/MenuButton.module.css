@@ -4,7 +4,8 @@
     margin-top: 15px;
     margin-right: 15px;
     float: right;
-    position: relative;
+    position: fixed;
+    right: 0;
     transition: 0.2s;
     z-index: 7;
     cursor: pointer;

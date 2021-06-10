@@ -8,7 +8,7 @@
     margin-top: 15px;
     margin-left: 15px;
     float: left;
-    position: relative;
+    position: fixed;
     background-color: #4B92DB;
     color: #FBF7D5;
     transition: 0.2s;

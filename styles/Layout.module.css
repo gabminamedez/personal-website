@@ -24,7 +24,6 @@
 }
 
 .menu a {
-    text-decoration: none;
     color: #202020;
     cursor: pointer;
     transition: all .2s ease-in-out;

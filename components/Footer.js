@@ -1,9 +1,20 @@
 import footerStyles from '../styles/Footer.module.css';
 
+import { FaGithub, FaInstagram, FaLinkedin, FaMedium, FaSpotify, FaTwitter } from 'react-icons/fa';
+
 function Footer() {
     return (
         <div className={footerStyles.footer}>
-            <p>Copyright © 2021 Gab Minamedez.<br /><a href='/'>Home</a> • <a href='/about'>About Me</a> • <a href='https://gabminamedez.medium.com' target='_blank'>Blog</a> • <a href='/portfolio'>Portfolio</a> • <a href='/resume'>Resume</a></p>
+            <p>
+                © 2021 Gab Minamedez.
+                <br />
+                <a href='https://github.com/gabminamedez' target='_blank' className={footerStyles.social}><FaGithub /></a>
+                <a href='https://www.instagram.com/gabminamedez/' target='_blank' className={footerStyles.social}><FaInstagram /></a>
+                <a href='https://www.linkedin.com/in/gabminamedez/' target='_blank' className={footerStyles.social}><FaLinkedin /></a>
+                <a href='https://gabminamedez.medium.com/' target='_blank' className={footerStyles.social}><FaMedium /></a>
+                <a href='https://open.spotify.com/user/gabminamedezz?si=399ed840fc674d71' target='_blank' className={footerStyles.social}><FaSpotify /></a>
+                <a href='https://twitter.com/GabMinamedez' target='_blank' className={footerStyles.social}><FaTwitter /></a>
+            </p>
         </div>
     );
 }

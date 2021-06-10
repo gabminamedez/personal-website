@@ -1,0 +1,20 @@
+.resume {
+    width: 80%;
+}
+
+.social {
+    color: #636363;
+    font-size: 24px;
+    margin-left: 8px;
+    margin-right: 8px;
+    transition: all .2s ease-in-out;
+    cursor: pointer;
+}
+
+.social:hover {
+    color: #4B92DB;
+}
+
+.socialWord {
+    margin-bottom: -5px;
+}

@@ -80,12 +80,10 @@
 }
 
 .upToDiv a, .inToDiv a {
-    text-decoration: none;
     color: #202020;
 }
 
 .upToDiv a:hover, .inToDiv a:hover {
-    text-decoration: solid;
     color: #4B92DB;
 }
 
