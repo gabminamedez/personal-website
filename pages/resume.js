@@ -12,7 +12,7 @@ const Resume = () => {
             <Head title={'Gab Minamedez | Resume'} />
             
             <Container className={resumeStyles.resume}>
-                <Row>
+                <Row className={resumeStyles.resumeFirst}>
                     <Col lg={3}>
                         <img className={resumeStyles.dpImage} src='/img/home/dp.jpg' />
                     </Col>
