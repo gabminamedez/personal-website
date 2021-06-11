@@ -1,13 +1,17 @@
-.portfolio {
+.blog {
     width: 80%;
     color: #202020;
 }
 
-.portfolio p {
+.blog p {
     font-size: 18px;
 }
 
-.project {
+.mediumLink {
+    color: #4B92DB;
+}
+
+.article {
     margin-top: 40px;
     margin-bottom: 40px;
     margin-left: auto;
@@ -18,15 +22,15 @@
     width: 100%;
 }
 
-.project a {
+.article a {
     color: #202020;
 }
 
-.project a:hover {
+.article a:hover {
     color: #4B92DB;
 }
 
-.project img {
+.article img {
     height: 250px;
     width: 100%;
     object-fit: cover;

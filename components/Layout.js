@@ -24,7 +24,7 @@ const Layout = ({ children }) => {
                     <div className={layoutStyles.menu}>
                         <div className={layoutStyles.menuContent}>
                             <h1><a href='/about'>About Me</a></h1>
-                            <h1><a href='https://gabminamedez.medium.com' target='_blank'>Blog</a></h1>
+                            <h1><a href='/blog'>Blog</a></h1>
                             <h1><a href='/portfolio'>Portfolio</a></h1>
                             <h1><a href='/resume'>Resume</a></h1>
                         </div>

@@ -9,6 +9,7 @@
   },
   "dependencies": {
     "bootstrap": "^5.0.1",
+    "moment": "^2.29.1",
     "next": "10.2.3",
     "react": "17.0.2",
     "react-animated-css": "^1.2.1",
