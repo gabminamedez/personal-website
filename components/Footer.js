@@ -6,7 +6,7 @@ function Footer() {
     return (
         <div className={footerStyles.footer}>
             <p>
-                © 2021 Gab Minamedez.
+                © 2021 Gabriel Minamedez.
                 <br />
                 <a href='https://github.com/gabminamedez' target='_blank' className={footerStyles.social}><FaGithub /></a>
                 <a href='https://www.instagram.com/gabminamedez/' target='_blank' className={footerStyles.social}><FaInstagram /></a>

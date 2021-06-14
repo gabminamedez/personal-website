@@ -65,7 +65,7 @@ const Portfolio = () => {
                     </Col>
 
                     <Col lg={6}>
-                        <img src='/img/home/portfolio.jpg' />
+                        <img src='/img/portfolio/ph_popn.png' />
                     </Col>
                 </Row>
 
@@ -83,7 +83,7 @@ const Portfolio = () => {
                     </Col>
 
                     <Col lg={6}>
-                        <img src='/img/home/portfolio.jpg' />
+                        <img src='/img/portfolio/weekday.png' />
                     </Col>
                 </Row>
 
@@ -94,14 +94,14 @@ const Portfolio = () => {
                         <p className={portfolioStyles.metadata}>
                             <b>University Project</b> prototyped with Figma.
                             <br />
-                            <a href='https://github.com/gabminamedez/weekday' target='_blank'>Figma</a>
+                            <a href='https://www.figma.com/proto/jI8cYXoMXzEWGkONvg8sM2/STHCIUX-Prototypes?node-id=293%3A397&scaling=scale-down' target='_blank'>Figma</a>
                         </p>
 
-                        <p className={portfolioStyles.projectBio}>lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum</p>
+                        <p className={portfolioStyles.projectBio}>A Figma prototype that improves and caters the online classroom platform Canvas for students with eye problems.</p>
                     </Col>
 
                     <Col lg={6}>
-                        <img src='/img/home/portfolio.jpg' />
+                        <img src='/img/portfolio/easel.png' />
                     </Col>
                 </Row>
 
@@ -173,7 +173,7 @@ const Portfolio = () => {
                     </Col>
 
                     <Col lg={6}>
-                        <img src='/img/home/portfolio.jpg' />
+                        <img src='https://teknosejahtera.com/wp-content/uploads/2020/12/Start-Up-Ep-1-Nam-Joohyuk.png' />
                     </Col>
                 </Row>
 
@@ -209,7 +209,7 @@ const Portfolio = () => {
                     </Col>
 
                     <Col lg={6}>
-                        <img src='/img/home/portfolio.jpg' />
+                        <img src='/img/portfolio/dlsu_usap.png' />
                     </Col>
                 </Row>
 
