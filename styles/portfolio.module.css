@@ -3,10 +3,6 @@
     color: #202020;
 }
 
-.portfolio p {
-    font-size: 18px;
-}
-
 .project {
     margin-top: 40px;
     margin-bottom: 40px;
@@ -18,11 +14,17 @@
     width: 100%;
 }
 
-.project a {
+.metadata {
+    color: #636363;
+    font-size: 14px !important;
+}
+
+.projectBio {
+    font-size: 18px;
     color: #202020;
 }
 
-.project a:hover {
+.project a {
     color: #4B92DB;
 }
 

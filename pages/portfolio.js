@@ -18,7 +18,14 @@ const Portfolio = () => {
                 <Row className={portfolioStyles.project}>
                     <Col lg={6}>
                         <h2>Biomes USA</h2>
-                        <p>lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum</p>
+
+                        <p className={portfolioStyles.metadata}>
+                            <b>Internship Project</b> developed with ReactJS.
+                            <br />
+                            Write-up coming soon
+                        </p>
+
+                        <p className={portfolioStyles.projectBio}>A dashboarding application specifically catered for FMCG companies aiming to improve performance through visualization of KPIs.</p>
                     </Col>
 
                     <Col lg={6}>
@@ -29,7 +36,14 @@ const Portfolio = () => {
                 <Row className={portfolioStyles.project}>
                     <Col lg={6}>
                         <h2>Ingat.ph</h2>
-                        <p>lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum</p>
+
+                        <p className={portfolioStyles.metadata}>
+                            <b>University Project</b> developed with Flask and SQLite.
+                            <br />
+                            <a href='https://ingat-ph.herokuapp.com/' target='_blank'>Application</a> • <a href='https://github.com/gabminamedez/DATA101-final' target='_blank'>Github</a> • Write-up coming soon
+                        </p>
+
+                        <p className={portfolioStyles.projectBio}>A visualization application that displays and interprets 2020 data on traffic incidents in the Philippines' capital region.</p>
                     </Col>
 
                     <Col lg={6}>
@@ -40,7 +54,14 @@ const Portfolio = () => {
                 <Row className={portfolioStyles.project}>
                     <Col lg={6}>
                         <h2>Philippine Population Data</h2>
-                        <p>lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum</p>
+                        
+                        <p className={portfolioStyles.metadata}>
+                            <b>Personal Project</b> developed with ReactJS.
+                            <br />
+                            <a href='https://github.com/gabminamedez/react-viz-exercise' target='_blank'>Github</a> • Write-up coming soon
+                        </p>
+
+                        <p className={portfolioStyles.projectBio}>A configurable visualization application that displays Philippine population data.</p>
                     </Col>
 
                     <Col lg={6}>
@@ -51,7 +72,14 @@ const Portfolio = () => {
                 <Row className={portfolioStyles.project}>
                     <Col lg={6}>
                         <h2>Weekday</h2>
-                        <p>lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum</p>
+
+                        <p className={portfolioStyles.metadata}>
+                            <b>Personal Project</b> developed with ReactJS.
+                            <br />
+                            <a href='https://github.com/gabminamedez/weekday' target='_blank'>Github</a>
+                        </p>
+
+                        <p className={portfolioStyles.projectBio}>A Kanban board mockup that functions as a compunded to-do list.</p>
                     </Col>
 
                     <Col lg={6}>
@@ -62,7 +90,14 @@ const Portfolio = () => {
                 <Row className={portfolioStyles.project}>
                     <Col lg={6}>
                         <h2>Easel</h2>
-                        <p>lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum</p>
+
+                        <p className={portfolioStyles.metadata}>
+                            <b>University Project</b> prototyped with Figma.
+                            <br />
+                            <a href='https://github.com/gabminamedez/weekday' target='_blank'>Figma</a>
+                        </p>
+
+                        <p className={portfolioStyles.projectBio}>lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum</p>
                     </Col>
 
                     <Col lg={6}>
@@ -73,7 +108,14 @@ const Portfolio = () => {
                 <Row className={portfolioStyles.project}>
                     <Col lg={6}>
                         <h2>Cache Replacement Algorithm Simulator</h2>
-                        <p>lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum</p>
+
+                        <p className={portfolioStyles.metadata}>
+                            <b>University Project</b> developed with Node.js and MySQL.
+                            <br />
+                            <a href='https://falru-simulator.herokuapp.com/' target='_blank'>Application</a> • <a href='https://github.com/gabminamedez/fa-lru-cache-simulator' target='_blank'>Github</a>
+                        </p>
+
+                        <p className={portfolioStyles.projectBio}>A web application that simulates the cache replacement algorithm of full associative mapping (LRU).</p>
                     </Col>
 
                     <Col lg={6}>
@@ -84,7 +126,14 @@ const Portfolio = () => {
                 <Row className={portfolioStyles.project}>
                     <Col lg={6}>
                         <h2>OLAP Querying of AirBnB NYC Data</h2>
-                        <p>lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum</p>
+
+                        <p className={portfolioStyles.metadata}>
+                            <b>University Project</b> developed with Node.js, MySQL, and Python.
+                            <br />
+                            <a href='https://stadvdb-mco2.herokuapp.com/' target='_blank'>Application</a> • <a href='https://github.com/gabminamedez/STADVDB_S12.2_T120-21_MCO2' target='_blank'>Github</a>
+                        </p>
+
+                        <p className={portfolioStyles.projectBio}>A web application that aggregates and returns AirBnB data of New York City based on OLAP queries.</p>
                     </Col>
 
                     <Col lg={6}>
@@ -95,7 +144,14 @@ const Portfolio = () => {
                 <Row className={portfolioStyles.project}>
                     <Col lg={6}>
                         <h2>Database Querying of AirBnB NYC Data</h2>
-                        <p>lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum</p>
+
+                        <p className={portfolioStyles.metadata}>
+                            <b>University Project</b> developed with Node.js and MySQL.
+                            <br />
+                            <a href='https://stadvdb-mco1.herokuapp.com/' target='_blank'>Application</a> • <a href='https://github.com/gabminamedez/STADVDB_S12.2_T120-21' target='_blank'>Github</a>
+                        </p>
+
+                        <p className={portfolioStyles.projectBio}>A web application that aggregates and returns AirBnB data of New York City.</p>
                     </Col>
 
                     <Col lg={6}>
@@ -106,7 +162,14 @@ const Portfolio = () => {
                 <Row className={portfolioStyles.project}>
                     <Col lg={6}>
                         <h2>Eye Spy</h2>
-                        <p>lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum</p>
+
+                        <p className={portfolioStyles.metadata}>
+                            <b>Personal Project</b> developed with Python (OpenCV, TensorFlow).
+                            <br />
+                            <a href='https://github.com/gabminamedez/eye-spy' target='_blank'>Github</a> • Write-up coming soon
+                        </p>
+
+                        <p className={portfolioStyles.projectBio}>A face liveliness detection project that takes in video feed as input and provides live feedback on whether or not a subject's eyes are open.</p>
                     </Col>
 
                     <Col lg={6}>
@@ -117,7 +180,14 @@ const Portfolio = () => {
                 <Row className={portfolioStyles.project}>
                     <Col lg={6}>
                         <h2>More than Meets the Ear: The Data Behind Spotify</h2>
-                        <p>lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum</p>
+
+                        <p className={portfolioStyles.metadata}>
+                            <b>University Project</b> developed with Python (Pandas, Matplotlib, Seaborn).
+                            <br />
+                            <a href='https://github.com/gabminamedez/spotify-data' target='_blank'>Github</a> • Write-up coming soon
+                        </p>
+
+                        <p className={portfolioStyles.projectBio}>An exploratory analysis of the data on Spotify tracks from 1921-2020.</p>
                     </Col>
 
                     <Col lg={6}>
@@ -128,7 +198,14 @@ const Portfolio = () => {
                 <Row className={portfolioStyles.project}>
                     <Col lg={6}>
                         <h2>DLSU Usap</h2>
-                        <p>lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum</p>
+
+                        <p className={portfolioStyles.metadata}>
+                            <b>University Project</b> developed with Java (Java.io, Java Swing).
+                            <br />
+                            <a href='https://github.com/gabminamedez/dlsu-usap' target='_blank'>Github</a>
+                        </p>
+
+                        <p className={portfolioStyles.projectBio}>A chat application that allows clients to send and receive messages and files through a server implemented with socket programming.</p>
                     </Col>
 
                     <Col lg={6}>
@@ -139,7 +216,14 @@ const Portfolio = () => {
                 <Row className={portfolioStyles.project}>
                     <Col lg={6}>
                         <h2>Python Sudoku</h2>
-                        <p>lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum</p>
+
+                        <p className={portfolioStyles.metadata}>
+                            <b>Personal Project</b> developed with Python (PyGame).
+                            <br />
+                            <a href='https://github.com/gabminamedez/python-sudoku' target='_blank'>Github</a>
+                        </p>
+
+                        <p className={portfolioStyles.projectBio}>A Pythonized version of the classic Japanese puzzle Sudoku.</p>
                     </Col>
 
                     <Col lg={6}>

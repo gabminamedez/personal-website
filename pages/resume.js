@@ -77,7 +77,7 @@ const Resume = () => {
                                 <li>C</li>
                                 <li>C++</li>
                                 <li>JavaScript</li>
-                                <li>Web Stack (HTML, CSS)</li>
+                                <li>Classic Web Stack (HTML, CSS)</li>
                                 <li>Swift</li>
                                 <li>MySQL</li>
                                 <li>PostgreSQL</li>
@@ -107,7 +107,7 @@ const Resume = () => {
                 <hr />
                 <Container className={resumeStyles.sectionContent}>
                     <h3>Cobena Business Analytics and Strategy Inc.</h3>
-                    <i>Frontend Developer Intern, February 2021 - June 2021</i>
+                    <i>Frontend Development Intern, February 2021 - June 2021</i>
 
                     <h3>SLAM Philippines</h3>
                     <i>Staff Writer, March 2020 - present</i>
