@@ -17,7 +17,7 @@ const Portfolio = () => {
 
                 <Row className={portfolioStyles.project}>
                     <Col lg={6}>
-                        <h2>Biomes USA</h2>
+                        <h2>Dashboarding Project</h2>
 
                         <p className={portfolioStyles.metadata}>
                             <b>Internship Project</b> developed with ReactJS.
