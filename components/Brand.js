@@ -1,6 +1,6 @@
 import brandStyles from '../styles/Brand.module.css';
 
-function Brand() {
+const Brand = () => {
     return (
         <a href='/'>
             <div className={brandStyles.brand}>

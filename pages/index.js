@@ -1,7 +1,8 @@
 import { useState } from 'react';
 import { Row, Col } from 'reactstrap';
 import { Animated } from 'react-animated-css';
-import { FaGithub, FaInstagram, FaLinkedin, FaMedium, FaSpotify, FaTwitter } from 'react-icons/fa';
+import { SiApplemusic } from 'react-icons/si';
+import { FaGithub, FaInstagram, FaLinkedin, FaMedium, FaTwitter } from 'react-icons/fa';
 
 import Head from '../components/Head';
 
@@ -42,11 +43,11 @@ const Home = () => {
                         </p>
 
                         <span className={homeStyles.socials}>
+                            <a href='https://music.apple.com/profile/gabminamedez' target='_blank' className={homeStyles.social}><SiApplemusic /></a>
                             <a href='https://github.com/gabminamedez' target='_blank' className={homeStyles.social}><FaGithub /></a>
                             <a href='https://www.instagram.com/gabminamedez/' target='_blank' className={homeStyles.social}><FaInstagram /></a>
                             <a href='https://www.linkedin.com/in/gabminamedez/' target='_blank' className={homeStyles.social}><FaLinkedin /></a>
                             <a href='https://gabminamedez.medium.com/' target='_blank' className={homeStyles.social}><FaMedium /></a>
-                            <a href='https://open.spotify.com/user/gabminamedezz?si=399ed840fc674d71' target='_blank' className={homeStyles.social}><FaSpotify /></a>
                             <a href='https://twitter.com/GabMinamedez' target='_blank' className={homeStyles.social}><FaTwitter /></a>
                         </span>
                     </div>

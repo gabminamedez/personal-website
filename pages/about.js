@@ -1,5 +1,6 @@
 import { Container, Row, Col } from 'reactstrap';
-import { FaGithub, FaInstagram, FaLinkedin, FaMedium, FaSpotify, FaTwitter } from 'react-icons/fa';
+import { SiApplemusic } from 'react-icons/si';
+import { FaGithub, FaInstagram, FaLinkedin, FaMedium, FaTwitter } from 'react-icons/fa';
 
 import Head from '../components/Head';
 
@@ -39,11 +40,11 @@ const About = () => {
                         <img className={aboutStyles.aboutImage} src='/img/about/about.jpg' />
 
                         <span className={aboutStyles.socials}>
+                        <a href='https://music.apple.com/profile/gabminamedez' target='_blank' className={aboutStyles.social}><SiApplemusic /></a>
                             <a href='https://github.com/gabminamedez' target='_blank' className={aboutStyles.social}><FaGithub /></a>
                             <a href='https://www.instagram.com/gabminamedez/' target='_blank' className={aboutStyles.social}><FaInstagram /></a>
                             <a href='https://www.linkedin.com/in/gabminamedez/' target='_blank' className={aboutStyles.social}><FaLinkedin /></a>
                             <a href='https://gabminamedez.medium.com/' target='_blank' className={aboutStyles.social}><FaMedium /></a>
-                            <a href='https://open.spotify.com/user/gabminamedezz?si=399ed840fc674d71' target='_blank' className={aboutStyles.social}><FaSpotify /></a>
                             <a href='https://twitter.com/GabMinamedez' target='_blank' className={aboutStyles.social}><FaTwitter /></a>
                         </span>
                     </Col>
