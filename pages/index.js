@@ -26,7 +26,11 @@ const Home = () => {
 
     return (
         <div>
-            <Head title={'Gab Minamedez | Home'} />
+            <Head title={'Home | Gab Minamedez'}
+                  description={'Gabriel is a junior Computer Science student in De La Salle University in the Philippines. He is an aspiring web developer and machine learning engineer. On his off days, he loves to write about anything under the scorching sun. © 2021 Gabriel Minamedez.'}
+                  title2={'Home'}
+                  url={'https://gabminamedez.herokuapp.com/'}
+            />
 
             <Row mx={0} fluid='true'>
                 <Col lg={5}>

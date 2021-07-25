@@ -10,7 +10,11 @@ const Resume = () => {
 
     return (
         <div>
-            <Head title={'Gab Minamedez | Resume'} />
+            <Head title={'Resume | Gab Minamedez'}
+                  description={'Gabriel is a junior Computer Science student in De La Salle University in the Philippines. He is an aspiring web developer and machine learning engineer. © 2021 Gabriel Minamedez.'}
+                  title2={'Resume'}
+                  url={'https://gabminamedez.herokuapp.com/resume'}
+            />
             
             <Container className={resumeStyles.resume}>
                 <Row className={resumeStyles.resumeFirst}>

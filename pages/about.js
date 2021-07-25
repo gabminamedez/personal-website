@@ -10,7 +10,11 @@ import aboutStyles from '../styles/about.module.css';
 const About = () => {
     return (
         <div>
-            <Head title={'Gab Minamedez | About Me'} />
+            <Head title={'About Me | Gab Minamedez'}
+                  description={'Gabriel is a junior Computer Science student in De La Salle University in the Philippines. He also writes for SLAM Philippines on the side. Aside from watching movies and series, reading books, and listening to music, he is also in a constant search to create something impactful be it through technology or the arts. © 2021 Gabriel Minamedez.'}
+                  title2={'About'}
+                  url={'https://gabminamedez.herokuapp.com/about'}
+            />
 
             <Container>
                 <Row className={aboutStyles.headDiv}>

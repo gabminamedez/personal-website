@@ -32,7 +32,11 @@ const Blog = () => {
       
     return (
         <div>
-            <Head title={'Gab Minamedez | Blog'} />
+            <Head title={'Blog | Gab Minamedez'}
+                  description={'Apart from being a programmer by future profession, Gabriel is passionate about the literary arts. This is a collection of his personal articles on Medium. He also writes for SLAM Philippines on the side. © 2021 Gabriel Minamedez.'}
+                  title2={'Blog'}
+                  url={'https://gabminamedez.herokuapp.com/blog'}
+            />
 
             <Container className={blogStyles.blog}>
                 <h1>Blog</h1>

@@ -1,15 +1,33 @@
 import Head from 'next/head';
 
-const Meta = ({title}) => {
+const Meta = ({title, description, title2, url}) => {
     return (
         <Head>
+            <title>{title}</title>
+            <meta name='keywords' content='Gabriel Minamedez, Programmer, Writer, Computer Science, Philippines' />
+            <meta name='description' content={description} />
+            <meta property='og:locale' content='en-US' />
+            <meta property='og:site_name' content='Gabriel Minamedez' />
+            <meta property='og:title' content={title2} />
+            <meta property='og:url' content={url} />
+            <link rel='canonical' href={url} />
+            
+            <script async='' src='//www.google-analytics.com/analytics.js' />
+            <script type='application/ld+json'>
+                {{ 
+                    '@context' : 'http://schema.org',
+                    '@type' : 'Person',
+                    'name' : 'Gabriel Nicolas Minamedez',
+                    'url' : 'https://gabminamedez.herokuapp.com/',
+                    'sameAs' : null
+                }}
+            </script>
+
             <meta name='viewport' content='width=device-width, initial-scale=1' />
-            <meta name='keywords' content='Gabriel Minamedez, Computer Science, Web Developer, De La Salle University' />
-            <meta name='description' content='Gabriel Minamedez is a junior Computer Science student in De La Salle University based in Manila, Philippines. He is an aspiring web developer and machine learning engineer. He also writes for SLAM Philippines. © 2021 Gab Minamedez.' />
             <meta charSet='utf-8' />
             <link rel='icon' href='/img/favicon.ico' />
+
             <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css' />
-            <title>{title}</title>
         </Head>
     );
 }

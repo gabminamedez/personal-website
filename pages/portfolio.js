@@ -8,7 +8,11 @@ import portfolioStyles from '../styles/portfolio.module.css';
 const Portfolio = () => {      
     return (
         <div>
-            <Head title={'Gab Minamedez | Portfolio'} />
+            <Head title={'Portfolio | Gab Minamedez'}
+                  description={'Gabriel is a junior Computer Science student in De La Salle University in the Philippines. He is an aspiring web developer and machine learning engineer. This is a collection of his pet projects developed as he continues to learn about new technologies everyday. © 2021 Gabriel Minamedez.'}
+                  title2={'Portfolio'}
+                  url={'https://gabminamedez.herokuapp.com/portfolio'}
+            />
 
             <Container className={portfolioStyles.portfolio}>
                 <h1>My Work</h1>
