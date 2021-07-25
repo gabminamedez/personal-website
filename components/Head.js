@@ -13,15 +13,15 @@ const Meta = ({title, description, title2, url}) => {
             <link rel='canonical' href={url} />
             
             <script async='' src='//www.google-analytics.com/analytics.js' />
-            <script type='application/ld+json'>
-                {{ 
-                    '@context' : 'http://schema.org',
-                    '@type' : 'Person',
-                    'name' : 'Gabriel Nicolas Minamedez',
-                    'url' : 'https://gabminamedez.herokuapp.com/',
-                    'sameAs' : null
-                }}
-            </script>
+            <script type='application/ld+json'
+                dangerouslySetInnerHTML={{ __html: JSON.stringify({
+                        '@context' : 'http://schema.org',
+                        '@type' : 'Person',
+                        'name' : 'Gabriel Nicolas Minamedez',
+                        'url' : 'https://gabminamedez.herokuapp.com/',
+                        'sameAs' : null
+                })}}
+            />
 
             <meta name='viewport' content='width=device-width, initial-scale=1' />
             <meta charSet='utf-8' />
