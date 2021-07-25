@@ -2,6 +2,7 @@ import { Container, Row, Col } from 'reactstrap';
 import { FaEnvelope, FaGithub, FaLinkedin } from 'react-icons/fa';
 
 import Head from '../components/Head';
+import AsyncImage from '../components/AsyncImage';
 
 import resumeStyles from '../styles/resume.module.css';
 
@@ -14,7 +15,7 @@ const Resume = () => {
             <Container className={resumeStyles.resume}>
                 <Row className={resumeStyles.resumeFirst}>
                     <Col lg={3}>
-                        <img className={resumeStyles.dpImage} src='/img/home/dp.jpg' />
+                        <AsyncImage className={resumeStyles.dpImage} src='/img/home/dp.jpg' />
                     </Col>
 
                     <Col lg={9} className={resumeStyles.resumeHead}>
@@ -24,7 +25,7 @@ const Resume = () => {
                             <a href='https://www.linkedin.com/in/gabminamedez/' target='_blank' className={resumeStyles.social}><FaLinkedin /></a>
                             <a href='https://github.com/gabminamedez' target='_blank' className={resumeStyles.social}><FaGithub /></a>
                         </span>
-                        <p>You can download a copy of my resume <a href='https://docs.google.com/document/d/1hBoGjn5_nk3u8RZsyqLoIxgU3-SGNnyrWp3ZVydAp_M/edit?usp=sharing' target='_blank' className={resumeStyles.downloadLink}>here</a>!</p>
+                        <p>Download a copy of my resume <a href='https://docs.google.com/document/d/1hBoGjn5_nk3u8RZsyqLoIxgU3-SGNnyrWp3ZVydAp_M/edit?usp=sharing' target='_blank' className={resumeStyles.downloadLink}>here</a> or my CV <a href='https://docs.google.com/document/d/1PbrYk6pyCctUnmxQBSCNlGvPVs4bQnhbdOq7ceo9He8/edit?usp=sharing' target='_blank' className={resumeStyles.downloadLink}>here</a>.</p>
                     </Col>
                 </Row>
 

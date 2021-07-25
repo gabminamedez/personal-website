@@ -1,21 +1,32 @@
 import { useState, useEffect } from 'react';
 import { Container, Row, Col } from 'reactstrap';
+import { usePromiseTracker, trackPromise } from 'react-promise-tracker';
 var moment = require('moment');
 
 import Head from '../components/Head';
+import AsyncImage from '../components/AsyncImage';
 
 import blogStyles from '../styles/blog.module.css';
 
+const sleep = ms => new Promise(r => setTimeout(r, ms));
+
 const Blog = () => {
     const [mediumData, setMediumData] = useState([]);
+    const { promiseInProgress } = usePromiseTracker({ delay: 500 });
 
-    useEffect(() => {
+    const loadData = async () => {
+        await sleep(2000);
         fetch(`https://api.rss2json.com/v1/api.json?rss_url=https://medium.com/feed/@gabminamedez`)
         .then(res => res.json())
         .then(response => {
                 setMediumData(response.items);
             })
             .catch(err => console.log(err));
+    };
+
+    useEffect(() => {
+        trackPromise(loadData());
+        return () => {};
     }, []);
 
       
@@ -29,7 +40,8 @@ const Blog = () => {
 
                 <hr />
 
-                {
+                {   promiseInProgress ? <div className={blogStyles.ldsEllipsis}><div></div><div></div><div></div><div></div></div> :
+
                     mediumData.map(article => (
                         <Row className={blogStyles.article} key={article.guid}>
                             <Col lg={6}>
@@ -38,7 +50,7 @@ const Blog = () => {
                             </Col>
 
                             <Col lg={6}>
-                                <img src={article.thumbnail} />
+                                <AsyncImage src={article.thumbnail} />
                             </Col>
                         </Row>
                     ))

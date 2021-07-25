@@ -26,7 +26,7 @@ const Layout = ({ children }) => {
                             <h1><a href='/about'>About Me</a></h1>
                             <h1><a href='/blog'>Blog</a></h1>
                             <h1><a href='/portfolio'>Portfolio</a></h1>
-                            <h1><a href='/resume'>Resume</a></h1>
+                            <h1><a href='/resume'>Resume/CV</a></h1>
                         </div>
                     </div>
                 </Animated>

@@ -3,6 +3,7 @@ import { SiApplemusic } from 'react-icons/si';
 import { FaGithub, FaInstagram, FaLinkedin, FaMedium, FaTwitter } from 'react-icons/fa';
 
 import Head from '../components/Head';
+import AsyncImage from '../components/AsyncImage';
 
 import aboutStyles from '../styles/about.module.css';
 
@@ -37,7 +38,7 @@ const About = () => {
                     </Col>
 
                     <Col lg={5} className={aboutStyles.aboutImageCol}>
-                        <img className={aboutStyles.aboutImage} src='/img/about/about.jpg' />
+                        <AsyncImage className={aboutStyles.aboutImage} src='/img/about/about.jpg' />
 
                         <span className={aboutStyles.socials}>
                         <a href='https://music.apple.com/profile/gabminamedez' target='_blank' className={aboutStyles.social}><SiApplemusic /></a>
@@ -83,23 +84,23 @@ const About = () => {
                     <Row>
                         <Col lg={4}>
                             <h3>Media 📺</h3>
-                            <p>Reply 1988<br /><i>K-Drama</i></p>
+                            <p>Vincenzo<br /><i>K-Drama</i></p>
                             <p>Attack on Titan<br /><i>Anime</i></p>
-                            <p>Dick Johnson is Dead<br /><i>Documentary</i></p>
+                            <p>Nevertheless<br /><i>K-Drama</i></p>
                         </Col>
 
                         <Col lg={4}>
                             <h3>Books 📚</h3>
-                            <p>The Wind-Up Bird Chronicle<br /><i>Haruki Murakami</i></p>
+                            <p>Anna Karenina<br /><i>Leo Tolstoy</i></p>
                             <p>The Republic<br /><i>Plato</i></p>
                             <p>The Picture of Dorian Gray<br /><i>Oscar Wilde</i></p>
                         </Col>
 
                         <Col lg={4}>
                             <h3>Music 🎶</h3>
-                            <p>Chicken Tenders<br /><i>Dominic Fike</i></p>
-                            <p>Afterglow<br /><i>THE DRIVER ERA</i></p>
-                            <p>HANGANG<br /><i>Hoody</i></p>
+                            <p>Eat, Sleep, Wake (Nothing But You)<br /><i>Bombay Bicycle Club</i></p>
+                            <p>BYE<br /><i>Jaden</i></p>
+                            <p>I want to<br /><i>MINO feat. meenoi</i></p>
                         </Col>
                     </Row>
                 </div>

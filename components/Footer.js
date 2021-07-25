@@ -7,7 +7,7 @@ function Footer() {
     return (
         <div className={footerStyles.footer}>
             <p>
-                © 2021 Gabriel Minamedez.
+                © { new Date().getFullYear() } Gabriel Minamedez.
                 <br />
                 <a href='https://music.apple.com/profile/gabminamedez' target='_blank' className={footerStyles.social}><SiApplemusic /></a>
                 <a href='https://github.com/gabminamedez' target='_blank' className={footerStyles.social}><FaGithub /></a>

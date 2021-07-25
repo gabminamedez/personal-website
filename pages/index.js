@@ -5,6 +5,7 @@ import { SiApplemusic } from 'react-icons/si';
 import { FaGithub, FaInstagram, FaLinkedin, FaMedium, FaTwitter } from 'react-icons/fa';
 
 import Head from '../components/Head';
+import AsyncImage from '../components/AsyncImage';
 
 import homeStyles from '../styles/home.module.css';
 
@@ -32,7 +33,7 @@ const Home = () => {
                     <div className={homeStyles.leftCol}>
                         <h1>What up world!<br />It's Gabriel Minamedez.</h1>
                         
-                        <img className={homeStyles.dpImage} src='/img/home/dp.jpg' />
+                        <AsyncImage className={homeStyles.dpImage} src='/img/home/dp.jpg' />
 
                         <p>
                             🇵🇭 Computer Science Student in Manila, Philippines
@@ -57,7 +58,7 @@ const Home = () => {
                     <div className={homeStyles.rightCol}>
                         <Animated animationIn='fadeIn' animationOut='fadeOut' animationInDuration={400} animationOutDuration={400} isVisible={hover} className={homeStyles.prevImage}>
                             {
-                                displayImage == null ? <></> : <img className={homeStyles.prevImage} src={displayImage} />
+                                displayImage == null ? <></> : <AsyncImage className={homeStyles.prevImage} src={displayImage} />
                             }
                         </Animated>
                         
@@ -65,7 +66,7 @@ const Home = () => {
                             <h1 onMouseOver={e => handleHover(e, 'about')} onMouseOut={e => handleHover(e, 'about')}><a href='/about'>About Me</a></h1>
                             <h1 onMouseOver={e => handleHover(e, 'blog')} onMouseOut={e => handleHover(e, 'blog')}><a href='/blog'>Blog</a></h1>
                             <h1 onMouseOver={e => handleHover(e, 'portfolio')} onMouseOut={e => handleHover(e, 'portfolio')}><a href='/portfolio'>Portfolio</a></h1>
-                            <h1 onMouseOver={e => handleHover(e, 'resume')} onMouseOut={e => handleHover(e, 'resume')}><a href='/resume'>Resume</a></h1>
+                            <h1 onMouseOver={e => handleHover(e, 'resume')} onMouseOut={e => handleHover(e, 'resume')}><a href='/resume'>Resume/CV</a></h1>
                         </div>
                     </div>
                 </Col>

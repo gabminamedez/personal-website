@@ -1,6 +1,7 @@
 import { Container, Row, Col } from 'reactstrap';
 
 import Head from '../components/Head';
+import AsyncImage from '../components/AsyncImage';
 
 import portfolioStyles from '../styles/portfolio.module.css';
 
@@ -29,7 +30,7 @@ const Portfolio = () => {
                     </Col>
 
                     <Col lg={6}>
-                        <img src='/img/portfolio/biomes2.png' />
+                        <AsyncImage src='/img/portfolio/biomes2.png' />
                     </Col>
                 </Row>
 
@@ -47,7 +48,7 @@ const Portfolio = () => {
                     </Col>
 
                     <Col lg={6}>
-                        <img src='/img/portfolio/ingat.png' />
+                        <AsyncImage src='/img/portfolio/ingat.png' />
                     </Col>
                 </Row>
 
@@ -65,7 +66,7 @@ const Portfolio = () => {
                     </Col>
 
                     <Col lg={6}>
-                        <img src='/img/portfolio/ph_popn.png' />
+                        <AsyncImage src='/img/portfolio/ph_popn.png' />
                     </Col>
                 </Row>
 
@@ -83,7 +84,7 @@ const Portfolio = () => {
                     </Col>
 
                     <Col lg={6}>
-                        <img src='/img/portfolio/weekday.png' />
+                        <AsyncImage src='/img/portfolio/weekday.png' />
                     </Col>
                 </Row>
 
@@ -101,7 +102,7 @@ const Portfolio = () => {
                     </Col>
 
                     <Col lg={6}>
-                        <img src='/img/portfolio/easel.png' />
+                        <AsyncImage src='/img/portfolio/easel.png' />
                     </Col>
                 </Row>
 
@@ -119,7 +120,7 @@ const Portfolio = () => {
                     </Col>
 
                     <Col lg={6}>
-                        <img src='https://slidetodoc.com/presentation_image_h/f150169326bf514299360a07d20e03c1/image-21.jpg' />
+                        <AsyncImage src='https://slidetodoc.com/presentation_image_h/f150169326bf514299360a07d20e03c1/image-21.jpg' />
                     </Col>
                 </Row>
 
@@ -137,7 +138,7 @@ const Portfolio = () => {
                     </Col>
 
                     <Col lg={6}>
-                        <img src='https://static.onecms.io/wp-content/uploads/sites/28/2021/02/19/new-york-city-evening-NYCTG0221.jpg' />
+                        <AsyncImage src='https://static.onecms.io/wp-content/uploads/sites/28/2021/02/19/new-york-city-evening-NYCTG0221.jpg' />
                     </Col>
                 </Row>
 
@@ -155,7 +156,7 @@ const Portfolio = () => {
                     </Col>
 
                     <Col lg={6}>
-                        <img src='https://www.planetware.com/wpimages/2020/06/new-york-new-york-city-best-time-to-visit-best-time-to-visit-new-york-city.jpg' />
+                        <AsyncImage src='https://www.planetware.com/wpimages/2020/06/new-york-new-york-city-best-time-to-visit-best-time-to-visit-new-york-city.jpg' />
                     </Col>
                 </Row>
 
@@ -173,7 +174,7 @@ const Portfolio = () => {
                     </Col>
 
                     <Col lg={6}>
-                        <img src='https://teknosejahtera.com/wp-content/uploads/2020/12/Start-Up-Ep-1-Nam-Joohyuk.png' />
+                        <AsyncImage src='https://teknosejahtera.com/wp-content/uploads/2020/12/Start-Up-Ep-1-Nam-Joohyuk.png' />
                     </Col>
                 </Row>
 
@@ -191,7 +192,7 @@ const Portfolio = () => {
                     </Col>
 
                     <Col lg={6}>
-                        <img src='https://miro.medium.com/max/2400/1*BKoo1Q5PBuN87XT4bArK3w.jpeg' />
+                        <AsyncImage src='https://miro.medium.com/max/2400/1*BKoo1Q5PBuN87XT4bArK3w.jpeg' />
                     </Col>
                 </Row>
 
@@ -209,7 +210,7 @@ const Portfolio = () => {
                     </Col>
 
                     <Col lg={6}>
-                        <img src='/img/portfolio/dlsu_usap.png' />
+                        <AsyncImage src='/img/portfolio/dlsu_usap.png' />
                     </Col>
                 </Row>
 
@@ -227,7 +228,7 @@ const Portfolio = () => {
                     </Col>
 
                     <Col lg={6}>
-                        <img src='https://upload.wikimedia.org/wikipedia/commons/thumb/e/e0/Sudoku_Puzzle_by_L2G-20050714_standardized_layout.svg/1200px-Sudoku_Puzzle_by_L2G-20050714_standardized_layout.svg.png' />
+                        <AsyncImage src='https://upload.wikimedia.org/wikipedia/commons/thumb/e/e0/Sudoku_Puzzle_by_L2G-20050714_standardized_layout.svg/1200px-Sudoku_Puzzle_by_L2G-20050714_standardized_layout.svg.png' />
                     </Col>
                 </Row>
             </Container>
