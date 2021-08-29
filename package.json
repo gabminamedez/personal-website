@@ -1,4 +1,5 @@
 {
+  "homepage": "http://gabminamedez.github.io/",
   "name": "gm-official",
   "version": "0.1.0",
   "private": true,
@@ -7,10 +8,13 @@
     "build": "next build",
     "export": "next export",
     "start": "next start -p $PORT",
-    "heroku-postbuild": "npm run build"
+    "heroku-postbuild": "npm run build",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build"
   },
   "dependencies": {
     "bootstrap": "^5.0.1",
+    "gh-pages": "^3.2.3",
     "moment": "^2.29.1",
     "next": "10.2.3",
     "react": "17.0.2",
