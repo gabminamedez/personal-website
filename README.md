@@ -1,2 +1,2 @@
-# gm-official
+# gabminamedez.github.io
 For yours truly.
