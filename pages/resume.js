@@ -51,58 +51,24 @@ const Resume = () => {
                     <Row>
                         <Col lg={6}>
                             <h3>Concepts</h3>
-                            <ul>
-                                <li>Data Structures, Algorithms, and Complexity</li>
-                                <li>Object-Oriented Design</li>
-                                <li>Data Science</li>
-                                <li>Web Development</li>
-                                <li>Machine Learning</li>
-                            </ul>
+                            <p>Data science, web development, web design, android development, machine learning</p>
                         </Col>
 
                         <Col lg={6}>
                             <h3>DevOps and Tools</h3>
-                            <ul>
-                                <li>Git</li>
-                                <li>Github</li>
-                                <li>Github Actions</li>
-                                <li>Heroku</li>
-                                <li>Agile and Scrum methodologies</li>
-                            </ul>
+                            <p>Git, Github, Github Actions, Heroku, Travis, Agile and Scrum methodologies</p>
                         </Col>
                     </Row>
 
                     <Row>
                         <Col lg={6}>
                             <h3>Languages</h3>
-                            <ul>
-                                <li>Python</li>
-                                <li>Java</li>
-                                <li>C</li>
-                                <li>C++</li>
-                                <li>JavaScript</li>
-                                <li>Classic Web Stack (HTML, CSS)</li>
-                                <li>Swift</li>
-                                <li>MySQL</li>
-                                <li>PostgreSQL</li>
-                                <li>MongoDB</li>
-                            </ul>
+                            <p>Python, Java, C, C++, Swift, HTML, CSS, JavaScript, MySQL, PostgreSQL, MongoDB</p>
                         </Col>
                         
                         <Col lg={6}>
                             <h3>Frameworks</h3>
-                            <ul>
-                                <li>Bootstrap</li>
-                                <li>Node.js</li>
-                                <li>ReactJS</li>
-                                <li>Vue.js</li>
-                                <li>Next.js</li>
-                                <li>Django</li>
-                                <li>Pandas</li>
-                                <li>OpenCV</li>
-                                <li>TensorFlow</li>
-                                <li>TKinter</li>
-                            </ul>
+                            <p>ReactJS, Vue, Node, Express, Django, Flask, Pandas, OpenCV, TensorFlow, TKinter, JavaFX, Java Swing</p>
                         </Col>
                     </Row>
                 </Container>

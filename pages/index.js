@@ -39,9 +39,9 @@ const Home = () => {
                         <AsyncImage className={homeStyles.dpImage} src='/img/home/dp.jpg' />
 
                         <p>
-                            🇵🇭 Computer Science Student in Manila, Philippines
+                            🇵🇭 Computer Science Student from Manila, PH
                             <br />
-                            👨‍💻 Aspiring Web Developer and Machine Learning Engineer
+                            👨‍💻 Aspiring Web and iOS Developer
                             <br />
                             ✍️ Semi-Professional Word Vomiter
                         </p>
