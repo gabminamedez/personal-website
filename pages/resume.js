@@ -7,13 +7,12 @@ import AsyncImage from '../components/AsyncImage';
 import resumeStyles from '../styles/resume.module.css';
 
 const Resume = () => {
-
     return (
         <div>
             <Head title={'Resume | Gab Minamedez'}
-                  description={'Gabriel is a junior Computer Science student in De La Salle University in the Philippines. He is an aspiring web developer and machine learning engineer. © 2021 Gabriel Minamedez.'}
+                  description={'Gabriel Minamedez. Gab is a senior Computer Science student in De La Salle University in the Philippines. He is an aspiring web and iOS developer. © 2021 Gabriel Minamedez.'}
                   title2={'Resume'}
-                  url={'https://gabminamedez.herokuapp.com/resume'}
+                  url={'https://gabminamedez.github.io/resume'}
             />
             
             <Container className={resumeStyles.resume}>

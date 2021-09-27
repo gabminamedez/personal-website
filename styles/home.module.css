@@ -14,16 +14,17 @@
 }
 
 .dpImage {
-    border-radius: 50%;
     height: 180px;
     width: 180px;
-    border: 1px solid rgba(0, 0, 0, .125);
     background-color: #FFF;
-    padding: .5rem;
     display: block;
     margin-left: auto;
     margin-right: auto;
-    margin-bottom: 10px;
+    margin-top: 20px;
+    margin-bottom: 30px;
+    color: #4B92DB;
+    border: 1px solid #4B92DB;
+    box-shadow: 10px 10px;
 }
 
 .social {
@@ -67,12 +68,14 @@
 .rightCol h1 {
     margin-top: 25px;
     margin-bottom: 25px;
+    /* padding: 10px; */
 }
 
 .rightCol a {
     color: #4B92DB;
     cursor: pointer;
     transition: all .2s ease-in-out;
+    padding: 6px;
 }
 
 .rightCol a:hover {

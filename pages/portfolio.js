@@ -9,9 +9,9 @@ const Portfolio = () => {
     return (
         <div>
             <Head title={'Portfolio | Gab Minamedez'}
-                  description={'Gabriel is a junior Computer Science student in De La Salle University in the Philippines. He is an aspiring web developer and machine learning engineer. This is a collection of his pet projects developed as he continues to learn about new technologies everyday. © 2021 Gabriel Minamedez.'}
+                  description={'Gabriel Minamedez. Gab is a senior Computer Science student in De La Salle University in the Philippines. He is an aspiring web and iOS developer. This is a collection of his pet coding projects developed as he continues to learn about new technologies everyday. © 2021 Gabriel Minamedez.'}
                   title2={'Portfolio'}
-                  url={'https://gabminamedez.herokuapp.com/portfolio'}
+                  url={'https://gabminamedez.github.io/portfolio'}
             />
 
             <Container className={portfolioStyles.portfolio}>

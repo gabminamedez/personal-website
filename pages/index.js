@@ -1,8 +1,7 @@
 import { useState } from 'react';
 import { Row, Col } from 'reactstrap';
 import { Animated } from 'react-animated-css';
-import { SiApplemusic } from 'react-icons/si';
-import { FaGithub, FaInstagram, FaLinkedin, FaMedium, FaTwitter } from 'react-icons/fa';
+import { FaGithub, FaInstagram, FaLinkedin, FaMedium, FaSpotify, FaTwitter } from 'react-icons/fa';
 
 import Head from '../components/Head';
 import AsyncImage from '../components/AsyncImage';
@@ -27,9 +26,9 @@ const Home = () => {
     return (
         <div>
             <Head title={'Home | Gab Minamedez'}
-                  description={'Gabriel is a junior Computer Science student in De La Salle University in the Philippines. He is an aspiring web developer and machine learning engineer. On his off days, he loves to write about anything under the scorching sun. © 2021 Gabriel Minamedez.'}
+                  description={'Gabriel Minamedez. Gab is a senior Computer Science student in De La Salle University in the Philippines. He is an aspiring web and iOS developer. On his off days, he loves to write about anything under the scorching sun. © 2021 Gabriel Minamedez.'}
                   title2={'Home'}
-                  url={'https://gabminamedez.herokuapp.com/'}
+                  url={'https://gabminamedez.github.io/'}
             />
 
             <Row mx={0} fluid='true'>
@@ -48,11 +47,11 @@ const Home = () => {
                         </p>
 
                         <span className={homeStyles.socials}>
-                            <a href='https://music.apple.com/profile/gabminamedez' target='_blank' className={homeStyles.social}><SiApplemusic /></a>
                             <a href='https://github.com/gabminamedez' target='_blank' className={homeStyles.social}><FaGithub /></a>
                             <a href='https://www.instagram.com/gabminamedez/' target='_blank' className={homeStyles.social}><FaInstagram /></a>
                             <a href='https://www.linkedin.com/in/gabminamedez/' target='_blank' className={homeStyles.social}><FaLinkedin /></a>
                             <a href='https://gabminamedez.medium.com/' target='_blank' className={homeStyles.social}><FaMedium /></a>
+                            <a href='https://open.spotify.com/user/dirgfk4e07s0pggwbexjxmjbw?si=3370afe5c3404fcc' target='_blank' className={homeStyles.social}><FaSpotify /></a>
                             <a href='https://twitter.com/GabMinamedez' target='_blank' className={homeStyles.social}><FaTwitter /></a>
                         </span>
                     </div>
@@ -70,7 +69,7 @@ const Home = () => {
                             <h1 onMouseOver={e => handleHover(e, 'about')} onMouseOut={e => handleHover(e, 'about')}><a href='/about'>About Me</a></h1>
                             <h1 onMouseOver={e => handleHover(e, 'blog')} onMouseOut={e => handleHover(e, 'blog')}><a href='https://gabminamedez.medium.com/' target='_blank'>Blog</a></h1>
                             <h1 onMouseOver={e => handleHover(e, 'portfolio')} onMouseOut={e => handleHover(e, 'portfolio')}><a href='/portfolio'>Portfolio</a></h1>
-                            <h1 onMouseOver={e => handleHover(e, 'resume')} onMouseOut={e => handleHover(e, 'resume')}><a href='/resume'>Resume/CV</a></h1>
+                            <h1 onMouseOver={e => handleHover(e, 'resume')} onMouseOut={e => handleHover(e, 'resume')}><a href='/resume'>Resume</a></h1>
                         </div>
                     </div>
                 </Col>

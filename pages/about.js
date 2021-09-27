@@ -1,6 +1,5 @@
 import { Container, Row, Col } from 'reactstrap';
-import { SiApplemusic } from 'react-icons/si';
-import { FaGithub, FaInstagram, FaLinkedin, FaMedium, FaTwitter } from 'react-icons/fa';
+import { FaGithub, FaInstagram, FaLinkedin, FaMedium, FaSpotify, FaTwitter } from 'react-icons/fa';
 
 import Head from '../components/Head';
 import AsyncImage from '../components/AsyncImage';
@@ -11,9 +10,9 @@ const About = () => {
     return (
         <div>
             <Head title={'About Me | Gab Minamedez'}
-                  description={'Gabriel is a junior Computer Science student in De La Salle University in the Philippines. He also writes for SLAM Philippines on the side. Aside from watching movies and series, reading books, and listening to music, he is also in a constant search to create something impactful be it through technology or the arts. © 2021 Gabriel Minamedez.'}
+                  description={'Gabriel Minamedez. Gab is a senior Computer Science student in De La Salle University in the Philippines. He is an aspiring web and iOS developer. He also writes for SLAM Philippines on the side. Aside from watching movies and series, reading books, and listening to music, he is also in a constant search to create something impactful be it through technology or the arts. © 2021 Gabriel Minamedez.'}
                   title2={'About'}
-                  url={'https://gabminamedez.herokuapp.com/about'}
+                  url={'https://gabminamedez.github.io/about'}
             />
 
             <Container>
@@ -25,7 +24,7 @@ const About = () => {
                             <br />
 
                             <p>
-                                I'm currently a junior studying Computer Science at De La Salle University in sunny Manila, Philippines.
+                                I'm currently a senior studying Computer Science at De La Salle University in sunny Manila, Philippines.
                                 The pair of glasses in my photos does justice for what I do 75% of my day: writing either code or stories with my laptop.
                             </p>
 
@@ -45,11 +44,11 @@ const About = () => {
                         <AsyncImage className={aboutStyles.aboutImage} src='/img/about/about.jpg' />
 
                         <span className={aboutStyles.socials}>
-                        <a href='https://music.apple.com/profile/gabminamedez' target='_blank' className={aboutStyles.social}><SiApplemusic /></a>
                             <a href='https://github.com/gabminamedez' target='_blank' className={aboutStyles.social}><FaGithub /></a>
                             <a href='https://www.instagram.com/gabminamedez/' target='_blank' className={aboutStyles.social}><FaInstagram /></a>
                             <a href='https://www.linkedin.com/in/gabminamedez/' target='_blank' className={aboutStyles.social}><FaLinkedin /></a>
                             <a href='https://gabminamedez.medium.com/' target='_blank' className={aboutStyles.social}><FaMedium /></a>
+                            <a href='https://open.spotify.com/user/dirgfk4e07s0pggwbexjxmjbw?si=3370afe5c3404fcc' target='_blank' className={aboutStyles.social}><FaSpotify /></a>
                             <a href='https://twitter.com/GabMinamedez' target='_blank' className={aboutStyles.social}><FaTwitter /></a>
                         </span>
                     </Col>
@@ -88,8 +87,8 @@ const About = () => {
                     <Row>
                         <Col lg={4}>
                             <h3>Media 📺</h3>
-                            <p>Vincenzo<br /><i>K-Drama</i></p>
-                            <p>Attack on Titan<br /><i>Anime</i></p>
+                            <p>One Punch Man<br /><i>Anime</i></p>
+                            <p>Sex Education<br /><i>Comedy</i></p>
                             <p>Nevertheless<br /><i>K-Drama</i></p>
                         </Col>
 
@@ -102,9 +101,9 @@ const About = () => {
 
                         <Col lg={4}>
                             <h3>Music 🎶</h3>
-                            <p>Eat, Sleep, Wake (Nothing But You)<br /><i>Bombay Bicycle Club</i></p>
-                            <p>BYE<br /><i>Jaden</i></p>
-                            <p>I want to<br /><i>MINO feat. meenoi</i></p>
+                            <p>The Kiss of Venus<br /><i>Paul McCartney, Dominic Fike</i></p>
+                            <p>zombie pop<br /><i>DPR IAN</i></p>
+                            <p>Jail<br /><i>Kanye West, Jay-Z</i></p>
                         </Col>
                     </Row>
                 </div>
