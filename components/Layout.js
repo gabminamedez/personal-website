@@ -23,7 +23,7 @@ const Layout = ({ children }) => {
                 <Animated animationIn='slideInDown' animationOut='slideOutUp' animationInDuration={400} animationOutDuration={400} isVisible={isOpen} className={layoutStyles.menu}>
                     <div className={layoutStyles.menu}>
                         <div className={layoutStyles.menuContent}>
-                            <h1><a href='/about'>About Me</a></h1>
+                            <h1><a href='/about'>About</a></h1>
                             <h1><a href='https://gabminamedez.medium.com/' target='_blank'>Blog</a></h1>
                             <h1><a href='/portfolio'>Portfolio</a></h1>
                             <h1><a href='/resume'>Resume</a></h1>
@@ -32,7 +32,6 @@ const Layout = ({ children }) => {
                 </Animated>
                 
                 <div className={layoutStyles.children}>
-                    <br />
                     <br />
                     
                     {children}

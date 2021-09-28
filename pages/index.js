@@ -1,5 +1,5 @@
 import { useState } from 'react';
-import { Container, Row, Col } from 'reactstrap';
+import { Container } from 'reactstrap';
 import { Animated } from 'react-animated-css';
 import { FaGithub, FaInstagram, FaLinkedin, FaMedium, FaSpotify, FaTwitter } from 'react-icons/fa';
 
@@ -33,7 +33,7 @@ const Home = () => {
 
             <Container className={homeStyles.home}>
                 <div className={homeStyles.heading}>
-                    <h1>What up world!<br />It's Gabriel Minamedez.</h1>
+                    <h1>What up world!<br />It's <span className={homeStyles.name}>Gabriel Minamedez</span>.</h1>
 
                     <p>
                         🇵🇭 Computer Science Student from Manila, PH
@@ -61,7 +61,7 @@ const Home = () => {
                     </Animated>
                     
                     <div className={homeStyles.directoryText}>
-                        <h2 onMouseOver={e => handleHover(e, 'about')} onMouseOut={e => handleHover(e, 'about')}><a href='/about'>About Me</a></h2>
+                        <h2 onMouseOver={e => handleHover(e, 'about')} onMouseOut={e => handleHover(e, 'about')}><a href='/about'>About</a></h2>
                         <h2 onMouseOver={e => handleHover(e, 'blog')} onMouseOut={e => handleHover(e, 'blog')}><a href='https://gabminamedez.medium.com/' target='_blank'>Blog</a></h2>
                         <h2 onMouseOver={e => handleHover(e, 'portfolio')} onMouseOut={e => handleHover(e, 'portfolio')}><a href='/portfolio'>Portfolio</a></h2>
                         <h2 onMouseOver={e => handleHover(e, 'resume')} onMouseOut={e => handleHover(e, 'resume')}><a href='/resume'>Resume</a></h2>

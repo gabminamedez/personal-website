@@ -51,16 +51,9 @@ const Resume = () => {
                     <Row>
                         <Col lg={6}>
                             <h3>Concepts</h3>
-                            <p>Data science, web development, web design, android development, machine learning</p>
+                            <p>Data science, web development, web design, UI/UX design, machine learning, android development</p>
                         </Col>
 
-                        <Col lg={6}>
-                            <h3>DevOps and Tools</h3>
-                            <p>Git, Github, Github Actions, Heroku, Travis, Agile and Scrum methodologies</p>
-                        </Col>
-                    </Row>
-
-                    <Row>
                         <Col lg={6}>
                             <h3>Languages</h3>
                             <p>Python, Java, C, C++, Swift, HTML, CSS, JavaScript, MySQL, PostgreSQL, MongoDB</p>
@@ -69,6 +62,16 @@ const Resume = () => {
                         <Col lg={6}>
                             <h3>Frameworks</h3>
                             <p>ReactJS, Vue, Node, Express, Django, Flask, Pandas, OpenCV, TensorFlow, TKinter, JavaFX, Java Swing</p>
+                        </Col>
+
+                        <Col lg={6}>
+                            <h3>DevOps and Tools</h3>
+                            <p>Git, Github, Github Actions, Heroku, Travis, Agile and Scrum methodologies</p>
+                        </Col>
+
+                        <Col lg={6}>
+                            <h3>Software</h3>
+                            <p>Microsoft Office, Adobe Suite, Figma, Trello, Notion, Wordpress</p>
                         </Col>
                     </Row>
                 </Container>

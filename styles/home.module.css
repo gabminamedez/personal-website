@@ -1,5 +1,5 @@
 .home {
-    width: 80%;
+    width: 70%;
 }
 
 .heading, .directory {
@@ -33,7 +33,7 @@
 
 .directory {
     background-color: #E5E5E5;
-    height: 400px;
+    height: 70vh;
     position: relative;
 }
 
