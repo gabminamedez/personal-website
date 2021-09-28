@@ -1,30 +1,21 @@
-.leftCol {
-    height: 65vh;
+.home {
+    width: 80%;
+}
+
+.heading, .directory {
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.heading {
     padding: 18px;
     text-align: center;
-    display: flex;
-    justify-content: center;
-    align-content: center;
-    flex-direction: column;
+    height: auto;
     margin-bottom: 18px;
 }
 
-.leftCol p {
+.heading p {
     font-size: large;
-}
-
-.dpImage {
-    height: 180px;
-    width: 180px;
-    background-color: #FFF;
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    margin-top: 20px;
-    margin-bottom: 30px;
-    color: #4B92DB;
-    border: 1px solid #4B92DB;
-    box-shadow: 10px 10px;
 }
 
 .social {
@@ -40,15 +31,10 @@
     color: #4B92DB;
 }
 
-.rightCol {
+.directory {
     background-color: #E5E5E5;
-    height: 65vh;
-    margin-right: 15px;
-    width: 55vw;
-    display: flex;
-    justify-content: center;
-    align-content: center;
-    flex-direction: column;
+    height: 400px;
+    position: relative;
 }
 
 .prevImage {
@@ -59,80 +45,47 @@
     display: block;
 }
 
-.rightColText {
+.directoryText {
     position: absolute;
-    margin-left: 42vw;
-    text-align: right;
+    text-align: center;
+    padding: 90px 0;
+    margin: 0;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
 }
 
-.rightCol h1 {
+.directory h2 {
     margin-top: 25px;
     margin-bottom: 25px;
-    /* padding: 10px; */
 }
 
-.rightCol a {
+.directory a {
     color: #4B92DB;
     cursor: pointer;
     transition: all .2s ease-in-out;
     padding: 6px;
 }
 
-.rightCol a:hover {
+.directory a:hover {
     background-color: #FBF7D5;
     border: 1px solid #4B92DB;
     box-shadow: 10px 10px;
 }
 
-@media only screen and (max-width: 1440px) {
-    .rightColText {
-        margin-left: 38vw;
-    }
-}
-
-@media only screen and (max-width: 1160px) {
-    .rightColText {
-        margin-left: 36vw;
-    }
-}
-
-@media only screen and (max-width: 991px) {
-    .leftCol, .rightCol {
-        width: 95vw;
-        margin-left: auto;
-        margin-right: auto;
-        height: 500px;
-    }
-
-    .rightCol {
-        position: relative;
-        height: 50vh;
-    }
-
-    .rightColText {
-        text-align: center;
-        padding: 70px 0;
-        margin: 0;
-        position: absolute;
-        top: 50%;
-        left: 50%;
-        transform: translate(-50%, -50%);
-    }
-}
-
 @media only screen and (max-width: 336px) {
-    .leftCol {
+    .heading {
         margin-top: 40px;
         margin-bottom: 40px;
     }
 
-    .leftCol p {
+    .heading p {
         font-size: medium;
     }
 }
 
 @media only screen and (max-width: 320px) {
-    .leftCol, .rightCol {
+    .heading, .directory {
         width: 92vw;
     }
 
@@ -146,13 +99,13 @@
         font-size: 14px;
     }
 
-    .leftCol p {
+    .heading p {
         font-size: small;
     }
 }
 
 @media only screen and (max-width: 248px) {
-    .leftCol {
+    .heading {
         margin-top: 80px;
         margin-bottom: 80px;
     }
