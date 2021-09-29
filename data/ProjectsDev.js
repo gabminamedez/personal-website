@@ -1,5 +1,6 @@
 export const PROJECTS = [
     {
+        id: 0,
         title: 'Dashboarding Project',
         type: 'Internship',
         stack: ' developed with ReactJS.',
@@ -8,6 +9,7 @@ export const PROJECTS = [
         links: []
     },
     {
+        id: 1,
         title: 'Ingat.ph',
         type: 'University',
         stack: ' developed with Flask and SQLite.',
@@ -17,6 +19,7 @@ export const PROJECTS = [
                 ['Github', 'https://github.com/gabminamedez/DATA101-final']]
     },
     {
+        id: 2,
         title: 'Philippine Population Data',
         type: 'Personal',
         stack: ' developed with ReactJS.',
@@ -25,6 +28,7 @@ export const PROJECTS = [
         links: [['Github', 'https://github.com/gabminamedez/react-viz-exercise']]
     },
     {
+        id: 3,
         title: 'Cache Replacement Algorithm Simulator',
         type: 'University',
         stack: ' developed with Node.js and MySQL.',
@@ -34,6 +38,7 @@ export const PROJECTS = [
                 ['Github', 'https://github.com/gabminamedez/fa-lru-cache-simulator']]
     },
     {
+        id: 4,
         title: 'OLAP Querying of AirBnB NYC Data',
         type: 'University',
         stack: ' developed with Node.js, MySQL, and Python.',
@@ -43,6 +48,7 @@ export const PROJECTS = [
                 ['Github', 'https://github.com/gabminamedez/STADVDB_S12.2_T120-21_MCO2']]
     },
     {
+        id: 5,
         title: 'Database Querying of AirBnB NYC Data',
         type: 'University',
         stack: ' developed with Node.js and MySQL.',
@@ -52,6 +58,7 @@ export const PROJECTS = [
                 ['Github', 'https://github.com/gabminamedez/STADVDB_S12.2_T120-21']]
     },
     {
+        id: 6,
         title: 'Eye Spy',
         type: 'Personal',
         stack: ' developed with Python (OpenCV, TensorFlow).',
@@ -60,6 +67,7 @@ export const PROJECTS = [
         links: [['Github', 'https://github.com/gabminamedez/eye-spy']]
     },
     {
+        id: 7,
         title: 'More than Meets the Ear: The Data Behind Spotify',
         type: 'University',
         stack: ' developed with Python (Pandas, Matplotlib, Seaborn).',
@@ -68,6 +76,7 @@ export const PROJECTS = [
         links: [['Github', 'https://github.com/gabminamedez/spotify-data']]
     },
     {
+        id: 8,
         title: 'DLSU Usap',
         type: 'University',
         stack: ' developed with Java (Java.io, Java Swing).',
@@ -76,6 +85,7 @@ export const PROJECTS = [
         links: [['Github', 'https://github.com/gabminamedez/dlsu-usap']]
     },
     {
+        id: 9,
         title: 'Python Sudoku',
         type: 'Personal',
         stack: ' developed with Python (PyGame).',

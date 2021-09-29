@@ -1,5 +1,6 @@
 export const PROJECTS = [
     {
+        id: 0,
         title: 'Easel',
         type: 'University',
         stack: ' prototyped with Figma.',
