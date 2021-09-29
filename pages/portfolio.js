@@ -76,24 +76,6 @@ const Portfolio = () => {
 
                 <Row className={portfolioStyles.project}>
                     <Col lg={6}>
-                        <h2>Weekday</h2>
-
-                        <p className={portfolioStyles.metadata}>
-                            <b>Personal Project</b> developed with ReactJS.
-                            <br />
-                            <a href='https://github.com/gabminamedez/weekday' target='_blank'>Github</a>
-                        </p>
-
-                        <p className={portfolioStyles.projectBio}>A Kanban board mockup that functions as a compunded to-do list.</p>
-                    </Col>
-
-                    <Col lg={6}>
-                        <AsyncImage src='/img/portfolio/weekday.png' />
-                    </Col>
-                </Row>
-
-                <Row className={portfolioStyles.project}>
-                    <Col lg={6}>
                         <h2>Easel</h2>
 
                         <p className={portfolioStyles.metadata}>

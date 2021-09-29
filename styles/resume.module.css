@@ -1,26 +1,22 @@
 .resume {
-    width: 70%;
+    width: 80%;
     color: #202020;
 }
 
 .resume h2 {
     margin-top: 35px;
-    font-size: 28px;
+    font-size: 26px;
 }
 
 .resume h3 {
     font-family: 'Karla', sans-serif;
     margin-top: 20px;
     font-weight: 900;
-    font-size: 21px;
+    font-size: 20px;
 }
 
-.resume p, .resume li {
-    font-size: 18px;
-}
-
-.resume i {
-    font-size: 18px;
+.resume p {
+    font-size: 16px;
 }
 
 .dpImage {
@@ -47,6 +43,10 @@
     margin-bottom: 8px;
 }
 
+.resumeHead p {
+    font-size: 14px;
+}
+
 .social {
     color: #636363;
     font-size: 24px;
@@ -71,5 +71,29 @@
 @media only screen and (max-width: 991px) {
     .resumeFirst {
         text-align: center;
+    }
+
+    .dpImage {
+        margin-bottom: 30px;
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    .resumeFirst {
+        margin-top: 60px;
+    }
+}
+
+@media only screen and (max-width: 452px) {
+    .dpImage {
+        height: 180px;
+        width: 180px;
+    }
+}
+
+@media only screen and (max-width: 366px) {
+    .dpImage {
+        height: 160px;
+        width: 160px;
     }
 }

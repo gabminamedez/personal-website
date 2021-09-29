@@ -17,18 +17,18 @@ const Resume = () => {
             
             <Container className={resumeStyles.resume}>
                 <Row className={resumeStyles.resumeFirst}>
-                    <Col lg={3}>
+                    <Col lg={4}>
                         <AsyncImage className={resumeStyles.dpImage} src='/img/home/dp.jpg' />
                     </Col>
 
-                    <Col lg={9} className={resumeStyles.resumeHead}>
+                    <Col lg={8} className={resumeStyles.resumeHead}>
                         <h1>Gabriel Nicolas D. Minamedez</h1>
                         <span>
                             <a href='mailto:gabminamedez@gmail.com' target='_blank' className={resumeStyles.social}><FaEnvelope /></a>
                             <a href='https://www.linkedin.com/in/gabminamedez/' target='_blank' className={resumeStyles.social}><FaLinkedin /></a>
                             <a href='https://github.com/gabminamedez' target='_blank' className={resumeStyles.social}><FaGithub /></a>
                         </span>
-                        <p>Download a copy of my resume <a href='https://docs.google.com/document/d/1hBoGjn5_nk3u8RZsyqLoIxgU3-SGNnyrWp3ZVydAp_M/edit?usp=sharing' target='_blank' className={resumeStyles.downloadLink}>here</a> or my CV <a href='https://docs.google.com/document/d/1PbrYk6pyCctUnmxQBSCNlGvPVs4bQnhbdOq7ceo9He8/edit?usp=sharing' target='_blank' className={resumeStyles.downloadLink}>here</a>.</p>
+                        <p className={resumeStyles.resumeLink}>Get a copy of my resume <a href='https://docs.google.com/document/d/1hBoGjn5_nk3u8RZsyqLoIxgU3-SGNnyrWp3ZVydAp_M/edit?usp=sharing' target='_blank' className={resumeStyles.downloadLink}>here</a> or my CV <a href='https://docs.google.com/document/d/1PbrYk6pyCctUnmxQBSCNlGvPVs4bQnhbdOq7ceo9He8/edit?usp=sharing' target='_blank' className={resumeStyles.downloadLink}>here</a>.</p>
                     </Col>
                 </Row>
 
@@ -40,9 +40,7 @@ const Resume = () => {
 
                     <h3>B.S. in Computer Science, Major in Software Technology</h3>
                     <i>De La Salle University - Manila, 2018 - present</i>
-                    <ul>
-                        <li>Thesis: Simulation of Social Interactions in Public Spaces<br />Advisor: Dr. Briane Samson</li>
-                    </ul>
+                    <p>Thesis: Simulation of Social Interactions in Public Spaces<br />Advisor: Dr. Briane Samson</p>
                 </Container>
 
                 <h2>🔨 Technical Skills and Relevant Coursework</h2>

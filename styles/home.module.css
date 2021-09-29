@@ -1,5 +1,5 @@
 .home {
-    width: 70%;
+    width: 80%;
 }
 
 .heading, .directory {
@@ -33,7 +33,7 @@
 
 .directory {
     background-color: #E5E5E5;
-    height: 70vh;
+    height: 60vh;
     position: relative;
 }
 
@@ -73,20 +73,13 @@
     box-shadow: 10px 10px;
 }
 
-@media only screen and (max-width: 336px) {
+@media only screen and (max-width: 404px) {
     .heading {
         margin-top: 40px;
-        margin-bottom: 40px;
     }
 
     .heading p {
         font-size: medium;
-    }
-}
-
-@media only screen and (max-width: 320px) {
-    .heading, .directory {
-        width: 92vw;
     }
 
     .social {
@@ -101,12 +94,5 @@
 
     .heading p {
         font-size: small;
-    }
-}
-
-@media only screen and (max-width: 248px) {
-    .heading {
-        margin-top: 80px;
-        margin-bottom: 80px;
     }
 }
