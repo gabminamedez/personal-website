@@ -7,29 +7,28 @@ import AsyncImage from '../components/AsyncImage';
 import resumeStyles from '../styles/resume.module.css';
 
 const Resume = () => {
-
     return (
         <div>
             <Head title={'Resume | Gab Minamedez'}
-                  description={'Gabriel is a junior Computer Science student in De La Salle University in the Philippines. He is an aspiring web developer and machine learning engineer. © 2021 Gabriel Minamedez.'}
+                  description={'Gabriel Minamedez. Gab is a senior Computer Science student in De La Salle University in the Philippines. He is an aspiring web and iOS developer. © 2021 Gabriel Minamedez.'}
                   title2={'Resume'}
-                  url={'https://gabminamedez.herokuapp.com/resume'}
+                  url={'https://gabminamedez.github.io/resume'}
             />
             
             <Container className={resumeStyles.resume}>
                 <Row className={resumeStyles.resumeFirst}>
-                    <Col lg={3}>
+                    <Col lg={4}>
                         <AsyncImage className={resumeStyles.dpImage} src='/img/home/dp.jpg' />
                     </Col>
 
-                    <Col lg={9} className={resumeStyles.resumeHead}>
+                    <Col lg={8} className={resumeStyles.resumeHead}>
                         <h1>Gabriel Nicolas D. Minamedez</h1>
                         <span>
                             <a href='mailto:gabminamedez@gmail.com' target='_blank' className={resumeStyles.social}><FaEnvelope /></a>
                             <a href='https://www.linkedin.com/in/gabminamedez/' target='_blank' className={resumeStyles.social}><FaLinkedin /></a>
                             <a href='https://github.com/gabminamedez' target='_blank' className={resumeStyles.social}><FaGithub /></a>
                         </span>
-                        <p>Download a copy of my resume <a href='https://docs.google.com/document/d/1hBoGjn5_nk3u8RZsyqLoIxgU3-SGNnyrWp3ZVydAp_M/edit?usp=sharing' target='_blank' className={resumeStyles.downloadLink}>here</a> or my CV <a href='https://docs.google.com/document/d/1PbrYk6pyCctUnmxQBSCNlGvPVs4bQnhbdOq7ceo9He8/edit?usp=sharing' target='_blank' className={resumeStyles.downloadLink}>here</a>.</p>
+                        <p className={resumeStyles.resumeLink}>Get a copy of my resume <a href='https://docs.google.com/document/d/1hBoGjn5_nk3u8RZsyqLoIxgU3-SGNnyrWp3ZVydAp_M/edit?usp=sharing' target='_blank' className={resumeStyles.downloadLink}>here</a> or my CV <a href='https://docs.google.com/document/d/1PbrYk6pyCctUnmxQBSCNlGvPVs4bQnhbdOq7ceo9He8/edit?usp=sharing' target='_blank' className={resumeStyles.downloadLink}>here</a>.</p>
                     </Col>
                 </Row>
 
@@ -41,9 +40,7 @@ const Resume = () => {
 
                     <h3>B.S. in Computer Science, Major in Software Technology</h3>
                     <i>De La Salle University - Manila, 2018 - present</i>
-                    <ul>
-                        <li>Thesis: Simulation of Social Interactions in Public Spaces<br />Advisor: Dr. Briane Samson</li>
-                    </ul>
+                    <p>Thesis: Simulation of Social Interactions in Public Spaces<br />Advisor: Dr. Briane Samson</p>
                 </Container>
 
                 <h2>🔨 Technical Skills and Relevant Coursework</h2>
@@ -52,58 +49,27 @@ const Resume = () => {
                     <Row>
                         <Col lg={6}>
                             <h3>Concepts</h3>
-                            <ul>
-                                <li>Data Structures, Algorithms, and Complexity</li>
-                                <li>Object-Oriented Design</li>
-                                <li>Data Science</li>
-                                <li>Web Development</li>
-                                <li>Machine Learning</li>
-                            </ul>
+                            <p>Data science, web development, web design, UI/UX design, machine learning, android development</p>
                         </Col>
 
-                        <Col lg={6}>
-                            <h3>DevOps and Tools</h3>
-                            <ul>
-                                <li>Git</li>
-                                <li>Github</li>
-                                <li>Github Actions</li>
-                                <li>Heroku</li>
-                                <li>Agile and Scrum methodologies</li>
-                            </ul>
-                        </Col>
-                    </Row>
-
-                    <Row>
                         <Col lg={6}>
                             <h3>Languages</h3>
-                            <ul>
-                                <li>Python</li>
-                                <li>Java</li>
-                                <li>C</li>
-                                <li>C++</li>
-                                <li>JavaScript</li>
-                                <li>Classic Web Stack (HTML, CSS)</li>
-                                <li>Swift</li>
-                                <li>MySQL</li>
-                                <li>PostgreSQL</li>
-                                <li>MongoDB</li>
-                            </ul>
+                            <p>Python, Java, C, C++, Swift, HTML, CSS, JavaScript, MySQL, PostgreSQL, MongoDB</p>
                         </Col>
                         
                         <Col lg={6}>
                             <h3>Frameworks</h3>
-                            <ul>
-                                <li>Bootstrap</li>
-                                <li>Node.js</li>
-                                <li>ReactJS</li>
-                                <li>Vue.js</li>
-                                <li>Next.js</li>
-                                <li>Django</li>
-                                <li>Pandas</li>
-                                <li>OpenCV</li>
-                                <li>TensorFlow</li>
-                                <li>TKinter</li>
-                            </ul>
+                            <p>ReactJS, Vue, Node, Express, Django, Flask, Pandas, OpenCV, TensorFlow, TKinter, JavaFX, Java Swing</p>
+                        </Col>
+
+                        <Col lg={6}>
+                            <h3>DevOps and Tools</h3>
+                            <p>Git, Github, Github Actions, Heroku, Travis, Agile and Scrum methodologies</p>
+                        </Col>
+
+                        <Col lg={6}>
+                            <h3>Software</h3>
+                            <p>Microsoft Office, Adobe Suite, Figma, Trello, Notion, Wordpress</p>
                         </Col>
                     </Row>
                 </Container>

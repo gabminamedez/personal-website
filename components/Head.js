@@ -4,7 +4,7 @@ const Meta = ({title, description, title2, url}) => {
     return (
         <Head>
             <title>{title}</title>
-            <meta name='keywords' content='Gabriel Minamedez, Programmer, Writer, Computer Science, Philippines' />
+            <meta name='keywords' content='Gabriel Minamedez, Developer, Writer, Computer Science, Philippines' />
             <meta name='description' content={description} />
             <meta property='og:locale' content='en-US' />
             <meta property='og:site_name' content='Gabriel Minamedez' />
@@ -18,7 +18,7 @@ const Meta = ({title, description, title2, url}) => {
                         '@context' : 'http://schema.org',
                         '@type' : 'Person',
                         'name' : 'Gabriel Nicolas Minamedez',
-                        'url' : 'https://gabminamedez.herokuapp.com/',
+                        'url' : 'https://gabminamedez.github.io/',
                         'sameAs' : null
                 })}}
             />
