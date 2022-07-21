@@ -1,6 +1,6 @@
-import menuButtonStyles from '../styles/MenuButton.module.css';
+import menuButtonStyles from '../assets/styles/MenuButton.module.css';
 
-function MenuButton({isOpen, toggleMenu}) {
+const MenuButton = ({ isOpen, toggleMenu }) => {
     return (
         <div>
             <div className={isOpen ? menuButtonStyles.menuButtonOpen : menuButtonStyles.menuButtonClosed} onClick={toggleMenu}>
