@@ -4,28 +4,29 @@
 
 .bioCol {
     display: block;
-    margin-left: auto;
-    margin-right: auto;
+    margin: 0 auto;
     width: 80%;
     overflow-wrap: break-word;
 }
 
-.bioCol h1 {
-    text-align: center;
+.nametag {
+    font-size: medium;
+}
+
+.name {
+    color: #4B92DB;
 }
 
 .bioCol p {
     font-size: 16px;
-    color: #202020;
 }
+
 
 .aboutImageCol {
     display: flex;
     justify-content: center;
     align-content: center;
     flex-direction: column;
-    margin-top: 50px;
-    margin-bottom: 50px;
     text-align: center;
 }
 
@@ -33,12 +34,13 @@
     height: 350px;
     width: 85%;
     display: block;
-    margin-left: auto;
-    margin-right: auto;
+    margin: 10px auto;
     object-fit: cover;
-    color: #4B92DB;
-    border: 1px solid #4B92DB;
-    box-shadow: 10px 10px;
+    background: rgba(75, 146, 219, 0.87);
+    border-radius: 10px;
+    box-shadow: 10px 10px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(7.4px);
+    -webkit-backdrop-filter: blur(7.4px);
 }
 
 .socials {
@@ -59,7 +61,7 @@
 }
 
 .upToDiv, .inToDiv {
-    width: 80%;
+    width: 90%;
     margin-left: auto;
     margin-right: auto;
     margin-bottom: 25px;
@@ -67,7 +69,7 @@
 }
 
 .upToDiv h3, .inToDiv h3 {
-    font-family: 'Karla', sans-serif;
+    font-family: 'DM Sans', sans-serif;
     font-size: 22px;
     font-weight: 900;
     color: #4B92DB;
