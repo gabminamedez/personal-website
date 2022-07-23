@@ -2,7 +2,14 @@ import { useState } from 'react';
 import { Link } from 'react-router-dom';
 import { Container } from 'reactstrap';
 import { Animated } from 'react-animated-css';
-import { FaGithub, FaInstagram, FaLinkedin, FaMedium, FaSpotify, FaTwitter } from 'react-icons/fa';
+import { FaGithub, FaInstagram, FaLinkedin, FaMedium, FaTwitter } from 'react-icons/fa';
+import { SiApplemusic } from 'react-icons/si';
+
+import AsyncImage from '../components/AsyncImage';
+import about from '../assets/images/home/about.jpg';
+import portfolio from '../assets/images/home/portfolio.jpg';
+import resume from '../assets/images/home/resume.jpg';
+import blog from '../assets/images/home/blog.jpg';
 
 import homeStyles from '../assets/styles/Home.module.css';
 
@@ -11,43 +18,53 @@ const Home = () => {
     const [hover, setHover] = useState(false);
 
     const handleHover = (e, page) => {
-        if(hover){
+        if (hover) {
             setHover(false);
             setDisplayImage(null);
         }
-        else{
+        else {
             setHover(true);
-            setDisplayImage('../assets/images/home/' + page + '.jpg');
+            setDisplayImage(page);
         }
-    }
+    };
 
     return (
         <div>
             <Container className={homeStyles.home}>
-                <div className={homeStyles.heading}>
-                    <h1>What up world!<br />It's <span className={homeStyles.name}>Gabriel Minamedez</span>.</h1>
-
-                    <p>
-                        🇵🇭 Computer Science Student from Manila, PH
+                <div className={homeStyles.hero}>
+                    <h1><span className={homeStyles.nametag}><i>What up world! It's</i></span>
                         <br />
-                        👨‍💻 Aspiring Web and iOS Developer
+                        <span className={homeStyles.name}>Gabriel Minamedez.</span>
+                    </h1>
+                    
+                    <p>
+                        🇵🇭 Graduating Computer Science Student from Manila, PH
+                        <br />
+                        👨‍💻 Fullstack Web and Aspiring iOS Developer
                         <br />
                         ✍️ Semi-Professional Word Vomiter
                     </p>
 
                     <span className={homeStyles.socials}>
                         <a href='https://github.com/gabminamedez' target='_blank' className={homeStyles.social} rel='noreferrer'><FaGithub /></a>
-                        <a href='https://www.instagram.com/gabminamedez/' target='_blank' className={homeStyles.social} rel='noreferrer'><FaInstagram /></a>
                         <a href='https://www.linkedin.com/in/gabminamedez/' target='_blank' className={homeStyles.social} rel='noreferrer'><FaLinkedin /></a>
                         <a href='https://gabminamedez.medium.com/' target='_blank' className={homeStyles.social} rel='noreferrer'><FaMedium /></a>
-                        <a href='https://open.spotify.com/user/dirgfk4e07s0pggwbexjxmjbw?si=3370afe5c3404fcc' target='_blank' className={homeStyles.social} rel='noreferrer'><FaSpotify /></a>
+                        <a href='https://music.apple.com/profile/gabminamedez' target='_blank' className={homeStyles.social} rel='noreferrer'><SiApplemusic /></a>
+                        <a href='https://www.instagram.com/gabminamedez/' target='_blank' className={homeStyles.social} rel='noreferrer'><FaInstagram /></a>
                         <a href='https://twitter.com/GabMinamedez' target='_blank' className={homeStyles.social} rel='noreferrer'><FaTwitter /></a>
                     </span>
                 </div>
 
                 <div className={homeStyles.directory}>
                     <Animated animationIn='fadeIn' animationOut='fadeOut' animationInDuration={400} animationOutDuration={400} isVisible={hover} className={homeStyles.prevImage}>
-                        { displayImage == null ? <></> : <img className={homeStyles.prevImage} src={displayImage} alt='img' /> }
+                        { 
+                            {
+                                'about': <AsyncImage className={homeStyles.prevImage} src={about} alt='img' onMouseOver={e => handleHover(e, '')} />,
+                                'portfolio': <AsyncImage className={homeStyles.prevImage} src={portfolio} alt='img' onMouseOver={e => handleHover(e, '')} />,
+                                'resume': <AsyncImage className={homeStyles.prevImage} src={resume} alt='img' onMouseOver={e => handleHover(e, '')} />,
+                                'blog': <AsyncImage className={homeStyles.prevImage} src={blog} alt='img' onMouseOver={e => handleHover(e, '')} />,
+                            }[displayImage]
+                        }
                     </Animated>
                     
                     <div className={homeStyles.directoryText}>

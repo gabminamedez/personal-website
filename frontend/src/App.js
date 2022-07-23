@@ -1,5 +1,5 @@
 import { useState } from 'react';
-import { BrowserRouter as Router, Routes, Route, Link } from 'react-router-dom';
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import { Animated } from 'react-animated-css';
 
 import Brand from './components/Brand';
@@ -25,13 +25,11 @@ const App = () => {
                 <Brand />
                 <MenuButton toggleMenu={toggleMenu} isOpen={isOpen} />
                 <Animated animationIn='slideInDown' animationOut='slideOutUp' animationInDuration={400} animationOutDuration={400} isVisible={isOpen} className='menu'>
-                    <div className='menu'>
-                        <div className='menuContent'>
-                            <h1><Link to='/about'>About</Link></h1>
-                            <h1><Link to='/portfolio'>Portfolio</Link></h1>
-                            <h1><a href='https://docs.google.com/document/d/1hBoGjn5_nk3u8RZsyqLoIxgU3-SGNnyrWp3ZVydAp_M/edit?usp=sharing' target='_blank' rel='noreferrer'>Resume</a></h1>
-                            <h1><a href='https://gabminamedez.medium.com/' target='_blank' rel='noreferrer'>Blog</a></h1>
-                        </div>
+                    <div className='menuContent'>
+                        <h1><a href='/about'>About</a></h1>
+                        <h1><a href='/portfolio'>Portfolio</a></h1>
+                        <h1><a href='https://docs.google.com/document/d/1hBoGjn5_nk3u8RZsyqLoIxgU3-SGNnyrWp3ZVydAp_M/edit?usp=sharing' target='_blank' rel='noreferrer'>Resume</a></h1>
+                        <h1><a href='https://gabminamedez.medium.com/' target='_blank' rel='noreferrer'>Blog</a></h1>
                     </div>
                 </Animated>
 
