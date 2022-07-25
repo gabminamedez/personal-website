@@ -1,6 +1,6 @@
 import { useState } from 'react';
 import { Link } from 'react-router-dom';
-import { Container } from 'reactstrap';
+import { Container, Row, Col } from 'reactstrap';
 import { Animated } from 'react-animated-css';
 import { FaGithub, FaInstagram, FaLinkedin, FaMedium, FaTwitter } from 'react-icons/fa';
 import { SiApplemusic } from 'react-icons/si';
@@ -32,27 +32,32 @@ const Home = () => {
         <div>
             <Container className={homeStyles.home}>
                 <div className={homeStyles.hero}>
-                    <h1><span className={homeStyles.nametag}><i>What up world! It's</i></span>
-                        <br />
-                        <span className={homeStyles.name}>Gabriel Minamedez.</span>
-                    </h1>
-                    
-                    <p>
-                        🇵🇭 Graduating Computer Science Student from Manila, PH
-                        <br />
-                        👨‍💻 Fullstack Web and Aspiring iOS Developer
-                        <br />
-                        ✍️ Semi-Professional Word Vomiter
-                    </p>
+                    <Row>
+                        <Col md={6}>
+                            <h1><span className={homeStyles.nametag}><i>What up world! It's</i></span>
+                                <br />
+                                <span className={homeStyles.name}>Gabriel Minamedez.</span>
+                            </h1>
+                        </Col>
+                        <Col md={6}>
+                            <p>
+                                🇵🇭 Graduating Computer Science Student from Manila, PH
+                                <br />
+                                👨‍💻 Fullstack Web and Aspiring iOS Developer
+                                <br />
+                                ✍️ Semi-Professional Word Vomiter
+                            </p>
 
-                    <span className={homeStyles.socials}>
-                        <a href='https://github.com/gabminamedez' target='_blank' className={homeStyles.social} rel='noreferrer'><FaGithub /></a>
-                        <a href='https://www.linkedin.com/in/gabminamedez/' target='_blank' className={homeStyles.social} rel='noreferrer'><FaLinkedin /></a>
-                        <a href='https://gabminamedez.medium.com/' target='_blank' className={homeStyles.social} rel='noreferrer'><FaMedium /></a>
-                        <a href='https://music.apple.com/profile/gabminamedez' target='_blank' className={homeStyles.social} rel='noreferrer'><SiApplemusic /></a>
-                        <a href='https://www.instagram.com/gabminamedez/' target='_blank' className={homeStyles.social} rel='noreferrer'><FaInstagram /></a>
-                        <a href='https://twitter.com/GabMinamedez' target='_blank' className={homeStyles.social} rel='noreferrer'><FaTwitter /></a>
-                    </span>
+                            <span className={homeStyles.socials}>
+                                <a href='https://github.com/gabminamedez' target='_blank' className={homeStyles.social} rel='noreferrer'><FaGithub /></a>
+                                <a href='https://www.linkedin.com/in/gabminamedez/' target='_blank' className={homeStyles.social} rel='noreferrer'><FaLinkedin /></a>
+                                <a href='https://gabminamedez.medium.com/' target='_blank' className={homeStyles.social} rel='noreferrer'><FaMedium /></a>
+                                <a href='https://music.apple.com/profile/gabminamedez' target='_blank' className={homeStyles.social} rel='noreferrer'><SiApplemusic /></a>
+                                <a href='https://www.instagram.com/gabminamedez/' target='_blank' className={homeStyles.social} rel='noreferrer'><FaInstagram /></a>
+                                <a href='https://twitter.com/GabMinamedez' target='_blank' className={homeStyles.social} rel='noreferrer'><FaTwitter /></a>
+                            </span>
+                        </Col>
+                    </Row>
                 </div>
 
                 <div className={homeStyles.directory}>

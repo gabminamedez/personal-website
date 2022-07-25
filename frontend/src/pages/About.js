@@ -3,12 +3,14 @@ import { FaGithub, FaInstagram, FaLinkedin, FaMedium, FaTwitter } from 'react-ic
 import { SiApplemusic } from 'react-icons/si';
 
 import about from '../assets/images/home/about.jpg';
+import { uptoItems } from '../assets/data/upto';
+import { intoBooks, intoMedia, intoMusic } from '../assets/data/into';
 
 import aboutStyles from '../assets/styles/About.module.css';
 
 const About = () => {
     return (
-        <div>
+        <div className={aboutStyles.about}>
             <Container>
                 <Row className={aboutStyles.headDiv}>
                     <Col lg={7}>
@@ -46,24 +48,12 @@ const About = () => {
                     <br />
 
                     <Row>
-                        <Col lg={4}>
-                            <h3>Getting that degree 🎓</h3>
-                            <p>B.S. Computer Science<br />De La Salle University<br /><i>Graduating real soon!</i></p>
-                        </Col>
-
-                        <Col lg={4}>
-                            <h3>Working at Shopee PH 🛍</h3>
-                            <p>Business Intelligence Intern<br />Shopee Apprentice Program<br />June - August 2022</p>
-                        </Col>
-
-                        <Col lg={4}>
-                            <h3>Writing at SLAM PH 🏀</h3>
-                            <p>
-                                <a href='https://slamonlineph.com/allow-the-warriors-to-reintroduce-themselves/' target='_blank' rel='noreferrer'>Allow the Dubs to Reintroduce Themselves</a><br />
-                                <a href='https://slamonlineph.com/mark-nonoy-is-primed-to-retake-the-wheel/' target='_blank' rel='noreferrer'>Mark Nonoy is primed to retake the wheel</a><br />
-                                <a href='https://slamonlineph.com/this-is-not-2021-nba-all-star-propaganda/?fbclid=IwAR0HJ4-8q7c-SCGuGVYwKvwiKxmjVet9c3nohMUoqAz0ZfE0M59DjtUT4f0' target='_blank' rel='noreferrer'>This is Not 2021 NBA All-Star Propaganda</a>
-                            </p>
-                        </Col>
+                        { uptoItems.map((item) => {
+                            return (<Col lg={4}>
+                                        <h3>{ item.title }</h3>
+                                        { item.content }
+                                    </Col>)
+                        }) }
                     </Row>
                 </div>
 
@@ -72,26 +62,45 @@ const About = () => {
 
                     <br />
 
+                    <h3>Media 📺</h3>
                     <Row>
-                        <Col lg={4}>
-                            <h3>Media 📺</h3>
-                            <p>One Punch Man<br /><i>Anime</i></p>
-                            <p>Sex Education<br /><i>Comedy</i></p>
-                            <p>Nevertheless<br /><i>K-Drama</i></p>
+                        { intoMedia.map((item) => {
+                            return (<Col sm={3} xs={6} className={aboutStyles.inToItem}>
+                                        <img src={ item.url } alt='img' />
+                                    </Col>)
+                        }) }
+                        <Col sm={3} xs={6} className={aboutStyles.inToItem}>
+                            { intoMedia.map((item) => {
+                                return (<p>{ item.title }<br /><i>{ item.type }</i></p>)
+                            }) }
                         </Col>
-
-                        <Col lg={4}>
-                            <h3>Books 📚</h3>
-                            <p>Anna Karenina<br /><i>Leo Tolstoy</i></p>
-                            <p>The Republic<br /><i>Plato</i></p>
-                            <p>The Picture of Dorian Gray<br /><i>Oscar Wilde</i></p>
+                    </Row>
+                    
+                    <h3>Books 📚</h3>
+                    <Row>
+                        { intoBooks.map((item) => {
+                            return (<Col sm={3} xs={6} className={aboutStyles.inToItem}>
+                                        <img src={ item.url } alt='img' />
+                                    </Col>)
+                        }) }
+                        <Col sm={3} xs={6} className={aboutStyles.inToItem}>
+                            { intoBooks.map((item) => {
+                                return (<p>{ item.title }<br /><i>{ item.author }</i></p>)
+                            }) }
                         </Col>
+                    </Row>
 
-                        <Col lg={4}>
-                            <h3>Music 🎶</h3>
-                            <p>The Kiss of Venus<br /><i>Paul McCartney, Dominic Fike</i></p>
-                            <p>zombie pop<br /><i>DPR IAN</i></p>
-                            <p>Jail<br /><i>Kanye West, Jay-Z</i></p>
+                    <h3>Music 🎵</h3>
+                    <Row>
+                        { intoMusic.map((item) => {
+                            return (<Col sm={3} xs={6} className={aboutStyles.inToItem}>
+                                        <img src={ item.url } alt='img' />
+                                    </Col>)
+                        }) }
+                        <Col sm={3} xs={6} className={aboutStyles.inToItem}>
+                            { intoMusic.map((item) => {
+                                return (<p>{ item.title }<br /><i>{ item.artist }</i></p>)
+                            }) }
                         </Col>
                     </Row>
                 </div>

@@ -2,7 +2,6 @@
     height: auto;
     width: 100%;
     margin: 30px 0;
-    text-align: center;
 }
 
 .hero img {
@@ -17,6 +16,7 @@
 
 .name {
     color: #4B92DB;
+    font-size: larger;
 }
 
 .hero p {
@@ -36,11 +36,10 @@
 
 .directory {
     background: rgba(75, 146, 219, 0.10);
-    border-radius: 16px;
     box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
     backdrop-filter: blur(10px);
     -webkit-backdrop-filter: blur(10px);
-    height: 60vh;
+    height: 50vh;
     position: relative;
 }
 
@@ -74,7 +73,6 @@
 
 .directory a:hover {
     background: rgba(251, 247, 213, 0.87);
-    border-radius: 10px;
     box-shadow: 10px 10px rgba(0, 0, 0, 0.1);
     backdrop-filter: blur(10.3px);
     -webkit-backdrop-filter: blur(10.3px);
@@ -83,11 +81,11 @@
 
 @media only screen and (max-width: 404px) {
     .hero {
-        margin-top: 40px;
+        margin-top: 60px;
     }
 
     .hero p {
-        font-size: medium;
+        font-size: small;
     }
 
     .social {

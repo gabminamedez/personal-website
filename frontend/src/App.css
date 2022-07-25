@@ -11,8 +11,8 @@ body {
     padding: 0;
     font-family: 'DM Sans', sans-serif;
     overflow-x: hidden;
-    background-image: linear-gradient(to right bottom, #fbf7d5, #ffefd9, #ffeae2, #fce8ea, #f0e7ec, #ece5ec, #e7e3ec, #e1e1eb, #dbdff0, #d3ddf4, #c9dcf8, #bcdcfc);
     color: #202020;
+    background-color: #E5E5E5;
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -29,7 +29,6 @@ a {
 
 .menu {
     background: rgba(251, 247, 213, 0.5);
-    border-radius: 16px;
     box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
     backdrop-filter: blur(10px);
     -webkit-backdrop-filter: blur(10px);
