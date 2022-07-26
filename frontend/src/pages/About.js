@@ -2,6 +2,7 @@ import { Container, Row, Col } from 'reactstrap';
 import { FaGithub, FaInstagram, FaLinkedin, FaMedium, FaTwitter } from 'react-icons/fa';
 import { SiApplemusic } from 'react-icons/si';
 
+import Meta from '../components/Meta'; 
 import about from '../assets/images/home/about.jpg';
 import { upToItems } from '../assets/data/upto';
 import { inToBooks, inToMedia, inToMusic } from '../assets/data/into';
@@ -11,6 +12,12 @@ import aboutStyles from '../assets/styles/About.module.css';
 const About = () => {
     return (
         <div className={aboutStyles.about}>
+            <Meta title={'About Me | Gabriel Minamedez'}
+                  description={'He also writes for SLAM Philippines on the side. Aside from watching movies and series, reading books, and listening to music, he is also in a constant search to create something impactful be it through technology or the arts.'}
+                  title2={'About'}
+                  url={'https://gabminamedez.github.io/about'}
+            />
+
             <Container>
                 <Row className={aboutStyles.headDiv}>
                     <Col lg={7}>

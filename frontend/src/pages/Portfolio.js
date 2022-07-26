@@ -1,6 +1,7 @@
 import { useState, useEffect } from 'react';
 import { Container, Row, Col } from 'reactstrap';
 
+import Meta from '../components/Meta'; 
 import { develop } from '../assets/data/pfDevelop';
 import { design } from '../assets/data/pfDesign';
 import { photography } from '../assets/data/pfPhotography';
@@ -22,6 +23,12 @@ const Portfolio = () => {
 
     return (
         <div>
+            <Meta title={'Portfolio | Gabriel Minamedez'}
+                  description={'This is a collection of his pet projects developed as he continues to learn about new technologies everyday.'}
+                  title2={'Portfolio'}
+                  url={'https://gabminamedez.github.io/portfolio'}
+            />
+
             <Container className={portfolioStyles.portfolio}>
                 <div className={portfolioStyles.fixed}>
                     <h1>My Work</h1>

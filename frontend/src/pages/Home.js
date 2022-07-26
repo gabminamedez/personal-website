@@ -6,6 +6,7 @@ import { FaGithub, FaInstagram, FaLinkedin, FaMedium, FaTwitter } from 'react-ic
 import { SiApplemusic } from 'react-icons/si';
 
 import AsyncImage from '../components/AsyncImage';
+import Meta from '../components/Meta'; 
 import about from '../assets/images/home/about.jpg';
 import portfolio from '../assets/images/home/portfolio.jpg';
 import resume from '../assets/images/home/resume.jpg';
@@ -30,6 +31,12 @@ const Home = () => {
 
     return (
         <div>
+            <Meta title={'Home | Gabriel Minamedez'}
+                  description={'On his off days, he loves to write about anything under the scorching sun.'}
+                  title2={'Home'}
+                  url={'https://gabminamedez.github.io/'}
+            />
+
             <Container className={homeStyles.home}>
                 <div className={homeStyles.hero}>
                     <Row>
