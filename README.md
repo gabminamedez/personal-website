@@ -1,2 +1,2 @@
-# gabminamedez.github.io
+# personal-website
 For yours truly.
