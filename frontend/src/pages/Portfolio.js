@@ -1,12 +1,24 @@
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
 import { Container, Row, Col } from 'reactstrap';
 
-import { coding } from '../assets/data/pfDevelop';
+import { develop } from '../assets/data/pfDevelop';
+import { design } from '../assets/data/pfDesign';
+import { photography } from '../assets/data/pfPhotography';
 
 import portfolioStyles from '../assets/styles/Portfolio.module.css';
 
 const Portfolio = () => {  
     const [selected, setSelected] = useState('develop');
+    const [articles, setArticles] = useState([]);
+
+    useEffect(() => {
+        fetch(`https://api.rss2json.com/v1/api.json?rss_url=https://medium.com/feed/@gabminamedez`)
+        .then((res) => res.json()).then((response) => {
+            setArticles(response.items);
+        })
+        .catch(err => console.log(err));
+        
+    }, [articles]);
 
     return (
         <div>
@@ -23,53 +35,45 @@ const Portfolio = () => {
                 </div>
 
                 <Row className={portfolioStyles.projects}>
-                    {
-                        coding.map((item) => {
-                            if (item.url) {
-                                return (<Col lg={6}>
-                                            <div className={portfolioStyles.project}>
-                                                <a href={ item.url } target='_blank' rel='noreferrer'><h2>{ item.title }</h2></a>
-                                                <p className={portfolioStyles.metadata}><b>{ item.type } Project</b> developed with { item.stack }. <br />
-                                                    <span className={portfolioStyles.projectBio}>{ item.bio }</span>
-                                                </p>
-                                                <img src={ item.img } alt='img' />
-                                            </div>
-                                        </Col>)
-                            }
-                            else {
-                                return (<Col lg={6}>
-                                            <div className={portfolioStyles.project}>
-                                                <h2>{ item.title }</h2>
-                                                <p className={portfolioStyles.metadata}><b>{ item.type } Project</b> developed with { item.stack }. <br />
-                                                    <span className={portfolioStyles.projectBio}>{ item.bio }</span>
-                                                </p>
-                                                <img src={ item.img } alt='img' />
-                                            </div>
-                                        </Col>)
-                            }
-                        })
-                    }
+                    {   selected === 'develop' && develop.map((item) => {
+                            return (<Col lg={6}>
+                                        <div className={portfolioStyles.project}>
+                                            <a href={ item.url } target='_blank' rel='noreferrer'><h2>{ item.title }</h2></a>
+                                            <p className={portfolioStyles.metadata}><b>{ item.type } Project</b> developed with { item.stack }. <br />
+                                                <span className={portfolioStyles.projectBio}>{ item.bio }</span>
+                                            </p>
+                                            <img src={ item.img } alt='img' />
+                                        </div>
+                                    </Col>)
+                    }) }
+                    {   selected === 'design' && design.map((item) => {
+                            return (<Col lg={6}>
+                                        <div className={portfolioStyles.project}>
+                                            <a href={ item.url } target='_blank' rel='noreferrer'><h2>{ item.title }</h2></a>
+                                            <p className={portfolioStyles.metadata}><b>{ item.type } Project</b> developed with { item.stack }. <br />
+                                                <span className={portfolioStyles.projectBio}>{ item.bio }</span>
+                                            </p>
+                                            <img src={ item.img } alt='img' />
+                                        </div>
+                                    </Col>)
+                    }) }
+                    {   selected === 'writing' && articles && articles.map((item) => {
+                            return (<Col lg={6}>
+                                        <div className={portfolioStyles.project}>
+                                            <a href={ item.link } target='_blank' rel='noreferrer'><h2>{ item.title }</h2></a>
+                                            <img src={ item.thumbnail } alt='img' />
+                                        </div>
+                                    </Col>)
+                    }) }
+                    {   selected === 'photography' && articles && photography.map((item) => {
+                            return (<Col lg={6}>
+                                        <div className={portfolioStyles.project}>
+                                            <a href={ item.url } target='_blank' rel='noreferrer'><h2>{ item.title }</h2></a>
+                                            <img src={ item.img } alt='img' />
+                                        </div>
+                                    </Col>)
+                    }) }
                 </Row>
-
-                        {/* 
-                    
-                        <Row className={portfolioStyles.project}>
-                            <Col lg={6}>
-                                <h2>Easel</h2>
-
-                                <p className={portfolioStyles.metadata}>
-                                    <b>University Project</b> prototyped with Figma.
-                                    <br />
-                                    <a href='https://www.figma.com/proto/jI8cYXoMXzEWGkONvg8sM2/STHCIUX-Prototypes?node-id=293%3A397&scaling=scale-down' target='_blank' rel='noreferrer'>Figma</a>
-                                </p>
-
-                                <p className={portfolioStyles.projectBio}>A Figma prototype that improves and caters the online classroom platform Canvas for students with eye problems.</p>
-                            </Col>
-
-                            <Col lg={6}>
-                                <img src='../assets/images/portfolio/easel.png' alt='img' />
-                            </Col>
-                        </Row> */}
             </Container>
         </div>
     );

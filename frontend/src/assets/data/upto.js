@@ -1,4 +1,4 @@
-export const uptoItems = [
+export const upToItems = [
     {
         'title': 'Getting that degree 🎓',
         'content':

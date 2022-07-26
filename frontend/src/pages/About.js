@@ -3,8 +3,8 @@ import { FaGithub, FaInstagram, FaLinkedin, FaMedium, FaTwitter } from 'react-ic
 import { SiApplemusic } from 'react-icons/si';
 
 import about from '../assets/images/home/about.jpg';
-import { uptoItems } from '../assets/data/upto';
-import { intoBooks, intoMedia, intoMusic } from '../assets/data/into';
+import { upToItems } from '../assets/data/upto';
+import { inToBooks, inToMedia, inToMusic } from '../assets/data/into';
 
 import aboutStyles from '../assets/styles/About.module.css';
 
@@ -48,7 +48,7 @@ const About = () => {
                     <br />
 
                     <Row>
-                        { uptoItems.map((item) => {
+                        { upToItems.map((item) => {
                             return (<Col lg={4}>
                                         <h3>{ item.title }</h3>
                                         { item.content }
@@ -64,13 +64,13 @@ const About = () => {
 
                     <h3>Media 📺</h3>
                     <Row>
-                        { intoMedia.map((item) => {
+                        { inToMedia.map((item) => {
                             return (<Col sm={3} xs={6} className={aboutStyles.inToItem}>
                                         <img src={ item.url } alt='img' />
                                     </Col>)
                         }) }
                         <Col sm={3} xs={6} className={aboutStyles.inToItem}>
-                            { intoMedia.map((item) => {
+                            { inToMedia.map((item) => {
                                 return (<p>{ item.title }<br /><i>{ item.type }</i></p>)
                             }) }
                         </Col>
@@ -78,13 +78,13 @@ const About = () => {
                     
                     <h3>Books 📚</h3>
                     <Row>
-                        { intoBooks.map((item) => {
+                        { inToBooks.map((item) => {
                             return (<Col sm={3} xs={6} className={aboutStyles.inToItem}>
                                         <img src={ item.url } alt='img' />
                                     </Col>)
                         }) }
                         <Col sm={3} xs={6} className={aboutStyles.inToItem}>
-                            { intoBooks.map((item) => {
+                            { inToBooks.map((item) => {
                                 return (<p>{ item.title }<br /><i>{ item.author }</i></p>)
                             }) }
                         </Col>
@@ -92,13 +92,13 @@ const About = () => {
 
                     <h3>Music 🎵</h3>
                     <Row>
-                        { intoMusic.map((item) => {
+                        { inToMusic.map((item) => {
                             return (<Col sm={3} xs={6} className={aboutStyles.inToItem}>
                                         <img src={ item.url } alt='img' />
                                     </Col>)
                         }) }
                         <Col sm={3} xs={6} className={aboutStyles.inToItem}>
-                            { intoMusic.map((item) => {
+                            { inToMusic.map((item) => {
                                 return (<p>{ item.title }<br /><i>{ item.artist }</i></p>)
                             }) }
                         </Col>

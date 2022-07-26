@@ -1,9 +1,35 @@
+import socialsim from '../images/portfolio/socialsim.png';
+import holy_seat from '../images/portfolio/holy_seat.png';
 import biomes from '../images/portfolio/biomes.png';
 import ingat from '../images/portfolio/ingat.png';
 import ph_popn from '../images/portfolio/ph_popn.png';
 import dlsu_usap from '../images/portfolio/dlsu_usap.png';
 
-export const coding = [
+export const develop = [
+    {
+        'title': 'SocialSim',
+        'type': 'University Thesis',
+        'stack': 'Java and JavaFX',
+        'bio': 'A series of agent-based models to simulate social interactions in groceries, malls, offices, and universities.',
+        'img': socialsim,
+        'url': 'https://github.com/gabminamedez/social-sim'
+    },
+    {
+        'title': 'Tagalog Fake News Detector',
+        'type': 'University',
+        'stack': 'Python (NumPy, Pandas, Scikit, PyTorch)',
+        'bio': 'A novel Tagalog fake news detector built via transfer learning.',
+        'img': 'https://sa.kapamilya.com/absnews/abscbnnews/media/2018/graphics/thumbnail-fake-news.jpg',
+        'url': 'https://github.com/gabminamedez/tagalog-fake-news-detector'
+    },
+    {
+        'title': 'Holy Seat',
+        'type': 'University',
+        'stack': 'Java (Android Studio)',
+        'bio': 'A mobile haven for the public toilet enthusiasts of Metro Manila.',
+        'img': holy_seat,
+        'url': 'https://github.com/gabminamedez/holy-seat'
+    },
     {
         'title': 'Dashboarding Project',
         'type': 'Internship',

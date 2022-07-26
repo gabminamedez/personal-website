@@ -1,4 +1,4 @@
-export const intoMedia = [
+export const inToMedia = [
     {
         'title': 'Seinfeld',
         'type': 'Sitcom',
@@ -16,7 +16,7 @@ export const intoMedia = [
     }
 ];
 
-export const intoBooks = [
+export const inToBooks = [
     {
         'title': 'Crying in H Mart',
         'author': 'Michelle Zauner',
@@ -34,7 +34,7 @@ export const intoBooks = [
     }
 ];
 
-export const intoMusic = [
+export const inToMusic = [
     {
         'title': 'Across the Sea',
         'artist': 'Weezer',

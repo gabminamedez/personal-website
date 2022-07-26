@@ -1,6 +1,5 @@
 .portfolio {
     margin-top: 50px;
-    position: absolute;
 }
 
 .fixed {
@@ -27,7 +26,7 @@ h4 span:hover {
 }
 
 .projects {
-    margin-top: 200px;
+    padding-top: 200px;
     z-index: 1;
 }
 
@@ -77,12 +76,54 @@ h4 span:hover {
 
 @media only screen and (max-width: 1199px) {
     .fixed {
-        width:unset;
+        width: unset;
+    }
+}
+
+@media only screen and (max-width: 615px) {
+    .projects {
+        padding-top: 230px;
+    }
+
+    .metadata {
+        font-size: 12px;
+    }
+    
+    .projectBio {
+        font-size: 14px;
+    }
+
+    .project img {
+        height: 200px;
+    }
+}
+
+@media only screen and (max-width: 572px) {
+    .fixed h4 {
+        font-size: large;
     }
 }
 
 @media only screen and (max-width: 600px) {
     .portfolio {
         margin-top: 80px;
+    }
+}
+
+@media only screen and (max-width: 476px) {
+    .fixed h4 {
+        font-size: medium;
+    }
+}
+
+@media only screen and (max-width: 430px) {
+    .fixed h4 {
+        font-size: small;
+    }
+}
+
+@media only screen and (max-width: 429px) {
+    .projects {
+        padding-top: 250px;
     }
 }

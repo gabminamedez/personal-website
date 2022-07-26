@@ -1,6 +1,6 @@
 import easel from '../images/portfolio/easel.png';
 
-export const coding = [
+export const design = [
     {
         'title': 'Easel',
         'type': 'University',
