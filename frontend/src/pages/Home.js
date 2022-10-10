@@ -2,8 +2,8 @@ import { useState } from 'react';
 import { Link } from 'react-router-dom';
 import { Container, Row, Col } from 'reactstrap';
 import { Animated } from 'react-animated-css';
-import { FaGithub, FaInstagram, FaLinkedin, FaMedium, FaTwitter } from 'react-icons/fa';
-import { SiApplemusic } from 'react-icons/si';
+import { FaGithub, FaInstagram, FaLinkedin, FaTwitter } from 'react-icons/fa';
+import { SiSubstack, SiApplemusic } from 'react-icons/si';
 
 import AsyncImage from '../components/AsyncImage';
 import Meta from '../components/Meta'; 
@@ -58,7 +58,7 @@ const Home = () => {
                             <span className={homeStyles.socials}>
                                 <a href='https://github.com/gabminamedez' target='_blank' className={homeStyles.social} rel='noreferrer'><FaGithub /></a>
                                 <a href='https://www.linkedin.com/in/gabminamedez/' target='_blank' className={homeStyles.social} rel='noreferrer'><FaLinkedin /></a>
-                                <a href='https://gabminamedez.medium.com/' target='_blank' className={homeStyles.social} rel='noreferrer'><FaMedium /></a>
+                                <a href='https://sansserif.substack.com/' target='_blank' className={homeStyles.social} rel='noreferrer'><SiSubstack /></a>
                                 <a href='https://music.apple.com/profile/gabminamedez' target='_blank' className={homeStyles.social} rel='noreferrer'><SiApplemusic /></a>
                                 <a href='https://www.instagram.com/gabminamedez/' target='_blank' className={homeStyles.social} rel='noreferrer'><FaInstagram /></a>
                                 <a href='https://twitter.com/GabMinamedez' target='_blank' className={homeStyles.social} rel='noreferrer'><FaTwitter /></a>
@@ -83,7 +83,7 @@ const Home = () => {
                         <h2 onMouseOver={e => handleHover(e, 'about')} onMouseOut={e => handleHover(e, 'about')}><Link to='/about'>About</Link></h2>
                         <h2 onMouseOver={e => handleHover(e, 'portfolio')} onMouseOut={e => handleHover(e, 'portfolio')}><Link to='/portfolio'>Portfolio</Link></h2>
                         <h2 onMouseOver={e => handleHover(e, 'resume')} onMouseOut={e => handleHover(e, 'resume')}><a href='https://docs.google.com/document/d/1hBoGjn5_nk3u8RZsyqLoIxgU3-SGNnyrWp3ZVydAp_M/edit?usp=sharing' target='_blank' rel='noreferrer'>Resume</a></h2>
-                        <h2 onMouseOver={e => handleHover(e, 'blog')} onMouseOut={e => handleHover(e, 'blog')}><a href='https://gabminamedez.medium.com/' target='_blank' rel='noreferrer'>Blog</a></h2>
+                        <h2 onMouseOver={e => handleHover(e, 'blog')} onMouseOut={e => handleHover(e, 'blog')}><a href='https://sansserif.substack.com/' target='_blank' rel='noreferrer'>Blog</a></h2>
                     </div>
                 </div>
             </Container>

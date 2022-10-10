@@ -1,6 +1,6 @@
 import { Container, Row, Col } from 'reactstrap';
-import { FaGithub, FaInstagram, FaLinkedin, FaMedium, FaTwitter } from 'react-icons/fa';
-import { SiApplemusic } from 'react-icons/si';
+import { FaGithub, FaInstagram, FaLinkedin, FaTwitter } from 'react-icons/fa';
+import { SiSubstack, SiApplemusic } from 'react-icons/si';
 
 import Meta from '../components/Meta'; 
 import about from '../assets/images/home/about.jpg';
@@ -41,7 +41,7 @@ const About = () => {
                         <span className={aboutStyles.socials}>
                             <a href='https://github.com/gabminamedez' target='_blank' className={aboutStyles.social} rel='noreferrer'><FaGithub /></a>
                             <a href='https://www.linkedin.com/in/gabminamedez/' target='_blank' className={aboutStyles.social} rel='noreferrer'><FaLinkedin /></a>
-                            <a href='https://gabminamedez.medium.com/' target='_blank' className={aboutStyles.social} rel='noreferrer'><FaMedium /></a>
+                            <a href='https://sansserif.substack.com/' target='_blank' className={aboutStyles.social} rel='noreferrer'><SiSubstack /></a>
                             <a href='https://music.apple.com/profile/gabminamedez' target='_blank' className={aboutStyles.social} rel='noreferrer'><SiApplemusic /></a>
                             <a href='https://www.instagram.com/gabminamedez/' target='_blank' className={aboutStyles.social} rel='noreferrer'><FaInstagram /></a>
                             <a href='https://twitter.com/GabMinamedez' target='_blank' className={aboutStyles.social} rel='noreferrer'><FaTwitter /></a>

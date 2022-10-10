@@ -29,7 +29,7 @@ const App = () => {
                         <h1><a href='/about'>About</a></h1>
                         <h1><a href='/portfolio'>Portfolio</a></h1>
                         <h1><a href='https://docs.google.com/document/d/1hBoGjn5_nk3u8RZsyqLoIxgU3-SGNnyrWp3ZVydAp_M/edit?usp=sharing' target='_blank' rel='noreferrer'>Resume</a></h1>
-                        <h1><a href='https://gabminamedez.medium.com/' target='_blank' rel='noreferrer'>Blog</a></h1>
+                        <h1><a href='https://sansserif.substack.com/' target='_blank' rel='noreferrer'>Blog</a></h1>
                     </div>
                 </Animated>
 
