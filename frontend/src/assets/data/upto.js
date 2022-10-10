@@ -2,20 +2,19 @@ export const upToItems = [
     {
         'title': 'Getting that degree 🎓',
         'content':
-            <p>B.S. Computer Science<br />De La Salle University<br /><i>Graduating real soon!</i></p>
+            <p>B.S. Computer Science @ DLSU<br /><i>Graduating real soon!</i></p>
     },
     {
-        'title': 'Working at Shopee PH 🛍',
+        'title': 'Dev at Thinking Machines 🧠',
         'content':
-            <p>Business Intelligence Intern<br />Shopee Apprentice Program<br />June - August 2022</p>
+            <p>Software Engineer<br /><i>October - present</i></p>
     },
     {
-        'title': 'Writing at SLAM PH 🏀',
+        'title': 'Writing at Sans Serif ✍️',
         'content':
             <p>
-                <a href='https://slamonlineph.com/allow-the-warriors-to-reintroduce-themselves/' target='_blank' rel='noreferrer'>Allow the Dubs to Reintroduce Themselves</a><br />
-                <a href='https://slamonlineph.com/mark-nonoy-is-primed-to-retake-the-wheel/' target='_blank' rel='noreferrer'>Mark Nonoy is primed to retake the wheel</a><br />
-                <a href='https://slamonlineph.com/this-is-not-2021-nba-all-star-propaganda/?fbclid=IwAR0HJ4-8q7c-SCGuGVYwKvwiKxmjVet9c3nohMUoqAz0ZfE0M59DjtUT4f0' target='_blank' rel='noreferrer'>This is Not 2021 NBA All-Star Propaganda</a>
+                <a href='https://sansserif.substack.com/' target='_blank' rel='noreferrer'>Check out the Sans Serif newsletter!</a><br />
+                <a href='https://sansserif.substack.com/p/have-you-met-gab' target='_blank' rel='noreferrer'>Hi! Have you met Gab?</a><br />
             </p>
     }
 ];

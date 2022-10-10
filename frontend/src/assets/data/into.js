@@ -1,8 +1,8 @@
 export const inToMedia = [
     {
-        'title': 'Seinfeld',
-        'type': 'Sitcom',
-        'url': 'https://tv-fanatic-res.cloudinary.com/iu/s--MFYKWBJc--/t_full/cs_srgb,f_auto,fl_strip_profile.lossy,q_auto:420/v1371156329/seinfeld-poster.png'
+        'title': 'Extraordinary Attorney Woo',
+        'type': 'K-Drama',
+        'url': 'https://asianwiki.com/images/f/fd/Strange_Lawyer_Woo_Young-Woo.jpeg'
     },
     {
         'title': 'Spy x Family',
@@ -10,44 +10,44 @@ export const inToMedia = [
         'url': 'https://i.pinimg.com/736x/ba/1c/c4/ba1cc4f5b4faa00d59e766af62a28dd2.jpg'
     },
     {
-        'title': 'Jojo\'s Bizarre Adventure',
-        'type': 'Anime',
-        'url': 'https://flxt.tmsimg.com/assets/p13351524_b_v8_aa.jpg'
+        'title': 'The Redeem Team',
+        'type': 'Docuseries',
+        'url': 'https://m.media-amazon.com/images/M/MV5BZDE5OGU2ZDQtMGQ0Ni00YzBhLWEyODUtMWUzZTA3NjMxYzVlXkEyXkFqcGdeQXVyMTEzMTI1Mjk3._V1_FMjpg_UX1000_.jpg'
     }
 ];
 
 export const inToBooks = [
     {
-        'title': 'Crying in H Mart',
-        'author': 'Michelle Zauner',
-        'url': 'https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1601937850l/54814676.jpg'
+        'title': 'The Bridges of Madison County',
+        'author': 'Robert James Waller',
+        'url': 'https://m.media-amazon.com/images/I/81rpCuu7zVL.jpg'
     },
     {
-        'title': 'Kafka on the Shore',
-        'author': 'Haruki Murakami',
-        'url': 'https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1429638085l/4929.jpg'
+        'title': 'Cruelty',
+        'author': 'Roald Dahl',
+        'url': 'https://images-na.ssl-images-amazon.com/images/S/compressed.photo.goodreads.com/books/1471276915i/30141183.jpg'
     },
     {
-        'title': 'Hear the Wind Sing',
-        'author': 'Haruki Murakami',
-        'url': 'https://yaledailynews.com/wp-content/uploads/2020/09/Victoria-Lu_Murakami_contributing.png'
+        'title': 'The Bell Jar',
+        'author': 'Sylvia Plath',
+        'url': 'https://kbimages1-a.akamaihd.net/47d7ccda-8044-4c6a-8a98-8851b57c8025/1200/1200/False/the-bell-jar-21.jpg'
     }
 ];
 
 export const inToMusic = [
     {
-        'title': 'Across the Sea',
-        'artist': 'Weezer',
-        'url': 'http://images.genius.com/36afb904496938597de1a641ab61da66.1000x1000x1.png'
+        'title': 'Mardy Bum',
+        'artist': 'Arctic Monkeys',
+        'url': 'https://upload.wikimedia.org/wikipedia/en/8/88/Whatever_People_Say_I_Am%2C_That%27s_What_I%27m_Not_%282006_Arctic_Monkeys_album%29.jpg'
     },
     {
-        'title': 'Nerdy Love',
-        'artist': 'pH-1, Yerin Baek',
-        'url': 'https://hiphopkr.com/wp-content/uploads/2020/01/ph-1-nerdy-love.jpg'
+        'title': 'Hype Boy',
+        'artist': 'NewJeans',
+        'url': 'https://cdn.albumoftheyear.org/album/528305-new-jeans.jpg'
     },
     {
-        'title': 'Slide Tackle',
-        'artist': 'Japanese Breakfast',
-        'url': 'https://api.floodmagazine.com/wp-content/uploads/2021/06/Japanese-Breakfast-Jubilee.jpg'
+        'title': 'Why Didn\'t You Stop Me?',
+        'artist': 'Mitski',
+        'url': 'https://images.genius.com/ffa06c3ce8ea946089ebc6b8b64c881c.1000x1000x1.jpg'
     }
 ];
