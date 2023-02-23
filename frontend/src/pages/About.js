@@ -1,6 +1,6 @@
 import { Container, Row, Col } from 'reactstrap';
-import { FaGithub, FaInstagram, FaLinkedin, FaTwitter } from 'react-icons/fa';
-import { SiSubstack, SiApplemusic } from 'react-icons/si';
+import { FaGithub, FaInstagram, FaLinkedin, FaSpotify, FaTwitter } from 'react-icons/fa';
+import { SiSubstack } from 'react-icons/si';
 
 import Meta from '../components/Meta'; 
 import about from '../assets/images/home/about.jpg';
@@ -29,7 +29,7 @@ const About = () => {
 
                             <br />
 
-                            <p>I'm currently a senior studying Computer Science at De La Salle University in sunny Manila, Philippines. The pair of glasses in my photos does justice for what I do 75% of my day: writing either code or stories with my laptop.</p>
+                            <p>I'm a fresh Computer Science graduate from De La Salle University in sunny Manila, Philippines! The pair of glasses in my photos does justice for what I do 75% of my day: writing either code or stories with my laptop.</p>
                             <p>I live my days constantly thinking about what I can innovate that could make a positive and lasting impact on even at least one person. That has always been my driving force in everything I do, whether I'm developing an application that I believe can help somebody, or writing an elaborate piece where I can air out my reservoir of thoughts.</p>
                             <p>I spend the remaining 25% of my days doing the most random stuff! A perfectly peaceful day to me involves reading books, looking up historical tidbits, playing basketball, discovering music, and listening to podcasts.</p>
                         </div>
@@ -42,7 +42,7 @@ const About = () => {
                             <a href='https://github.com/gabminamedez' target='_blank' className={aboutStyles.social} rel='noreferrer'><FaGithub /></a>
                             <a href='https://www.linkedin.com/in/gabminamedez/' target='_blank' className={aboutStyles.social} rel='noreferrer'><FaLinkedin /></a>
                             <a href='https://sansserif.substack.com/' target='_blank' className={aboutStyles.social} rel='noreferrer'><SiSubstack /></a>
-                            <a href='https://music.apple.com/profile/gabminamedez' target='_blank' className={aboutStyles.social} rel='noreferrer'><SiApplemusic /></a>
+                            <a href='https://open.spotify.com/user/dirgfk4e07s0pggwbexjxmjbw?si=e0fe017022114a1e' target='_blank' className={aboutStyles.social} rel='noreferrer'><FaSpotify /></a>
                             <a href='https://www.instagram.com/gabminamedez/' target='_blank' className={aboutStyles.social} rel='noreferrer'><FaInstagram /></a>
                             <a href='https://twitter.com/GabMinamedez' target='_blank' className={aboutStyles.social} rel='noreferrer'><FaTwitter /></a>
                         </span>
