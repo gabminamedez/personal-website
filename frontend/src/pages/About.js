@@ -29,7 +29,7 @@ const About = () => {
 
                             <br />
 
-                            <p>I'm currently a senior studying Computer Science at De La Salle University in sunny Manila, Philippines. The pair of glasses in my photos does justice for what I do 75% of my day: writing either code or stories with my laptop.</p>
+                            <p>I'm a fresh Computer Science graduate from De La Salle University in sunny Manila, Philippines! The pair of glasses in my photos does justice for what I do 75% of my day: writing either code or stories with my laptop.</p>
                             <p>I live my days constantly thinking about what I can innovate that could make a positive and lasting impact on even at least one person. That has always been my driving force in everything I do, whether I'm developing an application that I believe can help somebody, or writing an elaborate piece where I can air out my reservoir of thoughts.</p>
                             <p>I spend the remaining 25% of my days doing the most random stuff! A perfectly peaceful day to me involves reading books, looking up historical tidbits, playing basketball, discovering music, and listening to podcasts.</p>
                         </div>

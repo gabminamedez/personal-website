@@ -1,53 +1,53 @@
 export const inToMedia = [
     {
-        'title': 'Extraordinary Attorney Woo',
-        'type': 'K-Drama',
-        'url': 'https://asianwiki.com/images/f/fd/Strange_Lawyer_Woo_Young-Woo.jpeg'
+        'title': 'First Love',
+        'type': 'Drama',
+        'url': 'https://images.ctfassets.net/4cd45et68cgf/2B4kOq2zhxX2Y8RujmdPhf/f9d38b21a991e7f70b22cc0b4863c8cc/ENUS_FirstLove_S1_Super_Teaser_Vertical_RGB_PRE.jpg?w=2560'
     },
     {
-        'title': 'Spy x Family',
+        'title': 'Hunter x Hunter',
         'type': 'Anime',
-        'url': 'https://i.pinimg.com/736x/ba/1c/c4/ba1cc4f5b4faa00d59e766af62a28dd2.jpg'
+        'url': 'https://lzd-img-global.slatic.net/g/p/428ccc7467c38b8df70babf86e6a4570.jpg_720x720q80.jpg_.webp'
     },
     {
-        'title': 'The Redeem Team',
-        'type': 'Docuseries',
-        'url': 'https://m.media-amazon.com/images/M/MV5BZDE5OGU2ZDQtMGQ0Ni00YzBhLWEyODUtMWUzZTA3NjMxYzVlXkEyXkFqcGdeQXVyMTEzMTI1Mjk3._V1_FMjpg_UX1000_.jpg'
+        'title': 'Euphoria',
+        'type': 'Drama',
+        'url': 'https://tv-fanatic-res.cloudinary.com/iu/s--BstvH2qt--/t_full/cs_srgb,f_auto,fl_strip_profile.lossy,q_auto:420/v1674166532/euphoria-poster.jpg'
     }
 ];
 
 export const inToBooks = [
     {
-        'title': 'The Bridges of Madison County',
-        'author': 'Robert James Waller',
-        'url': 'https://m.media-amazon.com/images/I/81rpCuu7zVL.jpg'
+        'title': 'One Hundred Years of Solitude',
+        'author': 'Gabriel Garcia Marquez',
+        'url': 'https://m.media-amazon.com/images/I/81MI6+TpYkL.jpg'
     },
     {
-        'title': 'Cruelty',
-        'author': 'Roald Dahl',
-        'url': 'https://images-na.ssl-images-amazon.com/images/S/compressed.photo.goodreads.com/books/1471276915i/30141183.jpg'
+        'title': 'Men Without Women',
+        'author': 'Haruki Murakami',
+        'url': 'https://images-na.ssl-images-amazon.com/images/S/compressed.photo.goodreads.com/books/1483232988i/33652490.jpg'
     },
     {
-        'title': 'The Bell Jar',
-        'author': 'Sylvia Plath',
-        'url': 'https://kbimages1-a.akamaihd.net/47d7ccda-8044-4c6a-8a98-8851b57c8025/1200/1200/False/the-bell-jar-21.jpg'
+        'title': 'The Hunchback of Notre Dame',
+        'author': 'Victor Hugo',
+        'url': 'https://kbimages1-a.akamaihd.net/3fc74099-6a80-4bcb-aeb1-9f8804aaf112/1200/1200/False/the-hunchback-of-notre-dame-or-our-lady-of-paris.jpg'
     }
 ];
 
 export const inToMusic = [
     {
-        'title': 'Mardy Bum',
-        'artist': 'Arctic Monkeys',
-        'url': 'https://upload.wikimedia.org/wikipedia/en/8/88/Whatever_People_Say_I_Am%2C_That%27s_What_I%27m_Not_%282006_Arctic_Monkeys_album%29.jpg'
+        'title': 'Boogie On & On',
+        'artist': 'Beenzino',
+        'url': 'https://i.scdn.co/image/ab67616d0000b273fce4d97a91b1d51a64ec8a97'
     },
     {
-        'title': 'Hype Boy',
-        'artist': 'NewJeans',
-        'url': 'https://cdn.albumoftheyear.org/album/528305-new-jeans.jpg'
+        'title': 'Wurli',
+        'artist': 'Dominic Fike',
+        'url': 'https://media.pitchfork.com/photos/5f3171dc4a81119dc842fba1/1:1/w_600/What%20Could%20Possibly%20Go%20Wrong_dominic%20fike.jpg'
     },
     {
-        'title': 'Why Didn\'t You Stop Me?',
-        'artist': 'Mitski',
-        'url': 'https://images.genius.com/ffa06c3ce8ea946089ebc6b8b64c881c.1000x1000x1.jpg'
+        'title': 'LEFT RIGHT',
+        'artist': 'XG',
+        'url': 'https://cdns-images.dzcdn.net/images/artist/797734a6a0c8151cd539f438ecd59e8e/500x500.jpg'
     }
 ];
