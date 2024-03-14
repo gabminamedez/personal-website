@@ -1,129 +1,129 @@
 .portfolio {
-    margin-top: 50px;
+  margin-top: 50px;
 }
 
 .fixed {
-    position: fixed;
-    z-index: 3;
-    background: rgba(251, 247, 213, 0.5);
-    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
-    backdrop-filter: blur(10px);
-    -webkit-backdrop-filter: blur(10px);
-    padding: 20px;
-    width: 100%;
+  position: fixed;
+  z-index: 3;
+  background: rgba(251, 247, 213, 0.5);
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  padding: 20px;
+  width: 100%;
 }
 
 h4 span {
-    cursor: pointer;
-    transition: all .2s ease-in-out;
+  cursor: pointer;
+  transition: all 0.2s ease-in-out;
 }
 h4 span:hover {
-    color: #4B92DB;
+  color: #4b92db;
 }
 
 .selected {
-    color: #4B92DB;
+  color: #4b92db;
 }
 
 .projects {
-    padding-top: 200px;
-    z-index: 1;
+  padding-top: 200px;
+  z-index: 1;
 }
 
 .project {
-    margin: 12px auto;
-    padding: 20px;
-    box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
-    width: 100%;
-    background-color: #F5F5F5;
-    transition: all .2s ease-in-out;
+  margin: 12px auto;
+  padding: 20px;
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+  width: 100%;
+  background-color: #f5f5f5;
+  transition: all 0.2s ease-in-out;
 }
 
 .project:hover {
-    background: rgba(251, 247, 213, 0.87);
-    box-shadow: 10px 10px rgba(0, 0, 0, 0.1);
-    backdrop-filter: blur(10.3px);
-    -webkit-backdrop-filter: blur(10.3px);
+  background: rgba(251, 247, 213, 0.87);
+  box-shadow: 10px 10px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(10.3px);
+  -webkit-backdrop-filter: blur(10.3px);
 }
 
 .metadata {
-    color: #636363;
-    font-size: 14px;
+  color: #636363;
+  font-size: 14px;
 }
 
 .projectBio {
-    color: #202020;
-    font-size: 16px;
+  color: #202020;
+  font-size: 16px;
 }
 
 .portfolio a {
-    color: #202020;
-    transition: all .2s ease-in-out;
+  color: #202020;
+  transition: all 0.2s ease-in-out;
 }
 
 .portfolio a:hover {
-    color: #4B92DB;
+  color: #4b92db;
 }
 
 .project img {
-    height: 250px;
-    width: 100%;
-    object-fit: cover;
-    margin-left: auto;
-    margin-right: auto;
-    display: block;
+  height: 250px;
+  width: 100%;
+  object-fit: cover;
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
 }
 
 @media only screen and (max-width: 1199px) {
-    .fixed {
-        width: unset;
-    }
+  .fixed {
+    width: unset;
+  }
 }
 
 @media only screen and (max-width: 615px) {
-    .projects {
-        padding-top: 230px;
-    }
+  .projects {
+    padding-top: 230px;
+  }
 
-    .metadata {
-        font-size: 12px;
-    }
-    
-    .projectBio {
-        font-size: 14px;
-    }
+  .metadata {
+    font-size: 12px;
+  }
 
-    .project img {
-        height: 200px;
-    }
+  .projectBio {
+    font-size: 14px;
+  }
+
+  .project img {
+    height: 200px;
+  }
 }
 
 @media only screen and (max-width: 572px) {
-    .fixed h4 {
-        font-size: large;
-    }
+  .fixed h4 {
+    font-size: large;
+  }
 }
 
 @media only screen and (max-width: 600px) {
-    .portfolio {
-        margin-top: 80px;
-    }
+  .portfolio {
+    margin-top: 80px;
+  }
 }
 
 @media only screen and (max-width: 476px) {
-    .fixed h4 {
-        font-size: medium;
-    }
+  .fixed h4 {
+    font-size: medium;
+  }
 }
 
 @media only screen and (max-width: 430px) {
-    .fixed h4 {
-        font-size: small;
-    }
+  .fixed h4 {
+    font-size: small;
+  }
 }
 
 @media only screen and (max-width: 429px) {
-    .projects {
-        padding-top: 250px;
-    }
+  .projects {
+    padding-top: 250px;
+  }
 }

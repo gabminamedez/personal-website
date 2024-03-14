@@ -1,33 +1,31 @@
-import { useState, useEffect } from 'react';
+import { useState, useEffect } from "react";
 
 const AsyncImage = (props) => {
-    const [loadedSrc, setLoadedSrc] = useState(null);
+  const [loadedSrc, setLoadedSrc] = useState(null);
 
-    useEffect(() => {
-        setLoadedSrc(null);
+  useEffect(() => {
+    setLoadedSrc(null);
 
-        if(props.src) {
-            const handleLoad = () => {
-                setLoadedSrc(props.src);
-            };
+    if (props.src) {
+      const handleLoad = () => {
+        setLoadedSrc(props.src);
+      };
 
-            const image = new Image();
-            image.addEventListener('load', handleLoad);
-            image.src = props.src;
+      const image = new Image();
+      image.addEventListener("load", handleLoad);
+      image.src = props.src;
 
-            return () => {
-                image.removeEventListener('load', handleLoad);
-            };
-        }
-    }, [props.src]);
-
-    if (loadedSrc === props.src) {
-        return (
-            <img {...props}  alt='img' />
-        );
+      return () => {
+        image.removeEventListener("load", handleLoad);
+      };
     }
+  }, [props.src]);
 
-    return null;
+  if (loadedSrc === props.src) {
+    return <img {...props} alt="img" />;
+  }
+
+  return null;
 };
 
 export default AsyncImage;

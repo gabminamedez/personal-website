@@ -1,150 +1,156 @@
 .about {
-    margin-top: 50px;
+  margin-top: 50px;
 }
 
 .headDiv {
-    margin-bottom: 25px;
+  margin-bottom: 25px;
 }
 
 .bioCol {
-    display: block;
-    margin: 0 auto;
-    width: 80%;
-    overflow-wrap: break-word;
+  display: block;
+  margin: 0 auto;
+  width: 80%;
+  overflow-wrap: break-word;
 }
 
 .nametag {
-    font-size: medium;
+  font-size: medium;
 }
 
 .name {
-    color: #4B92DB;
+  color: #4b92db;
 }
 
 .bioCol p {
-    font-size: 16px;
+  font-size: 16px;
 }
 
 .aboutImageCol {
-    display: flex;
-    justify-content: center;
-    align-content: center;
-    flex-direction: column;
-    text-align: center;
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  flex-direction: column;
+  text-align: center;
 }
 
 .aboutImage {
-    height: 350px;
-    width: 85%;
-    display: block;
-    margin: 10px auto;
-    object-fit: cover;
-    background: rgba(75, 146, 219, 0.87);
-    box-shadow: 10px 10px rgba(0, 0, 0, 0.1);
-    backdrop-filter: blur(7.4px);
-    -webkit-backdrop-filter: blur(7.4px);
+  height: 350px;
+  width: 85%;
+  display: block;
+  margin: 10px auto;
+  object-fit: cover;
+  background: rgba(75, 146, 219, 0.87);
+  box-shadow: 10px 10px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(7.4px);
+  -webkit-backdrop-filter: blur(7.4px);
 }
 
 .socials {
-    margin-top: 20px;
+  margin-top: 20px;
 }
 
 .social {
-    color: #636363;
-    font-size: 28px;
-    margin: 0 8px;
-    transition: all .2s ease-in-out;
+  color: #636363;
+  font-size: 28px;
+  margin: 0 8px;
+  transition: all 0.2s ease-in-out;
 }
 
 .social:hover {
-    color: #4B92DB;
+  color: #4b92db;
 }
 
-.upToDiv, .inToDiv {
-    width: 90%;
-    margin: 0 auto 25px;
+.upToDiv,
+.inToDiv {
+  width: 90%;
+  margin: 0 auto 25px;
 }
 
-.upToDiv h3, .inToDiv h3 {
-    font-family: 'DM Sans', sans-serif;
-    font-size: 22px;
-    font-weight: 900;
-    color: #4B92DB;
-    text-align: center;
-    margin-bottom: 12px;
+.upToDiv h3,
+.inToDiv h3 {
+  font-family: "DM Sans", sans-serif;
+  font-size: 22px;
+  font-weight: 900;
+  color: #4b92db;
+  text-align: center;
+  margin-bottom: 12px;
 }
 
-.upToDiv a, .inToDiv a {
-    color: #202020;
-    transition: all .2s ease-in-out;
+.upToDiv a,
+.inToDiv a {
+  color: #202020;
+  transition: all 0.2s ease-in-out;
 }
 
-.upToDiv a:hover, .inToDiv a:hover {
-    color: #4B92DB;
+.upToDiv a:hover,
+.inToDiv a:hover {
+  color: #4b92db;
 }
 
 .upToDiv p {
-    text-align: center;
+  text-align: center;
 }
 
 .inToDiv h3 {
-    margin: 20px 0;
+  margin: 20px 0;
 }
 
 .inToDiv p {
-    text-align: right;
-    font-size: small;
+  text-align: right;
+  font-size: small;
 }
 
 .inToItem {
-    margin: 20px 0;
+  margin: 20px 0;
 }
 
 .inToDiv img {
-    height: 200px;
-    width: 200px;
-    object-fit: contain;
-    display: block;
-    margin: -12px auto 0;
+  height: 200px;
+  width: 200px;
+  object-fit: contain;
+  display: block;
+  margin: -12px auto 0;
 }
 
 @media only screen and (max-width: 991px) {
-    .upToDiv h2, .inToDiv h2 {
-        text-align: center;
-    }
+  .upToDiv h2,
+  .inToDiv h2 {
+    text-align: center;
+  }
 }
 
 @media only screen and (max-width: 575px) {
-    .aboutImage {
-        height: 250px;
-    }
+  .aboutImage {
+    height: 250px;
+  }
 
-    .inToDiv img {
-        height: 120px;
-        width: 120px;
-    }
+  .inToDiv img {
+    height: 120px;
+    width: 120px;
+  }
 
-    .inToDiv p {
-        text-align: left;
-    }
+  .inToDiv p {
+    text-align: left;
+  }
 
-    .bioCol p, .upToDiv p {
-        font-size: small;
-    }
+  .bioCol p,
+  .upToDiv p {
+    font-size: small;
+  }
 
-    .social {
-        font-size: 20px;
-    }
+  .social {
+    font-size: 20px;
+  }
 }
 
 @media only screen and (max-width: 400px) {
-    .about {
-        margin-top: 80px;
-    }
+  .about {
+    margin-top: 80px;
+  }
 }
 
 @media only screen and (max-width: 273px) {
-    .social {
-        font-size: 14px;
-    }
+  .social {
+    font-size: 14px;
+  }
 }

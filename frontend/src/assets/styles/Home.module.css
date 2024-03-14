@@ -1,104 +1,104 @@
 .hero {
-    height: auto;
-    width: 100%;
-    margin: 30px 0;
+  height: auto;
+  width: 100%;
+  margin: 30px 0;
 }
 
 .hero img {
-    object-fit: cover;
-    width: 100%;
-    height: inherit;
+  object-fit: cover;
+  width: 100%;
+  height: inherit;
 }
 
 .nametag {
-    font-size: medium;
+  font-size: medium;
 }
 
 .name {
-    color: #4B92DB;
-    font-size: larger;
+  color: #4b92db;
+  font-size: larger;
 }
 
 .hero p {
-    font-size: large;
+  font-size: large;
 }
 
 .social {
-    color: #636363;
-    font-size: 28px;
-    margin: 0 8px;
-    transition: all .2s ease-in-out;
+  color: #636363;
+  font-size: 28px;
+  margin: 0 8px;
+  transition: all 0.2s ease-in-out;
 }
 
 .social:hover {
-    color: #4B92DB;
+  color: #4b92db;
 }
 
 .directory {
-    background: rgba(75, 146, 219, 0.10);
-    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
-    backdrop-filter: blur(10px);
-    -webkit-backdrop-filter: blur(10px);
-    height: 50vh;
-    position: relative;
+  background: rgba(75, 146, 219, 0.1);
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  height: 50vh;
+  position: relative;
 }
 
 .prevImage {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    position: relative;
-    display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  position: relative;
+  display: block;
 }
 
 .directoryText {
-    position: absolute;
-    text-align: center;
-    padding: 90px 0;
-    margin: 0;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
+  position: absolute;
+  text-align: center;
+  padding: 90px 0;
+  margin: 0;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
 }
 
 .directory h2 {
-    margin: 25px 0;
+  margin: 25px 0;
 }
 
 .directory a {
-    color: #4B92DB !important;
-    transition: all .2s ease-in-out;
-    padding: 10px;
+  color: #4b92db !important;
+  transition: all 0.2s ease-in-out;
+  padding: 10px;
 }
 
 .directory a:hover {
-    background: rgba(251, 247, 213, 0.87);
-    box-shadow: 10px 10px rgba(0, 0, 0, 0.1);
-    backdrop-filter: blur(10.3px);
-    -webkit-backdrop-filter: blur(10.3px);
-    border: 1px solid #4B92DB;
+  background: rgba(251, 247, 213, 0.87);
+  box-shadow: 10px 10px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(10.3px);
+  -webkit-backdrop-filter: blur(10.3px);
+  border: 1px solid #4b92db;
 }
 
 @media only screen and (max-width: 404px) {
-    .hero {
-        margin-top: 60px;
-    }
+  .hero {
+    margin-top: 60px;
+  }
 
-    .hero p {
-        font-size: small;
-    }
+  .hero p {
+    font-size: small;
+  }
 
-    .social {
-        font-size: 20px;
-    }
+  .social {
+    font-size: 20px;
+  }
 }
 
 @media only screen and (max-width: 273px) {
-    .social {
-        font-size: 14px;
-    }
+  .social {
+    font-size: 14px;
+  }
 
-    .hero p {
-        font-size: small;
-    }
+  .hero p {
+    font-size: small;
+  }
 }
