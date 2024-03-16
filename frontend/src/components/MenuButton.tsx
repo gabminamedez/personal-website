@@ -1,6 +1,11 @@
 import menuButtonStyles from "src/styles/MenuButton.module.css";
 
-const MenuButton = ({ isOpen, toggleMenu }) => {
+type MenuButtonProps = {
+  isOpen: boolean;
+  toggleMenu: () => void;
+};
+
+const MenuButton = ({ isOpen, toggleMenu }: MenuButtonProps) => {
   return (
     <div>
       <div

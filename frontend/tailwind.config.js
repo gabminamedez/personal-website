@@ -5,6 +5,7 @@ module.exports = {
     colors: {
       gmBlue: "#4b92db",
       gmYellow: "#fbf7d5",
+      gmDarkGray: "#636363",
     },
   },
   plugins: [],

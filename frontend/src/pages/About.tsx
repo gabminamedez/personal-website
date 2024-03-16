@@ -8,10 +8,10 @@ import {
 } from "react-icons/fa";
 import { SiSubstack } from "react-icons/si";
 
-import Meta from "../components/Meta";
-import about from "../assets/images/home/about.jpg";
-import { upToItems } from "../assets/data/upto";
-import { inToBooks, inToMedia, inToMusic } from "../assets/data/into";
+import Meta from "src/components/Meta";
+import about from "src/assets/images/home/about.jpg";
+import { upToItems } from "src/assets/data/upto";
+import { inToBooks, inToMedia, inToMusic } from "src/assets/data/into";
 
 import aboutStyles from "src/styles/About.module.css";
 
@@ -28,15 +28,15 @@ const About = () => {
       />
 
       <Container>
-        <Row className={aboutStyles.headDiv}>
+        <Row className="mb-[25px]">
           <Col lg={7}>
-            <div className={aboutStyles.bioCol}>
+            <div className="block mx-auto w-[80%] overflow-wrap break-word">
               <h1>
-                <span className={aboutStyles.nametag}>
+                <span className="text-base">
                   <i>What up world! It's</i>
                 </span>
                 <br />
-                <span className={aboutStyles.name}>Gabriel Minamedez.</span>
+                <span className="text-gmBlue">Gabriel Minamedez.</span>
               </h1>
 
               <br />
@@ -64,10 +64,13 @@ const About = () => {
             </div>
           </Col>
 
-          <Col lg={5} className={aboutStyles.aboutImageCol}>
+          <Col
+            lg={5}
+            className="flex justify-center items-center flex-col text-center"
+          >
             <img className={aboutStyles.aboutImage} src={about} alt="img" />
 
-            <span className={aboutStyles.socials}>
+            <div className="mt-[20px] flex justify-center items-center">
               <a
                 href="https://github.com/gabminamedez"
                 target="_blank"
@@ -116,7 +119,7 @@ const About = () => {
               >
                 <FaTwitter />
               </a>
-            </span>
+            </div>
           </Col>
         </Row>
 

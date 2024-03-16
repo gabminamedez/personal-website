@@ -7,25 +7,25 @@
   float: right;
   position: fixed;
   right: 0;
-  transition: 0.2s;
   z-index: 7;
   cursor: pointer;
+  transition: 0.2s;
 }
 
 .menuButtonClosed {
-  background: rgba(75, 146, 219, 0.87);
-  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  background: #4b92db;
+  color: #fbf7d5;
+  box-shadow: 0 4px 30px #0000001a;
   backdrop-filter: blur(7.4px);
   -webkit-backdrop-filter: blur(7.4px);
-  color: #fbf7d5;
 }
 
 .menuButtonOpen {
-  background: rgba(251, 247, 213, 0.87);
-  box-shadow: -10px 10px rgba(0, 0, 0, 0.1);
+  background: #fbf7d5;
+  color: #4b92db;
+  box-shadow: -10px 10px #0000001a;
   backdrop-filter: blur(10.3px);
   -webkit-backdrop-filter: blur(10.3px);
-  color: #4b92db;
   border: 1px solid #4b92db;
 }
 

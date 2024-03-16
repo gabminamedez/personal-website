@@ -12,7 +12,7 @@
   z-index: 7;
   background: #4b92db;
   color: #fbf7d5;
-  box-shadow: 0 4px 30px r#0000001A;
+  box-shadow: 0 4px 30px #0000001a;
   backdrop-filter: blur(7.4px);
   -webkit-backdrop-filter: blur(7.4px);
   transition: all 0.2s ease-in-out;

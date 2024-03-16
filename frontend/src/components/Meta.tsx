@@ -1,6 +1,13 @@
 import { Helmet } from "react-helmet";
 
-const Meta = ({ title, description, title2, url }) => {
+type MetaProps = {
+  title: string;
+  description: string;
+  title2: string;
+  url: string;
+};
+
+const Meta = ({ title, description, title2, url }: MetaProps) => {
   return (
     <Helmet>
       <title>{title}</title>
@@ -26,7 +33,7 @@ const Meta = ({ title, description, title2, url }) => {
 
       <link rel="canonical" href={url} />
 
-      <script async="" src="//www.google-analytics.com/analytics.js" />
+      <script src="//www.google-analytics.com/analytics.js" />
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{
