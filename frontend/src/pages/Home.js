@@ -11,7 +11,7 @@ import { SiSubstack } from "react-icons/si";
 
 import Meta from "../components/Meta";
 
-import homeStyles from "../assets/styles/Home.module.css";
+import homeStyles from "src/styles/Home.module.css";
 
 const Home = () => {
   return (

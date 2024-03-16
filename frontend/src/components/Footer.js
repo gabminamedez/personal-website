@@ -7,7 +7,7 @@ import {
 } from "react-icons/fa";
 import { SiSubstack } from "react-icons/si";
 
-import footerStyles from "../assets/styles/Footer.module.css";
+import footerStyles from "src/styles/Footer.module.css";
 
 const Footer = () => {
   return (

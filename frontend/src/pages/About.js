@@ -13,7 +13,7 @@ import about from "../assets/images/home/about.jpg";
 import { upToItems } from "../assets/data/upto";
 import { inToBooks, inToMedia, inToMusic } from "../assets/data/into";
 
-import aboutStyles from "../assets/styles/About.module.css";
+import aboutStyles from "src/styles/About.module.css";
 
 const About = () => {
   return (

@@ -7,7 +7,7 @@ import { design } from "../assets/data/pfDesign";
 import { photography } from "../assets/data/pfPhotography";
 import sansserif from "../assets/images/portfolio/sansserif.png";
 
-import portfolioStyles from "../assets/styles/Portfolio.module.css";
+import portfolioStyles from "src/styles/Portfolio.module.css";
 
 const Portfolio = () => {
   const [selected, setSelected] = useState("develop");

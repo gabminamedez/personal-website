@@ -1,4 +1,4 @@
-import menuButtonStyles from "../assets/styles/MenuButton.module.css";
+import menuButtonStyles from "src/styles/MenuButton.module.css";
 
 const MenuButton = ({ isOpen, toggleMenu }) => {
   return (
