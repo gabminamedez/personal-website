@@ -9,7 +9,7 @@ import {
 import { SiSubstack } from "react-icons/si";
 
 import Meta from "src/components/Meta";
-import about from "src/assets/images/home/about.jpg";
+import about from "src/assets/images/about/about.jpg";
 import { upToItems } from "src/assets/data/upto";
 import { inToBooks, inToMedia, inToMusic } from "src/assets/data/into";
 

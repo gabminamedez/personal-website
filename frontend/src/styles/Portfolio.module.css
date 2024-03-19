@@ -23,7 +23,7 @@ h4 span:hover {
 }
 
 .projects {
-  padding-top: 200px;
+  padding-top: 150px;
   z-index: 1;
 }
 
@@ -79,7 +79,7 @@ h4 span:hover {
 
 @media only screen and (max-width: 615px) {
   .projects {
-    padding-top: 230px;
+    padding-top: 180px;
   }
 
   .metadata {
@@ -121,6 +121,6 @@ h4 span:hover {
 
 @media only screen and (max-width: 429px) {
   .projects {
-    padding-top: 250px;
+    padding-top: 200px;
   }
 }
