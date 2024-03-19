@@ -39,9 +39,9 @@ const Home = () => {
             </Col>
             <Col md={6}>
               <p className="text-lg">
-                🇵🇭 Just another guy with glasses from Manila, PH
+                🇵🇭 Guy with glasses from sunny Manila, PH
                 <br />
-                👨‍💻 Fullstack Web and Aspiring iOS Developer
+                👨‍💻 Fullstack Software Engineer in Data Science
                 <br />
                 ✍️ Semi-Professional Word Vomiter
               </p>
