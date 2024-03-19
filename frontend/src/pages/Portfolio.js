@@ -3,14 +3,13 @@ import { Container, Row, Col } from "reactstrap";
 
 import Meta from "../components/Meta";
 import { develop } from "../assets/data/pfDevelop";
-import { design } from "../assets/data/pfDesign";
-import { photography } from "../assets/data/pfPhotography";
 import sansserif from "../assets/images/portfolio/sansserif.png";
+import { portfolioSections } from "src/constants/portfolio";
 
 import portfolioStyles from "src/styles/Portfolio.module.css";
 
 const Portfolio = () => {
-  const [selected, setSelected] = useState("develop");
+  const [selected, setSelected] = useState(portfolioSections.coding);
 
   return (
     <div>
@@ -32,40 +31,26 @@ const Portfolio = () => {
           </p>
           <h4>
             <span
-              className={selected === "develop" && portfolioStyles.selected}
-              onClick={(e) => setSelected("develop")}
+              className={selected === portfolioSections.coding && "text-gmBlue"}
+              onClick={(e) => setSelected(portfolioSections.coding)}
             >
-              Develop
+              Coding
             </span>{" "}
-            /
+            |
             <span
-              className={selected === "design" && portfolioStyles.selected}
-              onClick={(e) => setSelected("design")}
-            >
-              {" "}
-              Design
-            </span>{" "}
-            /
-            <span
-              className={selected === "writing" && portfolioStyles.selected}
-              onClick={(e) => setSelected("writing")}
+              className={
+                selected === portfolioSections.writing && "text-gmBlue"
+              }
+              onClick={(e) => setSelected(portfolioSections.writing)}
             >
               {" "}
               Writing
-            </span>{" "}
-            /
-            <span
-              className={selected === "photography" && portfolioStyles.selected}
-              onClick={(e) => setSelected("photography")}
-            >
-              {" "}
-              Photography
             </span>
           </h4>
         </div>
 
         <Row className={portfolioStyles.projects}>
-          {selected === "develop" &&
+          {selected === portfolioSections.coding &&
             develop.map((item) => {
               return (
                 <Col lg={6}>
@@ -85,27 +70,8 @@ const Portfolio = () => {
                 </Col>
               );
             })}
-          {selected === "design" &&
-            design.map((item) => {
-              return (
-                <Col lg={6}>
-                  <div className={portfolioStyles.project}>
-                    <a href={item.url} target="_blank" rel="noreferrer">
-                      <h2>{item.title}</h2>
-                    </a>
-                    <p className={portfolioStyles.metadata}>
-                      <b>{item.type} Project</b> developed with {item.stack}.{" "}
-                      <br />
-                      <span className={portfolioStyles.projectBio}>
-                        {item.bio}
-                      </span>
-                    </p>
-                    <img src={item.img} alt="img" />
-                  </div>
-                </Col>
-              );
-            })}
-          {selected === "writing" && (
+
+          {selected === portfolioSections.writing && (
             <Col lg={6}>
               <div className={portfolioStyles.project}>
                 <a
@@ -123,20 +89,6 @@ const Portfolio = () => {
               </div>
             </Col>
           )}
-          {selected === "photography" &&
-            photography &&
-            photography.map((item) => {
-              return (
-                <Col lg={6}>
-                  <div className={portfolioStyles.project}>
-                    <a href={item.url} target="_blank" rel="noreferrer">
-                      <h2>{item.title}</h2>
-                    </a>
-                    <img src={item.img} alt="img" />
-                  </div>
-                </Col>
-              );
-            })}
         </Row>
       </Container>
     </div>
