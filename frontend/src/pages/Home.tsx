@@ -25,20 +25,20 @@ const Home = () => {
         url={"https://gabminamedez.github.io/"}
       />
 
-      <Container className={homeStyles.home}>
+      <Container>
         <div className={homeStyles.hero}>
           <Row>
             <Col md={6}>
               <h1>
-                <span className={homeStyles.nametag}>
+                <span className="text-base">
                   <i>What up world! It's</i>
                 </span>
                 <br />
-                <span className={homeStyles.name}>Gabriel Minamedez.</span>
+                <span className="text-gmBlue text-5xl">Gabriel Minamedez.</span>
               </h1>
             </Col>
             <Col md={6}>
-              <p>
+              <p className="text-lg">
                 🇵🇭 Just another guy with glasses from Manila, PH
                 <br />
                 👨‍💻 Fullstack Web and Aspiring iOS Developer
@@ -46,7 +46,7 @@ const Home = () => {
                 ✍️ Semi-Professional Word Vomiter
               </p>
 
-              <span className={homeStyles.socials}>
+              <div className="flex items-center ml-[-8px]">
                 <a
                   href="https://github.com/gabminamedez"
                   target="_blank"
@@ -95,13 +95,13 @@ const Home = () => {
                 >
                   <FaTwitter />
                 </a>
-              </span>
+              </div>
             </Col>
           </Row>
         </div>
 
         <div className={homeStyles.directory}>
-          <div className={homeStyles.directoryText}>
+          <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 text-center py-[90px] m-0">
             <h2>
               <Link to="/about">About</Link>
             </h2>
