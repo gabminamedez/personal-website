@@ -36,7 +36,7 @@ export const develop = [
     stack: "ReactJS",
     bio: "A dashboarding application specifically catered for FMCG companies aiming to improve performance through visualization of KPIs.",
     img: biomes,
-    url: null,
+    url: undefined,
   },
   {
     title: "Ingat.ph",
