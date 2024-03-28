@@ -1,9 +1,9 @@
-import socialsim from "../images/portfolio/socialsim.png";
-import holy_seat from "../images/portfolio/holy_seat.png";
-import biomes from "../images/portfolio/biomes.png";
-import ingat from "../images/portfolio/ingat.png";
-import ph_popn from "../images/portfolio/ph_popn.png";
-import dlsu_usap from "../images/portfolio/dlsu_usap.png";
+import socialsim from "src/assets/images/portfolio/socialsim.png";
+import holy_seat from "src/assets/images/portfolio/holy_seat.png";
+import biomes from "src/assets/images/portfolio/biomes.png";
+import ingat from "src/assets/images/portfolio/ingat.png";
+import ph_popn from "src/assets/images/portfolio/ph_popn.png";
+import dlsu_usap from "src/assets/images/portfolio/dlsu_usap.png";
 
 export const develop = [
   {

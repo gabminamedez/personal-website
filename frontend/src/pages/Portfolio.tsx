@@ -1,9 +1,10 @@
 import { Container, Row, Col } from "reactstrap";
 
 import Meta from "../components/Meta";
-import { develop } from "../assets/data/pfDevelop";
+import { develop } from "../assets/data/portfolio";
 
 import portfolioStyles from "src/styles/Portfolio.module.css";
+import { PortfolioDevItem } from "src/types/portfolio";
 
 const Portfolio = () => {
   return (
@@ -27,7 +28,7 @@ const Portfolio = () => {
         </div>
 
         <Row className={portfolioStyles.projects}>
-          {develop.map((item) => {
+          {develop.map((item: PortfolioDevItem) => {
             return (
               <Col lg={6}>
                 <div className={portfolioStyles.project}>

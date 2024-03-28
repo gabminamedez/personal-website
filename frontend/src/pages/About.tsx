@@ -10,8 +10,13 @@ import { SiSubstack } from "react-icons/si";
 
 import Meta from "src/components/Meta";
 import about from "src/assets/images/about/about.jpg";
-import { upToItems } from "src/assets/data/upto";
-import { inToBooks, inToMedia, inToMusic } from "src/assets/data/into";
+import {
+  upToItems,
+  inToMedia,
+  inToBooks,
+  inToSongs,
+} from "src/assets/data/about";
+import { Book, Media, Song, UptoItem } from "src/types/about";
 
 import aboutStyles from "src/styles/About.module.css";
 
@@ -129,11 +134,11 @@ const About = () => {
           <br />
 
           <Row>
-            {upToItems.map((item) => {
+            {upToItems.map((item: UptoItem) => {
               return (
                 <Col lg={4}>
                   <h3>{item.title}</h3>
-                  {item.content}
+                  <div dangerouslySetInnerHTML={{ __html: item.content }} />
                 </Col>
               );
             })}
@@ -147,7 +152,7 @@ const About = () => {
 
           <h3>Media 📺</h3>
           <Row>
-            {inToMedia.map((item) => {
+            {inToMedia.map((item: Media) => {
               return (
                 <Col sm={3} xs={6} className={aboutStyles.inToItem}>
                   <img src={item.url} alt="img" />
@@ -155,7 +160,7 @@ const About = () => {
               );
             })}
             <Col sm={3} xs={6} className={aboutStyles.inToItem}>
-              {inToMedia.map((item) => {
+              {inToMedia.map((item: Media) => {
                 return (
                   <p>
                     {item.title}
@@ -169,7 +174,7 @@ const About = () => {
 
           <h3>Books 📚</h3>
           <Row>
-            {inToBooks.map((item) => {
+            {inToBooks.map((item: Book) => {
               return (
                 <Col sm={3} xs={6} className={aboutStyles.inToItem}>
                   <img src={item.url} alt="img" />
@@ -177,7 +182,7 @@ const About = () => {
               );
             })}
             <Col sm={3} xs={6} className={aboutStyles.inToItem}>
-              {inToBooks.map((item) => {
+              {inToBooks.map((item: Book) => {
                 return (
                   <p>
                     {item.title}
@@ -191,7 +196,7 @@ const About = () => {
 
           <h3>Music 🎵</h3>
           <Row>
-            {inToMusic.map((item) => {
+            {inToSongs.map((item: Song) => {
               return (
                 <Col sm={3} xs={6} className={aboutStyles.inToItem}>
                   <img src={item.url} alt="img" />
@@ -199,7 +204,7 @@ const About = () => {
               );
             })}
             <Col sm={3} xs={6} className={aboutStyles.inToItem}>
-              {inToMusic.map((item) => {
+              {inToSongs.map((item: Song) => {
                 return (
                   <p>
                     {item.title}
