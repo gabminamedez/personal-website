@@ -26,10 +26,10 @@ const About = () => {
       <Meta
         title={"About Me | Gabriel Minamedez"}
         description={
-          "He also writes for SLAM Philippines on the side. Aside from watching movies and series, reading books, and listening to music, he is also in a constant search to create something impactful be it through technology or the arts."
+          "Aside from watching movies and series, writing stories, reading books, and listening to music, he is also in constant search to create something impactful be it through technology or the arts."
         }
         title2={"About"}
-        url={"https://gabminamedez.github.io/about"}
+        url={"https://gabminamedez.vercel.app/about"}
       />
 
       <Container>

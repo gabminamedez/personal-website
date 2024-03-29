@@ -15,7 +15,7 @@ const Portfolio = () => {
           "This is a collection of his pet projects developed as he continues to learn about new technologies everyday."
         }
         title2={"Portfolio"}
-        url={"https://gabminamedez.github.io/portfolio"}
+        url={"https://gabminamedez.vercel.app/portfolio"}
       />
 
       <Container className={portfolioStyles.portfolio}>

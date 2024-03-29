@@ -18,7 +18,7 @@ const Meta = ({ title, description, title2, url }: MetaProps) => {
       <meta
         name="description"
         content={
-          "Gabriel Minamedez. Gab is a senior Computer Science student in De La Salle University in the Philippines. He is a fullstack web and iOS developer. " +
+          "Gabriel Minamedez is a fullstack Software Engineer with experience in the e-commerce, data science, and FMCG industries. He enjoys taking on leadership and management roles, and values writing and other creative endeavors. " +
           description +
           " © " +
           new Date().getFullYear().toString() +
@@ -40,8 +40,8 @@ const Meta = ({ title, description, title2, url }: MetaProps) => {
           __html: JSON.stringify({
             "@context": "http://schema.org",
             "@type": "Person",
-            name: "Gabriel Nicolas Minamedez",
-            url: "https://gabminamedez.github.io/",
+            name: "Gabriel Minamedez",
+            url: "https://gabminamedez.vercel.app/",
             sameAs: null,
           }),
         }}

@@ -22,7 +22,7 @@ const Home = () => {
           "On his off days, he loves to write about anything under the scorching sun."
         }
         title2={"Home"}
-        url={"https://gabminamedez.github.io/"}
+        url={"https://gabminamedez.vercel.app/"}
       />
 
       <Container>
