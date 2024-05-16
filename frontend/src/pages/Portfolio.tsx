@@ -1,7 +1,7 @@
 import { Container, Row, Col } from "reactstrap";
 
-import Meta from "../components/Meta";
-import { develop } from "../assets/data/portfolio";
+import Meta from "src/components/Meta";
+import { develop } from "src/assets/data/portfolio";
 
 import portfolioStyles from "src/styles/Portfolio.module.css";
 import { PortfolioDevItem } from "src/types/portfolio";

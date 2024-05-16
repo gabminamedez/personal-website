@@ -34,19 +34,13 @@ const App = () => {
         >
           <div className="menuContent">
             <h1>
-              <a href="/about">About</a>
+              <a href="/about">about</a>
             </h1>
             <h1>
-              <a href="/portfolio">Portfolio</a>
+              <a href="/portfolio">portfolio - dev</a>
             </h1>
             <h1>
-              <a
-                href="https://docs.google.com/document/d/1hBoGjn5_nk3u8RZsyqLoIxgU3-SGNnyrWp3ZVydAp_M/edit?usp=sharing"
-                target="_blank"
-                rel="noreferrer"
-              >
-                Resume
-              </a>
+              <a href="/portfolio">portfolio - writing</a>
             </h1>
             <h1>
               <a
@@ -54,7 +48,7 @@ const App = () => {
                 target="_blank"
                 rel="noreferrer"
               >
-                Blog
+                blog
               </a>
             </h1>
           </div>

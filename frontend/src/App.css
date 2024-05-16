@@ -3,6 +3,7 @@
 html {
   position: relative;
   min-height: 100%;
+  overflow-x: hidden;
 }
 
 body {
@@ -17,6 +18,11 @@ body {
 
 a {
   text-decoration: none;
+}
+
+.italic {
+  font-family: "Helvetica Neue", sans-serif;
+  transform: skew(-10deg, 0deg);
 }
 
 .layout {
@@ -58,8 +64,7 @@ a {
 }
 
 .menuContent h1 {
-  margin-top: 25px;
-  margin-bottom: 25px;
+  margin: 25px auto;
 }
 
 .children {
@@ -69,28 +74,4 @@ a {
   width: 80%;
   display: block;
   margin: 0 auto;
-}
-
-@media only screen and (max-width: 600px) {
-  .children {
-    padding-top: 60px;
-  }
-}
-
-@media only screen and (max-width: 500px) {
-  .menu .menuContent {
-    font-size: medium;
-  }
-}
-
-@media only screen and (max-width: 400px) {
-  .children {
-    padding-top: 30px;
-  }
-}
-
-@media only screen and (max-width: 300px) {
-  .menu .menuContent {
-    font-size: small;
-  }
 }
