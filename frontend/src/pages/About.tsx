@@ -8,15 +8,11 @@ import {
 } from "react-icons/fa";
 import { SiSubstack } from "react-icons/si";
 
+import Hero from "src/components/Hero";
 import Meta from "src/components/Meta";
 import about from "src/assets/images/about/about.jpg";
-import {
-  upToItems,
-  inToMedia,
-  inToBooks,
-  inToSongs,
-} from "src/assets/data/about";
-import { Book, Media, Song, UptoItem } from "src/types/about";
+import { inToMedia } from "src/assets/data/about";
+import { Media } from "src/types/about";
 
 import aboutStyles from "src/styles/About.module.css";
 
@@ -32,19 +28,13 @@ const About = () => {
         url={"https://gabminamedez.vercel.app/about"}
       />
 
+      <Hero />
+
       <Container>
         <Row className="mb-[25px]">
           <Col lg={7}>
             <div className="block mx-auto w-[80%] overflow-wrap break-word">
-              <h1>
-                <span className="text-base">
-                  <i>What up world! It's</i>
-                </span>
-                <br />
-                <span className="text-gmBlue">Gabriel Minamedez.</span>
-              </h1>
-
-              <br />
+              <h1>about</h1>
 
               <p>
                 I'm a Software Engineer in Data Science from sunny Manila,
@@ -128,93 +118,16 @@ const About = () => {
           </Col>
         </Row>
 
-        <div className={aboutStyles.upToDiv}>
-          <h2>What I'm currently up to...</h2>
-
-          <br />
-
-          <Row>
-            {upToItems.map((item: UptoItem) => {
-              return (
-                <Col lg={4}>
-                  <h3>{item.title}</h3>
-                  <div dangerouslySetInnerHTML={{ __html: item.content }} />
-                </Col>
-              );
-            })}
-          </Row>
-        </div>
-
         <div className={aboutStyles.inToDiv}>
-          <h2>What I'm currently in to...</h2>
+          <h1>What I'm into right now (if you even care)</h1>
 
           <br />
 
-          <h3>Media 📺</h3>
-          <Row>
+          <div className={aboutStyles.inToGrid}>
             {inToMedia.map((item: Media) => {
-              return (
-                <Col sm={3} xs={6} className={aboutStyles.inToItem}>
-                  <img src={item.url} alt="img" />
-                </Col>
-              );
+              return <img src={item.url} alt="img" />;
             })}
-            <Col sm={3} xs={6} className={aboutStyles.inToItem}>
-              {inToMedia.map((item: Media) => {
-                return (
-                  <p>
-                    {item.title}
-                    <br />
-                    <i>{item.type}</i>
-                  </p>
-                );
-              })}
-            </Col>
-          </Row>
-
-          <h3>Books 📚</h3>
-          <Row>
-            {inToBooks.map((item: Book) => {
-              return (
-                <Col sm={3} xs={6} className={aboutStyles.inToItem}>
-                  <img src={item.url} alt="img" />
-                </Col>
-              );
-            })}
-            <Col sm={3} xs={6} className={aboutStyles.inToItem}>
-              {inToBooks.map((item: Book) => {
-                return (
-                  <p>
-                    {item.title}
-                    <br />
-                    <i>{item.author}</i>
-                  </p>
-                );
-              })}
-            </Col>
-          </Row>
-
-          <h3>Music 🎵</h3>
-          <Row>
-            {inToSongs.map((item: Song) => {
-              return (
-                <Col sm={3} xs={6} className={aboutStyles.inToItem}>
-                  <img src={item.url} alt="img" />
-                </Col>
-              );
-            })}
-            <Col sm={3} xs={6} className={aboutStyles.inToItem}>
-              {inToSongs.map((item: Song) => {
-                return (
-                  <p>
-                    {item.title}
-                    <br />
-                    <i>{item.artist}</i>
-                  </p>
-                );
-              })}
-            </Col>
-          </Row>
+          </div>
         </div>
       </Container>
     </div>

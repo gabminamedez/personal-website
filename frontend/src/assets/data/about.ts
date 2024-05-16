@@ -1,43 +1,3 @@
-export const upToItems = [
-  {
-    title: "Got that degree 🎓",
-    content: `<p>
-        B.S. Computer Science @ DLSU
-        <br />
-        <i>2018 - 2022</i>
-      </p>`,
-  },
-  {
-    title: "Dev at Thinking Machines 🧠",
-    content: `<p>
-        Software Engineer
-        <br />
-        <i>October 2022 - present</i>
-      </p>`,
-  },
-  {
-    title: "Writing at Sans Serif ✍️",
-    content: `<p>
-        <a
-          href="https://sansserif.substack.com/"
-          target="_blank"
-          rel="noreferrer"
-        >
-          Check out the Sans Serif newsletter!
-        </a>
-        <br />
-        <a
-          href="https://sansserif.substack.com/"
-          target="_blank"
-          rel="noreferrer"
-        >
-          And subscribe!
-        </a>
-        <br />
-      </p>`,
-  },
-];
-
 export const inToMedia = [
   {
     title: "Ted Lasso",
@@ -52,7 +12,72 @@ export const inToMedia = [
   {
     title: "Fast and Furious",
     type: "Action",
-    url: "https://static.wikia.nocookie.net/fastandfurious/images/0/04/The_Fast_and_the_Furious_%28DVD_Cover%29.jpeg",
+    url: "https://upload.wikimedia.org/wikipedia/en/0/0f/FIOEstrokes.jpg",
+  },
+  {
+    title: "Ted Lasso",
+    type: "Comedy",
+    url: "https://m.media-amazon.com/images/M/MV5BMTdmZjBjZjQtY2JiNS00Y2ZlLTg2NzgtMjUzMGY2OTVmOWJiXkEyXkFqcGdeQXVyMDM2NDM2MQ@@._V1_.jpg",
+  },
+  {
+    title: "The Devil All the Time",
+    type: "Thriller",
+    url: "https://m.media-amazon.com/images/M/MV5BZmE1NmVmN2EtMjZmZC00YzAyLWE4MWEtYjY5YmExMjUxODU1XkEyXkFqcGdeQXVyMTkxNjUyNQ@@._V1_.jpg",
+  },
+  {
+    title: "Fast and Furious",
+    type: "Action",
+    url: "https://upload.wikimedia.org/wikipedia/en/0/0f/FIOEstrokes.jpg",
+  },
+  {
+    title: "Ted Lasso",
+    type: "Comedy",
+    url: "https://m.media-amazon.com/images/M/MV5BMTdmZjBjZjQtY2JiNS00Y2ZlLTg2NzgtMjUzMGY2OTVmOWJiXkEyXkFqcGdeQXVyMDM2NDM2MQ@@._V1_.jpg",
+  },
+  {
+    title: "The Devil All the Time",
+    type: "Thriller",
+    url: "https://m.media-amazon.com/images/M/MV5BZmE1NmVmN2EtMjZmZC00YzAyLWE4MWEtYjY5YmExMjUxODU1XkEyXkFqcGdeQXVyMTkxNjUyNQ@@._V1_.jpg",
+  },
+  {
+    title: "Fast and Furious",
+    type: "Action",
+    url: "https://upload.wikimedia.org/wikipedia/en/0/0f/FIOEstrokes.jpg",
+  },
+  {
+    title: "Ted Lasso",
+    type: "Comedy",
+    url: "https://m.media-amazon.com/images/M/MV5BMTdmZjBjZjQtY2JiNS00Y2ZlLTg2NzgtMjUzMGY2OTVmOWJiXkEyXkFqcGdeQXVyMDM2NDM2MQ@@._V1_.jpg",
+  },
+  {
+    title: "The Devil All the Time",
+    type: "Thriller",
+    url: "https://m.media-amazon.com/images/M/MV5BZmE1NmVmN2EtMjZmZC00YzAyLWE4MWEtYjY5YmExMjUxODU1XkEyXkFqcGdeQXVyMTkxNjUyNQ@@._V1_.jpg",
+  },
+  {
+    title: "Fast and Furious",
+    type: "Action",
+    url: "https://upload.wikimedia.org/wikipedia/en/0/0f/FIOEstrokes.jpg",
+  },
+  {
+    title: "Ted Lasso",
+    type: "Comedy",
+    url: "https://m.media-amazon.com/images/M/MV5BMTdmZjBjZjQtY2JiNS00Y2ZlLTg2NzgtMjUzMGY2OTVmOWJiXkEyXkFqcGdeQXVyMDM2NDM2MQ@@._V1_.jpg",
+  },
+  {
+    title: "The Devil All the Time",
+    type: "Thriller",
+    url: "https://m.media-amazon.com/images/M/MV5BZmE1NmVmN2EtMjZmZC00YzAyLWE4MWEtYjY5YmExMjUxODU1XkEyXkFqcGdeQXVyMTkxNjUyNQ@@._V1_.jpg",
+  },
+  {
+    title: "Fast and Furious",
+    type: "Action",
+    url: "https://upload.wikimedia.org/wikipedia/en/0/0f/FIOEstrokes.jpg",
+  },
+  {
+    title: "Fast and Furious",
+    type: "Action",
+    url: "https://upload.wikimedia.org/wikipedia/en/0/0f/FIOEstrokes.jpg",
   },
 ];
 
