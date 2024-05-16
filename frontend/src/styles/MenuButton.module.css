@@ -12,21 +12,12 @@
   transition: 0.2s;
 }
 
-.menuButtonClosed {
+.menuButtonOpen {
   background: #4b92db;
   color: #fbf7d5;
-  box-shadow: 0 4px 30px #0000001a;
-  backdrop-filter: blur(7.4px);
-  -webkit-backdrop-filter: blur(7.4px);
-}
-
-.menuButtonOpen {
-  background: #fbf7d5;
-  color: #4b92db;
   box-shadow: -10px 10px #0000001a;
   backdrop-filter: blur(10.3px);
   -webkit-backdrop-filter: blur(10.3px);
-  border: 1px solid #4b92db;
 }
 
 .hamburgerClosed,
@@ -55,17 +46,17 @@
 .hamburgerClosed:before,
 .hamburgerClosed:after,
 .hamburgerClosed div {
-  background-color: #fbf7d5;
+  background-color: #4b92db;
 }
 
 .hamburgerOpen:before {
   transform: translateY(10px) rotate(135deg);
-  background-color: #4b92db;
+  background-color: #fbf7d5;
 }
 
 .hamburgerOpen:after {
   transform: translateY(-10px) rotate(-135deg);
-  background-color: #4b92db;
+  background-color: #fbf7d5;
 }
 
 .hamburgerOpen div {

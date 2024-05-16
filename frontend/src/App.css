@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=DM+Sans&family=Poppins:wght@700&display=swap");
+@import url("https://fonts.cdnfonts.com/css/helvetica-neue-55");
 
 html {
   position: relative;
@@ -9,19 +9,10 @@ body {
   margin: 0;
   top: 0;
   padding: 0;
-  font-family: "DM Sans", sans-serif;
+  font-family: "Helvetica Neue", sans-serif;
   overflow-x: hidden;
-  color: #202020;
-  background-color: #e5e5e5;
-}
-
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
-  font-family: "Poppins", sans-serif;
+  color: #4b92db;
+  background-color: #fbf7d5;
 }
 
 a {
@@ -56,12 +47,14 @@ a {
 }
 
 .menu a {
-  color: #202020;
+  color: #4b92db;
   transition: all 0.2s ease-in-out;
 }
 
 .menu a:hover {
   color: #4b92db;
+  text-decoration: underline;
+  transition: all 0.2s ease-in-out;
 }
 
 .menuContent h1 {
