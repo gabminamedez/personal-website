@@ -7,7 +7,8 @@ import MenuButton from "./components/MenuButton";
 import Footer from "./components/Footer";
 import Home from "./pages/Home";
 import About from "./pages/About";
-import Portfolio from "./pages/Portfolio";
+import PortfolioDev from "./pages/PortfolioDev";
+import PortfolioWriting from "./pages/PortfolioWriting";
 
 import "bootstrap/dist/css/bootstrap.min.css";
 import "./App.css";
@@ -37,10 +38,10 @@ const App = () => {
               <a href="/about">about</a>
             </h1>
             <h1>
-              <a href="/portfolio">portfolio - dev</a>
+              <a href="/portfolio-dev">portfolio - dev</a>
             </h1>
             <h1>
-              <a href="/portfolio">portfolio - writing</a>
+              <a href="/portfolio-writing">portfolio - writing</a>
             </h1>
             <h1>
               <a
@@ -58,7 +59,12 @@ const App = () => {
           <Routes>
             <Route exact path="/" element={<Home />} />
             <Route exact path="/about" element={<About />} />
-            <Route exact path="/portfolio" element={<Portfolio />} />
+            <Route exact path="/portfolio-dev" element={<PortfolioDev />} />
+            <Route
+              exact
+              path="/portfolio-writing"
+              element={<PortfolioWriting />}
+            />
           </Routes>
         </div>
       </div>

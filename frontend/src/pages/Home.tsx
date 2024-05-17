@@ -25,10 +25,10 @@ const Home = () => {
             <Link to="/about">about</Link>
           </h2>
           <h2 className="text-3xl">
-            <Link to="/portfolio">portfolio - dev</Link>
+            <Link to="/portfolio-dev">portfolio - dev</Link>
           </h2>
           <h2 className="text-3xl">
-            <Link to="/portfolio">portfolio - writing</Link>
+            <Link to="/portfolio-writing">portfolio - writing</Link>
           </h2>
           <h2 className="text-3xl">
             <a
