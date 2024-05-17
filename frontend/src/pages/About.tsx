@@ -1,12 +1,6 @@
 import { Container, Row, Col } from "reactstrap";
-import {
-  FaGithub,
-  FaInstagram,
-  FaLinkedin,
-  FaSpotify,
-  FaTwitter,
-} from "react-icons/fa";
-import { SiSubstack } from "react-icons/si";
+import { FaGithub, FaInstagram, FaLinkedin, FaTwitter } from "react-icons/fa";
+import { SiSubstack, SiApplemusic } from "react-icons/si";
 
 import Hero from "src/components/Hero";
 import Meta from "src/components/Meta";
@@ -91,12 +85,12 @@ const About = () => {
                 <SiSubstack />
               </a>
               <a
-                href="https://open.spotify.com/user/dirgfk4e07s0pggwbexjxmjbw?si=e0fe017022114a1e"
+                href="https://music.apple.com/profile/gabminamedez"
                 target="_blank"
                 className={aboutStyles.social}
                 rel="noreferrer"
               >
-                <FaSpotify />
+                <SiApplemusic />
               </a>
               <a
                 href="https://www.instagram.com/gabminamedez/"
