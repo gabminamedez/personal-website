@@ -1,7 +1,5 @@
 import { useEffect, useState } from "react";
 import { Container, Row, Col } from "reactstrap";
-import { FaGithub, FaInstagram, FaLinkedin, FaTwitter } from "react-icons/fa";
-import { SiSubstack, SiApplemusic } from "react-icons/si";
 
 import Hero from "src/components/Hero";
 import Meta from "src/components/Meta";
@@ -25,7 +23,7 @@ const About = () => {
   }, []);
 
   return (
-    <div className={aboutStyles.about}>
+    <div>
       <Meta
         title={"About Me | Gabriel Minamedez"}
         description={
@@ -40,7 +38,7 @@ const About = () => {
       <Container>
         <Row className="mb-[25px]">
           <Col lg={7}>
-            <div className="block mx-auto w-[80%] overflow-wrap break-word">
+            <div className="block mx-auto overflow-wrap break-word">
               <h1>about</h1>
 
               <p>
@@ -66,62 +64,8 @@ const About = () => {
             </div>
           </Col>
 
-          <Col
-            lg={5}
-            className="flex justify-center items-center flex-col text-center"
-          >
+          <Col lg={5} className="items-center">
             <img className={aboutStyles.aboutImage} src={about} alt="img" />
-
-            <div className="mt-[20px] flex justify-center items-center">
-              <a
-                href="https://github.com/gabminamedez"
-                target="_blank"
-                className={aboutStyles.social}
-                rel="noreferrer"
-              >
-                <FaGithub />
-              </a>
-              <a
-                href="https://www.linkedin.com/in/gabminamedez/"
-                target="_blank"
-                className={aboutStyles.social}
-                rel="noreferrer"
-              >
-                <FaLinkedin />
-              </a>
-              <a
-                href="https://sansserif.substack.com/"
-                target="_blank"
-                className={aboutStyles.social}
-                rel="noreferrer"
-              >
-                <SiSubstack />
-              </a>
-              <a
-                href="https://music.apple.com/profile/gabminamedez"
-                target="_blank"
-                className={aboutStyles.social}
-                rel="noreferrer"
-              >
-                <SiApplemusic />
-              </a>
-              <a
-                href="https://www.instagram.com/gabminamedez/"
-                target="_blank"
-                className={aboutStyles.social}
-                rel="noreferrer"
-              >
-                <FaInstagram />
-              </a>
-              <a
-                href="https://twitter.com/GabMinamedez"
-                target="_blank"
-                className={aboutStyles.social}
-                rel="noreferrer"
-              >
-                <FaTwitter />
-              </a>
-            </div>
           </Col>
         </Row>
 

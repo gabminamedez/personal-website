@@ -35,6 +35,10 @@
 }
 
 @media only screen and (max-width: 430px) {
+  .directory {
+    margin-left: 20px;
+  }
+
   .directory h2 {
     font-size: 1.25rem;
   }

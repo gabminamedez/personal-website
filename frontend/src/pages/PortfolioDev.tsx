@@ -27,19 +27,19 @@ const PortfolioDev = () => {
   }, []);
 
   return (
-    <div className={portfolioStyles.portfolio}>
+    <div>
       <Meta
         title={"Portfolio - Dev | Gabriel Minamedez"}
         description={
           "This is a collection of his pet projects developed as he continues to learn about new technologies everyday."
         }
         title2={"Portfolio - Dev"}
-        url={"https://gabminamedez.vercel.app/portfolio"}
+        url={"https://gabminamedez.vercel.app/portfolio-dev"}
       />
 
       <Hero />
 
-      <div className="block mx-auto w-[80%]">
+      <div className={portfolioStyles.portfolio + " block mx-auto"}>
         <h1>portfolio - dev</h1>
         <h2 className="italic">
           <a
@@ -108,7 +108,7 @@ const PortfolioDev = () => {
                         </p>
                         {item.url && (
                           <a
-                            className="text-gmDarkGray hover:text-gmBlue underline"
+                            className="text-gmDarkGray hover:text-gmBlue underline break-all"
                             href={item.url}
                             target="_blank"
                             rel="noreferrer"

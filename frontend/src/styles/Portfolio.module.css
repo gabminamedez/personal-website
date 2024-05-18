@@ -10,8 +10,6 @@
   padding: 20px 0;
   width: 60%;
   border-top: 2px solid #4b92db;
-  /* border-left: 2px solid #4b92db; */
-  /* border-right: 2px solid #4b92db; */
 }
 
 .lastProject {
@@ -32,4 +30,24 @@
 .projectBio,
 .projectMetadata {
   font-size: 16px;
+}
+
+@media only screen and (max-width: 600px) {
+  .portfolio h2 > a {
+    font-size: 1.25rem;
+  }
+
+  .project {
+    width: 80%;
+  }
+}
+
+@media only screen and (max-width: 430px) {
+  .portfolio h2 > a {
+    font-size: 1.15rem;
+  }
+
+  .project {
+    width: 100%;
+  }
 }

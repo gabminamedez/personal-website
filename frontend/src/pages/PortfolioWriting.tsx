@@ -27,19 +27,19 @@ const PortfolioWriting = () => {
   }, []);
 
   return (
-    <div className={portfolioStyles.portfolio}>
+    <div>
       <Meta
         title={"Portfolio - Writing | Gabriel Minamedez"}
         description={
           "This is a collection of his writing endeavors for his personal blog, university, and publications."
         }
         title2={"Portfolio - Writing"}
-        url={"https://gabminamedez.vercel.app/portfolio"}
+        url={"https://gabminamedez.vercel.app/portfolio-writing"}
       />
 
       <Hero />
 
-      <div className="block mx-auto w-[80%]">
+      <div className={portfolioStyles.portfolio + " block mx-auto"}>
         <h1>portfolio - writing</h1>
         <h2 className="italic">
           <a
