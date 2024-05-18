@@ -1,19 +1,30 @@
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import { Animated } from "react-animated-css";
 
 import Hero from "src/components/Hero";
 import Meta from "src/components/Meta";
 
-import { PortfolioDevItem } from "src/types/portfolio";
+import { fetchWritingPortfolioData } from "src/api/portfolio";
+import { PortfolioWritingItem } from "src/types/portfolio";
 
 import portfolioStyles from "src/styles/Portfolio.module.css";
 
 const PortfolioWriting = () => {
+  const [projects, setProjects] = useState<PortfolioWritingItem[]>([]);
   const [selectedProject, setSelectedProject] = useState<number | null>(null);
 
   const selectProject = (index: number) => {
     setSelectedProject(index);
   };
+
+  useEffect(() => {
+    const fetchData = async () => {
+      const data = await fetchWritingPortfolioData();
+      setProjects(data);
+    };
+
+    fetchData();
+  }, []);
 
   return (
     <div className={portfolioStyles.portfolio}>
@@ -49,11 +60,12 @@ const PortfolioWriting = () => {
           </a>
         </h2>
 
-        {/* <div className={portfolioStyles.projects}>
-          {develop.map((item: PortfolioDevItem, index: number) => {
+        <div className={portfolioStyles.projects}>
+          {projects.map((item: PortfolioWritingItem, index: number) => {
             return (
               <div
-                className={`${portfolioStyles.project} ${index === develop.length - 1 ? portfolioStyles.lastProject : ""} ${index !== selectedProject && "py-0"}`}
+                key={index}
+                className={`${portfolioStyles.project} ${index === projects.length - 1 ? portfolioStyles.lastProject : ""} ${index !== selectedProject && "py-0"}`}
               >
                 <div
                   className={
@@ -75,8 +87,8 @@ const PortfolioWriting = () => {
                 </div>
 
                 <Animated
-                  animationIn="pulse"
-                  animationOut="pulse"
+                  animationIn="slideInLeft"
+                  animationOut="slideOutRight"
                   animationInDuration={600}
                   animationOutDuration={600}
                   isVisible={index === selectedProject}
@@ -91,8 +103,7 @@ const PortfolioWriting = () => {
                             portfolioStyles.projectMetadata + " italic"
                           }
                         >
-                          <b>{item.type} Project</b> developed with {item.stack}
-                          .
+                          <b>{item.type}</b> for {item.organization}.
                         </p>
                         {item.url && (
                           <a
@@ -111,7 +122,7 @@ const PortfolioWriting = () => {
               </div>
             );
           })}
-        </div> */}
+        </div>
       </div>
     </div>
   );

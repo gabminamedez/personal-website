@@ -10,6 +10,16 @@ export const fetchDevPortfolioData = async () => {
   return parsedTSVData;
 };
 
+export const fetchWritingPortfolioData = async () => {
+  const csvUrl =
+    "https://docs.google.com/spreadsheets/d/e/2PACX-1vQ_XYd-qGzvlmKrDAigvEE8c_CoifnDLNmXzBxWXElKA5z0nf5rPuipUfH3HKWWcQgWKRYS8haNQgbs/pub?gid=0&single=true&output=tsv";
+
+  const response = await axios.get(csvUrl);
+  const parsedTSVData = parseTSV(response.data);
+
+  return parsedTSVData;
+};
+
 const parseTSV = (tsvText: string) => {
   const rows = tsvText.split(/\r?\n/);
   const headers = rows[0].split("\t");
