@@ -1,15 +1,19 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
-    <loc>https://gab-minamedez.web.app/</loc>
-    <lastmod>2023-02-21</lastmod>
+    <loc>https://gabminamedez.vercel.app/</loc>
+    <lastmod>2023-05-18</lastmod>
   </url>
   <url>
-    <loc>https://gab-minamedez.web.app/about</loc>
-    <lastmod>2023-02-21</lastmod>
+    <loc>https://gabminamedez.vercel.app/about</loc>
+    <lastmod>2023-05-18</lastmod>
   </url>
   <url>
-    <loc>https://gab-minamedez.web.app/portfolio</loc>
-    <lastmod>2023-02-21</lastmod>
+    <loc>https://gabminamedez.vercel.app/portfolio-dev</loc>
+    <lastmod>2023-05-18</lastmod>
+  </url>
+  <url>
+    <loc>https://gabminamedez.vercel.app/portfolio-writing</loc>
+    <lastmod>2023-05-18</lastmod>
   </url>
 </urlset>
