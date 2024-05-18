@@ -1,21 +1,5 @@
-export type UptoItem = {
+export type IntoItem = {
   title: string;
-  content: string;
-};
-
-type IntoItem = {
-  title: string;
+  image: string;
   url: string;
 };
-
-export type Media = {
-  type: string;
-} & IntoItem;
-
-export type Book = {
-  author: string;
-} & IntoItem;
-
-export type Song = {
-  artist: string;
-} & IntoItem;

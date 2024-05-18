@@ -1,3 +1,4 @@
+import { useEffect, useState } from "react";
 import { Container, Row, Col } from "reactstrap";
 import { FaGithub, FaInstagram, FaLinkedin, FaTwitter } from "react-icons/fa";
 import { SiSubstack, SiApplemusic } from "react-icons/si";
@@ -5,13 +6,24 @@ import { SiSubstack, SiApplemusic } from "react-icons/si";
 import Hero from "src/components/Hero";
 import Meta from "src/components/Meta";
 
+import { fetchIntoItemsData } from "src/api/about";
 import about from "src/assets/images/about/about.jpg";
-import { inToMedia } from "src/assets/data/about";
-import { Media } from "src/types/about";
+import { IntoItem } from "src/types/about";
 
 import aboutStyles from "src/styles/About.module.css";
 
 const About = () => {
+  const [intoItems, setIntoItems] = useState<IntoItem[]>([]);
+
+  useEffect(() => {
+    const fetchData = async () => {
+      const data = await fetchIntoItemsData();
+      setIntoItems(data);
+    };
+
+    fetchData();
+  }, []);
+
   return (
     <div className={aboutStyles.about}>
       <Meta
@@ -118,9 +130,23 @@ const About = () => {
 
           <br />
 
-          <div className={aboutStyles.inToGrid}>
-            {inToMedia.map((item: Media) => {
-              return <img src={item.url} alt="img" />;
+          <div className="grid lg:grid-cols-4 sm:grid-cols-2">
+            {intoItems.map((item: IntoItem) => {
+              return (
+                <div className={aboutStyles.imgWrapper}>
+                  <img src={item.image} alt="img" />
+                  <div className="absolute bottom-2 left-2 text-white text-base z-10">
+                    <a
+                      className="text-gmBlue hover:text-gmYellow hover:underline font-bold"
+                      href={item.url}
+                      target="_blank"
+                      rel="noreferrer"
+                    >
+                      {item.title}
+                    </a>
+                  </div>
+                </div>
+              );
             })}
           </div>
         </div>
