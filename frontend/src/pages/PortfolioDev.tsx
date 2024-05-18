@@ -1,19 +1,30 @@
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import { Animated } from "react-animated-css";
 
 import Hero from "src/components/Hero";
 import Meta from "src/components/Meta";
-import { develop } from "src/assets/data/portfolio";
 
-import portfolioStyles from "src/styles/Portfolio.module.css";
+import { fetchDevPortfolioData } from "src/api/portfolio";
 import { PortfolioDevItem } from "src/types/portfolio";
 
+import portfolioStyles from "src/styles/Portfolio.module.css";
+
 const PortfolioDev = () => {
+  const [projects, setProjects] = useState<PortfolioDevItem[]>([]);
   const [selectedProject, setSelectedProject] = useState<number | null>(null);
 
   const selectProject = (index: number) => {
     setSelectedProject(index);
   };
+
+  useEffect(() => {
+    const fetchData = async () => {
+      const data = await fetchDevPortfolioData();
+      setProjects(data);
+    };
+
+    fetchData();
+  }, []);
 
   return (
     <div className={portfolioStyles.portfolio}>
@@ -50,10 +61,11 @@ const PortfolioDev = () => {
         </h2>
 
         <div className={portfolioStyles.projects}>
-          {develop.map((item: PortfolioDevItem, index: number) => {
+          {projects.map((item: PortfolioDevItem, index: number) => {
             return (
               <div
-                className={`${portfolioStyles.project} ${index === develop.length - 1 ? portfolioStyles.lastProject : ""} ${index !== selectedProject && "py-0"}`}
+                key={index}
+                className={`${portfolioStyles.project} ${index === projects.length - 1 ? portfolioStyles.lastProject : ""} ${index !== selectedProject && "py-0"}`}
               >
                 <div
                   className={
@@ -75,8 +87,8 @@ const PortfolioDev = () => {
                 </div>
 
                 <Animated
-                  animationIn="pulse"
-                  animationOut="pulse"
+                  animationIn="slideInLeft"
+                  animationOut="slideOutRight"
                   animationInDuration={600}
                   animationOutDuration={600}
                   isVisible={index === selectedProject}

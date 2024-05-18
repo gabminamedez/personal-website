@@ -3,10 +3,10 @@ import { Animated } from "react-animated-css";
 
 import Hero from "src/components/Hero";
 import Meta from "src/components/Meta";
-import { develop } from "src/assets/data/portfolio";
+
+import { PortfolioDevItem } from "src/types/portfolio";
 
 import portfolioStyles from "src/styles/Portfolio.module.css";
-import { PortfolioDevItem } from "src/types/portfolio";
 
 const PortfolioWriting = () => {
   const [selectedProject, setSelectedProject] = useState<number | null>(null);
@@ -49,7 +49,7 @@ const PortfolioWriting = () => {
           </a>
         </h2>
 
-        <div className={portfolioStyles.projects}>
+        {/* <div className={portfolioStyles.projects}>
           {develop.map((item: PortfolioDevItem, index: number) => {
             return (
               <div
@@ -111,7 +111,7 @@ const PortfolioWriting = () => {
               </div>
             );
           })}
-        </div>
+        </div> */}
       </div>
     </div>
   );

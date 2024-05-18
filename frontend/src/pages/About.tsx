@@ -4,6 +4,7 @@ import { SiSubstack, SiApplemusic } from "react-icons/si";
 
 import Hero from "src/components/Hero";
 import Meta from "src/components/Meta";
+
 import about from "src/assets/images/about/about.jpg";
 import { inToMedia } from "src/assets/data/about";
 import { Media } from "src/types/about";

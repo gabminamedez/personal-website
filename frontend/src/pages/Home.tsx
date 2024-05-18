@@ -1,9 +1,9 @@
 import { Link } from "react-router-dom";
 
+import Hero from "src/components/Hero";
 import Meta from "src/components/Meta";
 
 import homeStyles from "src/styles/Home.module.css";
-import Hero from "src/components/Hero";
 
 const Home = () => {
   return (
