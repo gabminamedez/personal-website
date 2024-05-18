@@ -1,27 +1,10 @@
-.hero {
-  height: auto;
-  width: 100%;
-  margin: 30px 0;
-}
-
-.social {
-  color: #636363;
-  font-size: 28px;
-  margin: 0 8px;
-  transition: all 0.2s ease-in-out;
-}
-
-.social:hover {
-  color: #4b92db;
-}
-
 .directory {
-  height: 50vh;
+  height: 40vh;
+  width: 80%;
   position: relative;
-  background: #4b92db1a;
-  box-shadow: 0 4px 30px #0000001a;
-  backdrop-filter: blur(10px);
-  -webkit-backdrop-filter: blur(10px);
+  margin-left: 80px;
+  padding-left: 20px;
+  border: 2px solid #4b92db;
 }
 
 .directory h2 {
@@ -35,34 +18,28 @@
 }
 
 .directory a:hover {
-  color: #4b92db;
-  background: #fbf7d5de;
-  border: 1px solid #4b92db;
+  border: 2px solid #4b92db;
   box-shadow: 10px 10px #0000001a;
   backdrop-filter: blur(10.3px);
   -webkit-backdrop-filter: blur(10.3px);
 }
 
-@media only screen and (max-width: 404px) {
-  .hero {
-    margin-top: 60px;
+@media only screen and (max-width: 600px) {
+  .directory {
+    margin-left: 40px;
   }
 
-  .hero p {
-    font-size: small;
-  }
-
-  .social {
-    font-size: 20px;
+  .directory h2 {
+    font-size: 1.5rem;
   }
 }
 
-@media only screen and (max-width: 273px) {
-  .hero p {
-    font-size: small;
+@media only screen and (max-width: 430px) {
+  .directory {
+    margin-left: 20px;
   }
 
-  .social {
-    font-size: 14px;
+  .directory h2 {
+    font-size: 1.25rem;
   }
 }

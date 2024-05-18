@@ -1,0 +1,60 @@
+.hero {
+  height: auto;
+  width: 100%;
+  margin: 20px 0;
+}
+
+.heroDetails {
+  margin-left: 80px;
+}
+
+.social {
+  color: #636363;
+  font-size: 28px;
+  margin: 0 12px;
+  transition: all 0.2s ease-in-out;
+}
+
+.social:hover {
+  color: #4b92db;
+}
+
+.hr {
+  width: 200%;
+  margin: 25px auto;
+  border-bottom: 2px solid #4b92db;
+  overflow-x: hidden;
+}
+
+@media only screen and (max-width: 600px) {
+  .hero h1 {
+    font-size: 4rem;
+  }
+
+  .hero h2 {
+    font-size: 1.5rem;
+  }
+
+  .heroDetails {
+    margin-left: 40px;
+  }
+}
+
+@media only screen and (max-width: 430px) {
+  .hero h1 {
+    font-size: 3rem;
+  }
+
+  .hero h2 {
+    font-size: 1.25rem;
+  }
+
+  .heroDetails {
+    margin-left: 20px;
+  }
+
+  .social {
+    margin: 0 8px;
+    font-size: 24px;
+  }
+}

@@ -1,126 +1,53 @@
-.portfolio {
-  margin-top: 50px;
-}
-
-.fixed {
-  padding: 20px;
-  width: 100%;
-  position: fixed;
-  z-index: 3;
-  background: #fbf7d580;
-  box-shadow: 0 4px 30px #0000001a;
-  backdrop-filter: blur(10px);
-  -webkit-backdrop-filter: blur(10px);
-}
-
-h4 span {
-  cursor: pointer;
+.portfolio a {
   transition: all 0.2s ease-in-out;
-}
-
-h4 span:hover {
-  color: #4b92db;
 }
 
 .projects {
-  padding-top: 150px;
-  z-index: 1;
+  padding-top: 8px;
 }
 
 .project {
-  margin: 12px auto;
-  padding: 20px;
-  width: 100%;
-  background-color: #f5f5f5;
-  box-shadow: 0px 1px 4px 00000029;
-  transition: all 0.2s ease-in-out;
+  padding: 20px 0;
+  width: 60%;
+  border-top: 2px solid #4b92db;
 }
 
-.project:hover {
-  background: #fbf7dadb;
-  box-shadow: 10px 10px #0000001a;
-  backdrop-filter: blur(10.3px);
-  -webkit-backdrop-filter: blur(10.3px);
-}
-
-.metadata {
-  color: #636363;
-  font-size: 14px;
-}
-
-.projectBio {
-  color: #202020;
-  font-size: 16px;
-}
-
-.portfolio a {
-  color: #202020;
-  transition: all 0.2s ease-in-out;
-}
-
-.portfolio a:hover {
-  color: #4b92db;
+.lastProject {
+  border-bottom: 2px solid #4b92db;
 }
 
 .project img {
   height: 250px;
+  margin: 0;
   width: 100%;
   object-fit: cover;
-  margin-left: auto;
-  margin-right: auto;
-  display: block;
 }
 
-@media only screen and (max-width: 1199px) {
-  .fixed {
-    width: unset;
-  }
+.projectDetails {
+  padding: 20px 20px 0;
 }
 
-@media only screen and (max-width: 615px) {
-  .projects {
-    padding-top: 180px;
-  }
-
-  .metadata {
-    font-size: 12px;
-  }
-
-  .projectBio {
-    font-size: 14px;
-  }
-
-  .project img {
-    height: 200px;
-  }
-}
-
-@media only screen and (max-width: 572px) {
-  .fixed h4 {
-    font-size: large;
-  }
+.projectBio,
+.projectMetadata {
+  font-size: 16px;
 }
 
 @media only screen and (max-width: 600px) {
-  .portfolio {
-    margin-top: 80px;
+  .portfolio h2 > a {
+    font-size: 1.25rem;
   }
-}
 
-@media only screen and (max-width: 476px) {
-  .fixed h4 {
-    font-size: medium;
+  .project {
+    width: 80%;
   }
 }
 
 @media only screen and (max-width: 430px) {
-  .fixed h4 {
-    font-size: small;
+  .portfolio h2 > a {
+    font-size: 1.15rem;
   }
-}
 
-@media only screen and (max-width: 429px) {
-  .projects {
-    padding-top: 200px;
+  .project {
+    width: 100%;
   }
 }

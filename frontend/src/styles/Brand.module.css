@@ -26,3 +26,15 @@
   -webkit-backdrop-filter: blur(10.3px);
   border: 1px solid #4b92db;
 }
+
+@media only screen and (max-width: 600px) {
+  .brand h1 {
+    font-size: 4rem;
+  }
+}
+
+@media only screen and (max-width: 430px) {
+  .brand h1 {
+    font-size: 3rem;
+  }
+}

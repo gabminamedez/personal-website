@@ -7,7 +7,8 @@ import MenuButton from "./components/MenuButton";
 import Footer from "./components/Footer";
 import Home from "./pages/Home";
 import About from "./pages/About";
-import Portfolio from "./pages/Portfolio";
+import PortfolioDev from "./pages/PortfolioDev";
+import PortfolioWriting from "./pages/PortfolioWriting";
 
 import "bootstrap/dist/css/bootstrap.min.css";
 import "./App.css";
@@ -34,19 +35,13 @@ const App = () => {
         >
           <div className="menuContent">
             <h1>
-              <a href="/about">About</a>
+              <a href="/about">about</a>
             </h1>
             <h1>
-              <a href="/portfolio">Portfolio</a>
+              <a href="/portfolio-dev">portfolio - dev</a>
             </h1>
             <h1>
-              <a
-                href="https://docs.google.com/document/d/1hBoGjn5_nk3u8RZsyqLoIxgU3-SGNnyrWp3ZVydAp_M/edit?usp=sharing"
-                target="_blank"
-                rel="noreferrer"
-              >
-                Resume
-              </a>
+              <a href="/portfolio-writing">portfolio - writing</a>
             </h1>
             <h1>
               <a
@@ -54,7 +49,7 @@ const App = () => {
                 target="_blank"
                 rel="noreferrer"
               >
-                Blog
+                blog
               </a>
             </h1>
           </div>
@@ -64,7 +59,12 @@ const App = () => {
           <Routes>
             <Route exact path="/" element={<Home />} />
             <Route exact path="/about" element={<About />} />
-            <Route exact path="/portfolio" element={<Portfolio />} />
+            <Route exact path="/portfolio-dev" element={<PortfolioDev />} />
+            <Route
+              exact
+              path="/portfolio-writing"
+              element={<PortfolioWriting />}
+            />
           </Routes>
         </div>
       </div>
