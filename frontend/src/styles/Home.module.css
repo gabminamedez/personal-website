@@ -1,5 +1,5 @@
 .directory {
-  height: 50vh;
+  height: 40vh;
   width: 80%;
   position: relative;
   margin-left: 80px;
@@ -22,4 +22,20 @@
   box-shadow: 10px 10px #0000001a;
   backdrop-filter: blur(10.3px);
   -webkit-backdrop-filter: blur(10.3px);
+}
+
+@media only screen and (max-width: 600px) {
+  .directory {
+    margin-left: 40px;
+  }
+
+  .directory h2 {
+    font-size: 1.5rem;
+  }
+}
+
+@media only screen and (max-width: 430px) {
+  .directory h2 {
+    font-size: 1.25rem;
+  }
 }

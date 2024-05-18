@@ -3,11 +3,11 @@ import { SiSubstack, SiApplemusic } from "react-icons/si";
 
 import heroStyles from "src/styles/Hero.module.css";
 
-const Home = () => {
+const Hero = () => {
   return (
     <div className={heroStyles.hero}>
       <h1 className="text-8xl mb-[12px]">Gabriel Minamedez</h1>
-      <div className="ml-[80px]">
+      <div className={heroStyles.heroDetails}>
         <h2 className="text-2xl italic mb-[12px]">(gabminamedez@gmail.com)</h2>
 
         <table className="mb-[12px]">
@@ -90,4 +90,4 @@ const Home = () => {
   );
 };
 
-export default Home;
+export default Hero;
