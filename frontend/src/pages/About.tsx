@@ -81,7 +81,7 @@ const About = () => {
                   <img src={item.image} alt="img" />
                   <div className="absolute bottom-2 left-2 text-white text-base z-10">
                     <a
-                      className="text-gmBlue hover:text-gmYellow hover:underline font-bold"
+                      className="text-gmBlue hover:text-gmYellow hover:underline"
                       href={item.url}
                       target="_blank"
                       rel="noreferrer"
