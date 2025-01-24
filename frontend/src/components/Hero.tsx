@@ -1,5 +1,5 @@
 import { FaGithub, FaInstagram, FaLinkedin, FaTwitter } from "react-icons/fa";
-import { SiSubstack, SiApplemusic } from "react-icons/si";
+import { SiSubstack, SiSpotify } from "react-icons/si";
 
 import heroStyles from "src/styles/Hero.module.css";
 
@@ -59,12 +59,12 @@ const Hero = () => {
             <SiSubstack />
           </a>
           <a
-            href="https://music.apple.com/profile/gabminamedez"
+            href="https://open.spotify.com/user/dirgfk4e07s0pggwbexjxmjbw?si=172c73380d084bee"
             target="_blank"
             className={heroStyles.social}
             rel="noreferrer"
           >
-            <SiApplemusic />
+            <SiSpotify />
           </a>
           <a
             href="https://www.instagram.com/gabminamedez/"
