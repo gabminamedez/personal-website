@@ -1,78 +1,8 @@
 "use client";
 
+import { NowPlayingPanel } from "@/components/sections/NowPlayingPanel";
 import { useCountUp, useInView } from "@/hooks/useScrollAnimation";
-import { useEffect, useMemo, useRef, useState } from "react";
-
-const TRACKS = [
-  { t: "Helena", a: "Nothing But Thieves", dur: 218 },
-  { t: "Eyes Wide Shut", a: "Tiny Habits", dur: 184 },
-  { t: "Sunsetz", a: "Cigarettes After Sex", dur: 245 },
-  { t: "August", a: "Taylor Swift", dur: 261 },
-];
-
-function NowPlaying() {
-  const [i, setI] = useState(0);
-  const [s, setS] = useState(72);
-  const tr = TRACKS[i]!;
-
-  useEffect(() => {
-    const t = setInterval(() => {
-      setS((prev) => {
-        if (prev + 1 >= TRACKS[i]!.dur) {
-          setI((prevI) => (prevI + 1) % TRACKS.length);
-          return 0;
-        }
-        return prev + 1;
-      });
-    }, 1000);
-    return () => clearInterval(t);
-  }, [i]);
-
-  const fmt = (n: number) =>
-    `${Math.floor(n / 60)}:${String(n % 60).padStart(2, "0")}`;
-  const pct = (s / tr.dur) * 100;
-
-  return (
-    <div className="panel">
-      <div className="p-head">
-        <span>NOW&nbsp;PLAYING</span>
-        <span className="p-live">
-          <span className="dot" />
-          LAST.FM
-        </span>
-      </div>
-      <div className="np-art" />
-      <h4 className="np-track">{tr.t}</h4>
-      <p className="np-artist">{tr.a}</p>
-      <div className="np-eq">
-        <span />
-        <span />
-        <span />
-        <span />
-        <span />
-        <span />
-        <span />
-        <span />
-        <span />
-      </div>
-      <div className="np-progress">
-        <div
-          style={{
-            position: "absolute",
-            inset: "0 auto 0 0",
-            width: `${pct}%`,
-            background: "var(--cream)",
-            transition: "width 1s linear",
-          }}
-        />
-      </div>
-      <div className="np-times mono-num">
-        <span>{fmt(s)}</span>
-        <span>{fmt(tr.dur)}</span>
-      </div>
-    </div>
-  );
-}
+import { useMemo, useRef } from "react";
 
 function Reading() {
   const ref = useRef<HTMLDivElement>(null);
@@ -234,7 +164,7 @@ export function Currents() {
           </p>
         </header>
         <div className="panels">
-          <NowPlaying />
+          <NowPlayingPanel />
           <Reading />
           <GithubToday />
           <Weather />
