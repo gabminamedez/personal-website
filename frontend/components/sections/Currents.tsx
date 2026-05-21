@@ -1,6 +1,6 @@
 "use client";
 
-import { NowPlayingPanel } from "@/components/sections/NowPlayingPanel";
+import { NowPlayingPanel } from "@/components/utils/NowPlayingPanel";
 import { useCountUp, useInView } from "@/hooks/useScrollAnimation";
 import { useMemo, useRef } from "react";
 
@@ -66,8 +66,7 @@ function GithubToday() {
     const arr: number[] = [];
     for (let j = 0; j < 91; j++) {
       const r = (Math.sin(j * 1.7) + 1) / 2;
-      const l =
-        r < 0.3 ? 0 : r < 0.55 ? 1 : r < 0.75 ? 2 : r < 0.9 ? 3 : 4;
+      const l = r < 0.3 ? 0 : r < 0.55 ? 1 : r < 0.75 ? 2 : r < 0.9 ? 3 : 4;
       arr.push(l);
     }
     return arr;
@@ -151,7 +150,11 @@ function Weather() {
 
 export function Currents() {
   return (
-    <section id="currents" className="currents" data-screen-label="03 The Currents">
+    <section
+      id="currents"
+      className="currents"
+      data-screen-label="03 The Currents"
+    >
       <div className="section-pad">
         <header className="section-head">
           <div className="h-left">

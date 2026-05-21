@@ -1,34 +1,22 @@
-"use client";
-
 import {
   About,
-  Collab,
+  Collaborate,
   Currents,
-  Hero,
+  Identity,
   Marquee,
-  Nav,
+  Navbar,
+  PrimaryMarquee,
   Portfolio,
   Substack,
   UselessLists,
-} from "@/components/sections";
+} from "@/components";
 
 export default function Page() {
   return (
     <>
-      <Nav />
-      <Hero />
-      <Marquee
-        items={[
-          "DEVELOPER",
-          "DESIGNER",
-          "WRITER",
-          "EXPEDITIONIST",
-          "BASED IN MANILA · PH",
-          "AVAILABLE FOR FREELANCE",
-          "COLLAB CURIOUS",
-          "BUILDING IN PUBLIC",
-        ]}
-      />
+      <Navbar />
+      <Identity />
+      <PrimaryMarquee />
       <About />
       <Currents />
       <Portfolio />
@@ -45,7 +33,7 @@ export default function Page() {
           "INTERNET STRANGERS WELCOME",
         ]}
       />
-      <Collab />
+      <Collaborate />
     </>
   );
 }

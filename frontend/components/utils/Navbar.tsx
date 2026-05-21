@@ -2,7 +2,7 @@
 
 import { useEffect, useState } from "react";
 
-export const SECTIONS = [
+const SECTIONS = [
   { id: "identity", label: "IDENTITY" },
   { id: "about", label: "ABOUT" },
   { id: "currents", label: "CURRENTS" },
@@ -10,9 +10,9 @@ export const SECTIONS = [
   { id: "substack", label: "SUBSTACK" },
   { id: "lists", label: "LISTS" },
   { id: "collab", label: "COLLABORATE" },
-] as const;
+];
 
-export function Nav() {
+export function Navbar() {
   const [active, setActive] = useState("identity");
   const [progress, setProgress] = useState(0);
 
@@ -64,10 +64,6 @@ export function Nav() {
               {s.label}
             </a>
           ))}
-        </div>
-        <div className="nav-status" title="available for work">
-          <span className="dot" />
-          <span>OPEN&nbsp;FOR&nbsp;WORK</span>
         </div>
       </div>
       <div className="nav-progress" style={{ width: `${progress}%` }} />

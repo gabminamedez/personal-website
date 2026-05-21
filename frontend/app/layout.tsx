@@ -3,14 +3,13 @@ import type { ReactNode } from "react";
 import "./globals.css";
 
 export const metadata: Metadata = {
-  title: "Gabriel Minamedez — Software Engineer / Writer / Expeditionist",
+  title: "Gabriel Minamedez — Software Engineer / Writer / Human",
   description:
-    "Developer and designer building personal, useful, and slightly unhinged things on the internet. Based in Manila, Philippines.",
+    "Developer and designer creating things on the internet. Based in Manila, Philippines.",
   openGraph: {
-    title:
-      "Gabriel Minamedez — Software Engineer / Writer / Expeditionist",
+    title: "Gabriel Minamedez — Software Engineer / Writer / Human",
     description:
-      "Developer and designer building personal, useful things on the internet.",
+      "Developer and designer creating things on the internet. Based in Manila, Philippines.",
   },
 };
 
