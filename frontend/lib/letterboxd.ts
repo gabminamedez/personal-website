@@ -22,17 +22,7 @@ function rssUrl(username: string): string {
 }
 
 async function fetchRssXml(username: string): Promise<string> {
-  const url = rssUrl(username);
-
-  try {
-    const res = await fetch(url, { cache: "no-store" });
-    if (res.ok) return res.text();
-  } catch {
-    /* direct fetch may fail due to CORS in the browser */
-  }
-
-  const proxy = `https://api.allorigins.win/raw?url=${encodeURIComponent(url)}`;
-  const res = await fetch(proxy, { cache: "no-store" });
+  const res = await fetch(rssUrl(username), { cache: "no-store" });
   if (!res.ok) {
     throw new Error(`Letterboxd RSS HTTP ${res.status}`);
   }

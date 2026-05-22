@@ -1,10 +1,7 @@
 "use client";
 
 import { FABLE_USERNAME } from "@/consts/fable";
-import {
-  fetchFableReading,
-  type FableReadingDisplay,
-} from "@/lib/fable";
+import type { FableReadingDisplay } from "@/lib/fable";
 import { useCallback, useEffect, useState } from "react";
 
 export type FableReadingPhase = "idle" | "loading" | "ready" | "empty" | "error";
@@ -27,7 +24,15 @@ export function useFableReading() {
     }
 
     try {
-      const data = await fetchFableReading(FABLE_USERNAME);
+      const res = await fetch("/api/fable/reading", { cache: "no-store" });
+      const body = (await res.json()) as {
+        data?: FableReadingDisplay | null;
+        error?: string;
+      };
+      if (!res.ok) {
+        throw new Error(body.error ?? `Fable HTTP ${res.status}`);
+      }
+      const data = body.data ?? null;
       setDisplay(data);
       setPhase(data ? "ready" : "empty");
       setError(null);

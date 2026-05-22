@@ -1,10 +1,7 @@
 "use client";
 
 import { LETTERBOXD_USERNAME } from "@/consts/letterboxd";
-import {
-  fetchLetterboxdLastFilm,
-  type LetterboxdDisplay,
-} from "@/lib/letterboxd";
+import type { LetterboxdDisplay } from "@/lib/letterboxd";
 import { useCallback, useEffect, useState } from "react";
 
 export type LetterboxdPhase = "idle" | "loading" | "ready" | "empty" | "error";
@@ -27,7 +24,15 @@ export function useLetterboxdLastFilm() {
     }
 
     try {
-      const data = await fetchLetterboxdLastFilm(LETTERBOXD_USERNAME);
+      const res = await fetch("/api/letterboxd", { cache: "no-store" });
+      const body = (await res.json()) as {
+        data?: LetterboxdDisplay | null;
+        error?: string;
+      };
+      if (!res.ok) {
+        throw new Error(body.error ?? `Letterboxd HTTP ${res.status}`);
+      }
+      const data = body.data ?? null;
       setDisplay(data);
       setPhase(data ? "ready" : "empty");
       setError(null);
