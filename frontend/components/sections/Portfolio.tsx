@@ -1,4 +1,4 @@
-import { PortfolioSection } from "@/components/sections/PortfolioSection";
+import { PortfolioSection } from "@/components/utils/PortfolioSection";
 
 export function Portfolio() {
   return (

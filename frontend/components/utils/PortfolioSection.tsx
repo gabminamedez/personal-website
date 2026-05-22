@@ -1,5 +1,6 @@
 "use client";
 
+import Image from "next/image";
 import { useEffect, useId, useState } from "react";
 import { usePortfolioProjects } from "@/hooks/usePortfolioProjects";
 
@@ -77,12 +78,13 @@ export function PortfolioSection() {
               onClick={() => toggle(index)}
             >
               {project.img ? (
-                <img
+                <Image
                   className="project-thumb"
                   src={project.img}
                   alt=""
+                  width={120}
+                  height={88}
                   loading="lazy"
-                  decoding="async"
                 />
               ) : (
                 <div className="project-thumb project-thumb--empty" aria-hidden />

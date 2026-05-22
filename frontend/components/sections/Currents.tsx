@@ -65,7 +65,8 @@ export function Currents() {
             <h2>The Currents</h2>
           </div>
           <p className="h-sub">
-            Stuff I&apos;m into right now, plus the weather from where I'm at
+            Stuff I&apos;m into right now, plus the weather from where I&apos;m
+            at
             right now!
           </p>
         </header>
