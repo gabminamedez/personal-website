@@ -8,7 +8,6 @@ const SECTIONS = [
   { id: "currents", label: "CURRENTS" },
   { id: "portfolio", label: "PORTFOLIO" },
   { id: "substack", label: "SUBSTACK" },
-  { id: "lists", label: "LISTS" },
   { id: "collab", label: "COLLABORATE" },
 ];
 

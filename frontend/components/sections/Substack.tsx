@@ -1,56 +1,11 @@
 "use client";
 
-import { useState } from "react";
-
-const POSTS = [
-  {
-    d: "2026 · 04 · 12",
-    t: "Why I decided to design and develop my portfolio with the garage door open",
-    r: "12 min",
-    tag: "PROCESS",
-  },
-  {
-    d: "2026 · 03 · 28",
-    t: "A curatorial practice for personal websites",
-    r: "9 min",
-    tag: "ESSAY",
-  },
-  {
-    d: "2026 · 03 · 04",
-    t: "On building in public (and the parts I keep private)",
-    r: "7 min",
-    tag: "CRAFT",
-  },
-  {
-    d: "2026 · 02 · 17",
-    t: "The taxonomy of things that don't matter, presented with gravitas",
-    r: "5 min",
-    tag: "USELESS",
-  },
-  {
-    d: "2026 · 01 · 30",
-    t: "CSS specificity wars and other things I lost in 2025",
-    r: "11 min",
-    tag: "DEV",
-  },
-];
+import { socials } from "@/consts/socials";
+import { formatWritingDate } from "@/lib/writing";
+import { useWritingPosts } from "@/hooks/useWritingPosts";
 
 export function Substack() {
-  const [email, setEmail] = useState("");
-  const [state, setState] = useState<"idle" | "ok" | "err">("idle");
-  const [msg, setMsg] = useState("");
-
-  const submit = (e: React.FormEvent) => {
-    e.preventDefault();
-    const ok = /^[^@\s]+@[^@\s]+\.[^@\s]+$/.test(email);
-    if (!ok) {
-      setState("err");
-      setMsg("THAT EMAIL LOOKS WRONG — TRY AGAIN");
-      return;
-    }
-    setState("ok");
-    setMsg("SUBSCRIBED. SEE YOU IN THE INBOX.");
-  };
+  const { posts, status, error } = useWritingPosts();
 
   return (
     <section id="substack" data-screen-label="05 Substack">
@@ -61,61 +16,56 @@ export function Substack() {
             <h2>Substack</h2>
           </div>
           <p className="h-sub">
-            Essays about building things, building yourself, and the
-            embarrassing place where those overlap.
+            the world is my oyster and i love writing about oysters apparently
           </p>
         </header>
         <div className="substack-bar">
           <div>
-            <h3>Subscribe on Substack.</h3>
-            <p>
-              One letter, roughly monthly. No funnels, no upsells. Just essays
-              and the occasional dumb list.
-            </p>
+            <h3>Subscribe to my Substack on Sans Serif!</h3>
           </div>
-          <div>
-            <form
-              className={`subscribe-form${
-                state === "ok" ? " ok" : state === "err" ? " err" : ""
-              }`}
-              onSubmit={submit}
+          <div className="substack-bar-cta">
+            <a
+              href={socials.substack}
+              className="subscribe-cta"
+              target="_blank"
+              rel="noopener noreferrer"
             >
-              <input
-                type="email"
-                value={email}
-                onChange={(e) => {
-                  setEmail(e.target.value);
-                  setState("idle");
-                  setMsg("");
-                }}
-                placeholder="you@somewhere.com"
-                aria-label="Email"
-              />
-              <button type="submit">
-                {state === "ok" ? "DONE" : "SUBSCRIBE →"}
-              </button>
-            </form>
-            <div className="subscribe-msg" aria-live="polite">
-              {msg}
-            </div>
+              let&apos;s see it! →
+            </a>
           </div>
         </div>
 
         <div className="posts-list">
-          {POSTS.map((p, idx) => (
-            <a
-              key={`${p.d}-${idx}`}
-              className="post-row"
-              href="https://sansserif.substack.com/"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              <span className="date mono-num">{p.d}</span>
-              <span className="title">{p.t}</span>
-              <span className="reads">{p.r}</span>
-              <span className="tag">{p.tag}</span>
-            </a>
-          ))}
+          {status === "loading" ? (
+            <p className="posts-list-status">Loading posts…</p>
+          ) : null}
+          {status === "error" ? (
+            <p className="posts-list-status">
+              Could not load posts from Google Sheets. {error}
+            </p>
+          ) : null}
+          {status === "ready"
+            ? posts.map((post, idx) => (
+                <a
+                  key={`${post.date}-${post.title}-${idx}`}
+                  className="post-row"
+                  href={post.url || socials.substack}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <span className="date mono-num">
+                    {post.date ? formatWritingDate(post.date) : "—"}
+                  </span>
+                  <div className="post-row-body">
+                    <span className="title">{post.title}</span>
+                    {post.bio ? <span className="bio">{post.bio}</span> : null}
+                    {post.type ? (
+                      <span className="tag">{post.type}</span>
+                    ) : null}
+                  </div>
+                </a>
+              ))
+            : null}
         </div>
       </div>
     </section>

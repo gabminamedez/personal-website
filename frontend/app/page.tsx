@@ -8,7 +8,6 @@ import {
   PrimaryMarquee,
   Portfolio,
   Substack,
-  UselessLists,
 } from "@/components";
 
 export default function Page() {
@@ -21,11 +20,9 @@ export default function Page() {
       <Currents />
       <Portfolio />
       <Substack />
-      <UselessLists />
       <Marquee
         alt
         items={[
-          "FREELANCE",
           "COLLABORATIONS",
           "CREATIVE PROJECTS",
           "RANDOM EMAILS",

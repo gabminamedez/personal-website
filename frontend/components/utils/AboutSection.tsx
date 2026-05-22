@@ -3,23 +3,22 @@
 import { GITHUB_USERNAME } from "@/consts/github";
 import { useGitHubStats } from "@/hooks/useGitHubStats";
 import { useCountUp, useInView } from "@/hooks/useScrollAnimation";
+import { useWritingPosts } from "@/hooks/useWritingPosts";
 import { useRef } from "react";
 
-type Props = {
-  postCount: number;
-};
-
-export function AboutSection({ postCount }: Props) {
+export function AboutSection() {
   const ref = useRef<HTMLDivElement>(null);
   const seen = useInView(ref);
   const gh = useGitHubStats(GITHUB_USERNAME);
+  const writing = useWritingPosts();
 
   const animate = seen && gh.ready;
   const shipped = useCountUp(gh.projectsShipped ?? 0, animate);
   const sportsLeagues = useCountUp(6, seen);
   const coffees = useCountUp(3, seen);
   const lists = useCountUp(12, seen);
-  const posts = useCountUp(postCount, seen);
+  const postsReady = writing.status === "ready";
+  const posts = useCountUp(writing.postCount, seen && postsReady);
   const favoriteNumber = useCountUp(17, seen);
 
   return (
@@ -88,7 +87,9 @@ export function AboutSection({ postCount }: Props) {
             </div>
             <div className="stat">
               <div className="k">POSTS WRITTEN</div>
-              <div className="v mono-num">{posts}</div>
+              <div className="v mono-num">
+                {!postsReady ? "—" : posts}
+              </div>
             </div>
             <div className="stat blue">
               <div className="k">FAVORITE NUMBER</div>

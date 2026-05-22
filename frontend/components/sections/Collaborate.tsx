@@ -16,7 +16,7 @@ export function Collaborate() {
           </p>
           <div className="collab-email">
             <div>
-              <div className="label">EMAIL&nbsp;ME&nbsp;DIRECTLY</div>
+              <div className="label">EMAIL ME DIRECTLY</div>
               <a className="mail" href={socials.email}>
                 gabminamedez@gmail.com
               </a>
@@ -26,9 +26,9 @@ export function Collaborate() {
         </div>
 
         <div className="foot-meta">
-          <span>© 2026 Gabriel Minamedez</span>
+          <span>© {new Date().getFullYear()} Gabriel Minamedez</span>
           <a href="#identity" style={{ color: "inherit" }}>
-            SCROLL&nbsp;BACK&nbsp;UP&nbsp;↑
+            SCROLL BACK UP ↑
           </a>
         </div>
       </div>
