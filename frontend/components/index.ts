@@ -1,0 +1,9 @@
+export { Navbar } from "./utils/Navbar";
+export { Identity } from "./sections/Identity";
+export { Marquee } from "./utils/Marquee";
+export { PrimaryMarquee } from "./utils/PrimaryMarquee";
+export { About } from "./sections/About";
+export { Currents } from "./sections/Currents";
+export { Portfolio } from "./sections/Portfolio";
+export { Substack } from "./sections/Substack";
+export { Collaborate } from "./sections/Collaborate";
